@@ -1,0 +1,677 @@
+[
+  {
+    "id": "logic-password-rules",
+    "title": "Validador de regras de senha",
+    "category": "logic",
+    "level": "beginner",
+    "realWorldContext": "Um formulário precisa informar todos os critérios ausentes.",
+    "statement": "Crie uma função que valide tamanho, presença de letra e número sem usar regex.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de condicionais.",
+      "Use loops e acumuladores para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["condicionais", "loops", "acumuladores"],
+    "references": [
+      {
+        "title": "Python Tutorial — Control Flow",
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "logic-delivery-route",
+    "title": "Menor rota de entregas",
+    "category": "logic",
+    "level": "intermediate",
+    "realWorldContext": "Um entregador precisa atravessar um mapa de conexões sem pesos.",
+    "statement": "Modele o mapa como grafo e encontre a rota com menos conexões entre dois pontos.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de grafos.",
+      "Use BFS e fila para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["grafos", "BFS", "fila"],
+    "references": [
+      {
+        "title": "Python Tutorial — Control Flow",
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "python-sales-summary",
+    "title": "Resumo de vendas em Python",
+    "category": "python",
+    "level": "beginner",
+    "realWorldContext": "Uma loja recebeu uma lista de vendas com produto, quantidade e preço.",
+    "statement": "Crie funções que calculem faturamento total e total por produto.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de funções.",
+      "Use dicionários e laços para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["funções", "dicionários", "laços"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "python-stream-csv",
+    "title": "Processador de CSV em fluxo",
+    "category": "python",
+    "level": "intermediate",
+    "realWorldContext": "Um arquivo grande não cabe confortavelmente na memória.",
+    "statement": "Crie um generator que leia registros válidos e produza totais sem materializar o arquivo.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de generators.",
+      "Use tratamento de erros e context manager para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["generators", "tratamento de erros", "context manager"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "python-async-rate-limit",
+    "title": "Cliente assíncrono com limite",
+    "category": "python",
+    "level": "advanced",
+    "realWorldContext": "Uma API permite poucas requisições simultâneas e pode falhar temporariamente.",
+    "statement": "Projete um cliente asyncio com limite de concorrência, timeout e retry controlado.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de asyncio.",
+      "Use semaphore e timeout e backoff para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["asyncio", "semaphore", "timeout", "backoff"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "sql-sales-report",
+    "title": "Relatório mensal de vendas",
+    "category": "sql-databases",
+    "level": "beginner",
+    "realWorldContext": "A equipe precisa acompanhar receita e pedidos por mês.",
+    "statement": "Escreva uma consulta com agrupamento, soma, contagem e ordenação cronológica.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de SELECT.",
+      "Use GROUP BY e SUM para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["SELECT", "GROUP BY", "SUM"],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "sql-customer-ranking",
+    "title": "Ranking de clientes por período",
+    "category": "sql-databases",
+    "level": "intermediate",
+    "realWorldContext": "O time quer os três clientes com maior receita em cada mês.",
+    "statement": "Use CTE, JOIN e window function para produzir o ranking mensal.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de CTE.",
+      "Use JOIN e ROW_NUMBER e PARTITION BY para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["CTE", "JOIN", "ROW_NUMBER", "PARTITION BY"],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "oop-library-loans",
+    "title": "Empréstimos de uma biblioteca",
+    "category": "oop",
+    "level": "beginner",
+    "realWorldContext": "Livros possuem disponibilidade e empréstimos possuem prazo.",
+    "statement": "Modele classes que protejam a regra de não emprestar um exemplar indisponível.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de classes.",
+      "Use encapsulamento e invariantes para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["classes", "encapsulamento", "invariantes"],
+    "references": [
+      {
+        "title": "Python Tutorial — Classes",
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "oop-notification-strategies",
+    "title": "Estratégias de notificação",
+    "category": "oop",
+    "level": "intermediate",
+    "realWorldContext": "Um sistema envia avisos por canais diferentes.",
+    "statement": "Modele um contrato de envio e componha o serviço sem condicionais por canal.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de polimorfismo.",
+      "Use composição e injeção de dependência para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["polimorfismo", "composição", "injeção de dependência"],
+    "references": [
+      {
+        "title": "Python Tutorial — Classes",
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "backend-products-api",
+    "title": "API paginada de produtos",
+    "category": "backend",
+    "level": "beginner",
+    "realWorldContext": "Um catálogo precisa expor busca sem retornar milhares de registros.",
+    "statement": "Desenhe rotas REST com validação, filtros, paginação e status adequados.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de HTTP.",
+      "Use REST e paginação e validação para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["HTTP", "REST", "paginação", "validação"],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "backend-idempotency-key",
+    "title": "Endpoint de cobrança idempotente",
+    "category": "backend",
+    "level": "advanced",
+    "realWorldContext": "Uma cobrança pode ser repetida após timeout sem duplicar o efeito.",
+    "statement": "Projete uma rota POST com chave de idempotência, concorrência segura e resposta repetível.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de idempotência.",
+      "Use transações e restrição única para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["idempotência", "transações", "restrição única"],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "ai-maze-search",
+    "title": "Agente de busca em labirinto",
+    "category": "artificial-intelligence",
+    "level": "beginner",
+    "realWorldContext": "Um agente conhece movimentos válidos e precisa atingir uma saída.",
+    "statement": "Implemente BFS e registre caminho, estados visitados e custo final.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de estado.",
+      "Use BFS e grafo para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["estado", "BFS", "grafo"],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "ai-explainable-rules",
+    "title": "Sistema de regras explicável",
+    "category": "artificial-intelligence",
+    "level": "intermediate",
+    "realWorldContext": "Uma triagem usa regras e precisa justificar cada recomendação.",
+    "statement": "Modele fatos, regras e uma trilha de evidências para a decisão.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de sistema especialista.",
+      "Use regras e explicabilidade para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["sistema especialista", "regras", "explicabilidade"],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "ml-churn-baseline",
+    "title": "Baseline de previsão de cancelamento",
+    "category": "machine-learning",
+    "level": "beginner",
+    "realWorldContext": "Uma empresa quer estimar quais clientes podem cancelar.",
+    "statement": "Defina alvo, divisão de dados, baseline e métrica antes de escolher o modelo.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de classificação.",
+      "Use holdout e baseline e métrica para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["classificação", "holdout", "baseline", "métrica"],
+    "references": [
+      {
+        "title": "scikit-learn User Guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "ml-imbalanced-evaluation",
+    "title": "Avaliação com classes desbalanceadas",
+    "category": "machine-learning",
+    "level": "intermediate",
+    "realWorldContext": "Casos positivos são raros e têm custo alto quando não detectados.",
+    "statement": "Compare matriz de confusão, precision, recall e limiares de decisão.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de precision.",
+      "Use recall e threshold e cross-validation para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["precision", "recall", "threshold", "cross-validation"],
+    "references": [
+      {
+        "title": "scikit-learn User Guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "dl-image-transfer",
+    "title": "Classificador visual por transferência",
+    "category": "deep-learning",
+    "level": "intermediate",
+    "realWorldContext": "Há poucas imagens rotuladas de defeitos industriais.",
+    "statement": "Planeje pré-processamento, base pré-treinada, congelamento e validação.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de CNN.",
+      "Use transfer learning e augmentation para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["CNN", "transfer learning", "augmentation"],
+    "references": [
+      {
+        "title": "Deep Learning",
+        "url": "https://www.deeplearningbook.org/",
+        "kind": "book"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "dl-training-diagnosis",
+    "title": "Diagnóstico de treinamento instável",
+    "category": "deep-learning",
+    "level": "advanced",
+    "realWorldContext": "Uma rede apresenta perda oscilante e validação piorando.",
+    "statement": "Crie uma sequência de experimentos para investigar dados, gradientes e learning rate.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de backpropagation.",
+      "Use otimização e overfitting e ablação para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["backpropagation", "otimização", "overfitting", "ablação"],
+    "references": [
+      {
+        "title": "Deep Learning",
+        "url": "https://www.deeplearningbook.org/",
+        "kind": "book"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "nn-xor-network",
+    "title": "Rede neural para o problema XOR",
+    "category": "neural-networks",
+    "level": "intermediate",
+    "realWorldContext": "XOR não pode ser separado por uma única fronteira linear.",
+    "statement": "Desenhe uma rede pequena e explique por que a camada oculta permite a solução.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de não linearidade.",
+      "Use camada oculta e função de ativação para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["não linearidade", "camada oculta", "função de ativação"],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "nn-sequence-model",
+    "title": "Modelo neural para sequências",
+    "category": "neural-networks",
+    "level": "advanced",
+    "realWorldContext": "Uma série temporal possui dependências entre passos e valores ausentes.",
+    "statement": "Projete janelas, arquitetura recorrente, máscara e avaliação temporal.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de LSTM.",
+      "Use hidden state e masking e validação temporal para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["LSTM", "hidden state", "masking", "validação temporal"],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "genai-prompt-comparison",
+    "title": "Comparação controlada de prompts",
+    "category": "generative-ai",
+    "level": "beginner",
+    "realWorldContext": "Uma equipe quer melhorar respostas sem depender de impressão subjetiva.",
+    "statement": "Crie dois prompts, um conjunto fixo de casos e critérios explícitos de comparação.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de prompting.",
+      "Use avaliação e rubrica para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["prompting", "avaliação", "rubrica"],
+    "references": [
+      {
+        "title": "OWASP GenAI Security Project",
+        "url": "https://genai.owasp.org/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "genai-rag-defense",
+    "title": "RAG resistente a instruções maliciosas",
+    "category": "generative-ai",
+    "level": "advanced",
+    "realWorldContext": "Documentos recuperados podem conter instruções que tentam controlar o modelo.",
+    "statement": "Projete recuperação, isolamento de instruções, citação, validação e testes adversariais.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de RAG.",
+      "Use prompt injection e grounding e guardrails para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["RAG", "prompt injection", "grounding", "guardrails"],
+    "references": [
+      {
+        "title": "OWASP GenAI Security Project",
+        "url": "https://genai.owasp.org/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "data-clean-sales",
+    "title": "Limpeza de uma base de vendas",
+    "category": "data-science",
+    "level": "beginner",
+    "realWorldContext": "Uma planilha possui datas inválidas, ausências e moedas diferentes.",
+    "statement": "Crie uma análise de qualidade e transformações reproduzíveis com pandas.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de pandas.",
+      "Use missing data e tipos e duplicatas para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["pandas", "missing data", "tipos", "duplicatas"],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "data-ab-analysis",
+    "title": "Análise de um teste A/B",
+    "category": "data-science",
+    "level": "intermediate",
+    "realWorldContext": "Duas versões foram exibidas aleatoriamente e possuem conversões diferentes.",
+    "statement": "Calcule efeito, intervalo de confiança e limitações antes da recomendação.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de experimento.",
+      "Use intervalo de confiança e efeito para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["experimento", "intervalo de confiança", "efeito"],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "engineering-daily-etl",
+    "title": "Pipeline diário idempotente",
+    "category": "data-engineering",
+    "level": "beginner",
+    "realWorldContext": "Arquivos diários podem chegar atrasados ou ser reenviados.",
+    "statement": "Projete ingestão, validação de schema, deduplicação e carga repetível.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de ETL.",
+      "Use schema e idempotência e partição para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["ETL", "schema", "idempotência", "partição"],
+    "references": [
+      {
+        "title": "Apache Airflow Documentation",
+        "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "engineering-stream-orders",
+    "title": "Pedidos em streaming com duplicatas",
+    "category": "data-engineering",
+    "level": "advanced",
+    "realWorldContext": "Eventos podem chegar fora de ordem e ser entregues novamente.",
+    "statement": "Projete janelas, watermark, deduplicação e escrita consistente no destino.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece identificando entradas, saídas e a responsabilidade de streaming.",
+      "Use event time e watermark e deduplicação para separar as etapas e verificar o resultado."
+    ],
+    "expectedConcepts": ["streaming", "event time", "watermark", "deduplicação"],
+    "references": [
+      {
+        "title": "Apache Airflow Documentation",
+        "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-15"
+  }
+]
