@@ -27,4 +27,4 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 
 ## Resultado
 
-Todos os critérios definidos para a primeira versão foram concluídos. A demonstração pública está disponível em `https://devspin-learning-lab.ai-consult.chatgpt.site`.
+Todos os critérios definidos para a primeira versão foram concluídos. A demonstração pública está disponível em `https://agathalafaiety.github.io/devspin-learning-lab/`.

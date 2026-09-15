@@ -2,7 +2,7 @@
 
 Laboratório de aprendizagem ativa para desenvolvimento, inteligência artificial e dados.
 
-**Demonstração:** [devspin-learning-lab.ai-consult.chatgpt.site](https://devspin-learning-lab.ai-consult.chatgpt.site)
+**Demonstração:** [agathalafaiety.github.io/devspin-learning-lab](https://agathalafaiety.github.io/devspin-learning-lab/)
 
 ![Tela inicial do DevSpin](docs/images/devspin-desktop.png)
 
@@ -99,10 +99,6 @@ O DevSpin não possui contas, telemetria ou APIs externas. O progresso fica no `
 - 6 cenários ponta a ponta em desktop e celular.
 - Auditoria automática sem violações graves ou críticas de acessibilidade nas telas testadas.
 - Pipeline de CI com lint, testes, build e auditoria de dependências.
-
-## Interface móvel
-
-![DevSpin em uma tela móvel](docs/images/devspin-mobile.png)
 
 ## Licença
 
