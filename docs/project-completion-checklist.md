@@ -11,7 +11,7 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 - [x] Credenciais e configurações sensíveis protegidas por variáveis de ambiente, com apenas `.env.example` versionado.
 - [x] README com apresentação, instalação, comandos, uso, arquitetura e decisões do projeto.
 - [x] Licença MIT adicionada ao repositório.
-- [ ] Código commitado e publicado no repositório GitHub configurado como `origin`.
+- [x] Código commitado e publicado no repositório GitHub configurado como `origin`.
 - [x] Prints atualizados de desktop e celular no README.
 - [ ] Deploy público com endereço registrado no README.
 
@@ -27,5 +27,4 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 
 ## Pendências para encerramento
 
-1. Criar o primeiro commit e publicar o código no GitHub.
-2. Publicar o deploy e registrar o endereço no README.
+1. Publicar o deploy e verificar o endereço registrado no README.

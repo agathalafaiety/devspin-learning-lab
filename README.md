@@ -2,6 +2,8 @@
 
 Laboratório de aprendizagem ativa para desenvolvimento, inteligência artificial e dados.
 
+**Demonstração:** [devspin-learning-lab.ai-consult.chatgpt.site](https://devspin-learning-lab.ai-consult.chatgpt.site)
+
 ![Tela inicial do DevSpin](docs/images/devspin-desktop.png)
 
 ## Problema
