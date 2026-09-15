@@ -14,6 +14,7 @@ Este incremento fecha as funcionalidades locais, a verificação de qualidade e 
 - auditoria automática de acessibilidade;
 - README completo, licença MIT e prints responsivos;
 - pipeline de integração contínua ampliado com Playwright.
+- código publicado no GitHub e demonstração pública implantada.
 
 ## Verificações
 

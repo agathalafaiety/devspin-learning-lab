@@ -13,7 +13,7 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 - [x] Licença MIT adicionada ao repositório.
 - [x] Código commitado e publicado no repositório GitHub configurado como `origin`.
 - [x] Prints atualizados de desktop e celular no README.
-- [ ] Deploy público com endereço registrado no README.
+- [x] Deploy público com endereço registrado no README.
 
 ## Evidências atuais
 
@@ -25,6 +25,6 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 - `.gitignore` exclui `.env` e variantes, preservando somente `.env.example`.
 - Repositório remoto configurado em `https://github.com/agathalafaiety/devspin-learning-lab.git`.
 
-## Pendências para encerramento
+## Resultado
 
-1. Publicar o deploy e verificar o endereço registrado no README.
+Todos os critérios definidos para a primeira versão foram concluídos. A demonstração pública está disponível em `https://devspin-learning-lab.ai-consult.chatgpt.site`.
