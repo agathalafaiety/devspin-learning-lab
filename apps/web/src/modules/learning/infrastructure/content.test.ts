@@ -8,58 +8,58 @@ const expectedMatrix: Record<
   { concepts: Record<Level, number>; challenges: Record<Level, number> }
 > = {
   logic: {
-    concepts: { beginner: 2, intermediate: 1, advanced: 0 },
+    concepts: { beginner: 2, intermediate: 1, advanced: 1 },
     challenges: { beginner: 1, intermediate: 1, advanced: 0 },
   },
   python: {
-    concepts: { beginner: 2, intermediate: 2, advanced: 1 },
+    concepts: { beginner: 5, intermediate: 5, advanced: 5 },
     challenges: { beginner: 1, intermediate: 1, advanced: 1 },
   },
   'sql-databases': {
-    concepts: { beginner: 2, intermediate: 2, advanced: 1 },
+    concepts: { beginner: 5, intermediate: 5, advanced: 5 },
     challenges: { beginner: 1, intermediate: 1, advanced: 0 },
   },
   oop: {
-    concepts: { beginner: 2, intermediate: 1, advanced: 0 },
+    concepts: { beginner: 2, intermediate: 1, advanced: 1 },
     challenges: { beginner: 1, intermediate: 1, advanced: 0 },
   },
   backend: {
-    concepts: { beginner: 1, intermediate: 2, advanced: 2 },
+    concepts: { beginner: 1, intermediate: 3, advanced: 3 },
     challenges: { beginner: 1, intermediate: 0, advanced: 1 },
   },
   'artificial-intelligence': {
-    concepts: { beginner: 2, intermediate: 1, advanced: 0 },
+    concepts: { beginner: 2, intermediate: 2, advanced: 0 },
     challenges: { beginner: 1, intermediate: 1, advanced: 0 },
   },
   'machine-learning': {
-    concepts: { beginner: 2, intermediate: 2, advanced: 1 },
+    concepts: { beginner: 2, intermediate: 3, advanced: 1 },
     challenges: { beginner: 1, intermediate: 1, advanced: 0 },
   },
   'deep-learning': {
-    concepts: { beginner: 1, intermediate: 1, advanced: 2 },
+    concepts: { beginner: 1, intermediate: 1, advanced: 3 },
     challenges: { beginner: 0, intermediate: 1, advanced: 1 },
   },
   'neural-networks': {
-    concepts: { beginner: 1, intermediate: 1, advanced: 2 },
+    concepts: { beginner: 1, intermediate: 1, advanced: 3 },
     challenges: { beginner: 0, intermediate: 1, advanced: 1 },
   },
   'generative-ai': {
-    concepts: { beginner: 2, intermediate: 1, advanced: 1 },
+    concepts: { beginner: 2, intermediate: 1, advanced: 2 },
     challenges: { beginner: 1, intermediate: 0, advanced: 1 },
   },
   'data-science': {
-    concepts: { beginner: 2, intermediate: 2, advanced: 1 },
+    concepts: { beginner: 4, intermediate: 3, advanced: 1 },
     challenges: { beginner: 1, intermediate: 1, advanced: 0 },
   },
   'data-engineering': {
-    concepts: { beginner: 1, intermediate: 1, advanced: 2 },
+    concepts: { beginner: 1, intermediate: 2, advanced: 4 },
     challenges: { beginner: 1, intermediate: 0, advanced: 1 },
   },
 };
 
 describe('biblioteca oficial de conteúdo', () => {
-  it('carrega exatamente 50 conceitos e 25 desafios', () => {
-    expect(concepts).toHaveLength(50);
+  it('carrega exatamente 85 conceitos e 25 desafios', () => {
+    expect(concepts).toHaveLength(85);
     expect(challenges).toHaveLength(25);
   });
 
@@ -81,13 +81,35 @@ describe('biblioteca oficial de conteúdo', () => {
     }
   });
 
-  it('mantém 20/17/13 conceitos e 10/9/6 desafios por nível', () => {
+  it('mantém 28/28/29 conceitos e 10/9/6 desafios por nível', () => {
     expect(levels.map((level) => concepts.filter((item) => item.level === level).length)).toEqual([
-      20, 17, 13,
+      28, 28, 29,
     ]);
     expect(levels.map((level) => challenges.filter((item) => item.level === level).length)).toEqual(
       [10, 9, 6],
     );
+  });
+
+  it('oferece pelo menos 15 conceitos em cada trilha principal', () => {
+    const tracks: Category[][] = [
+      ['python'],
+      ['sql-databases'],
+      ['backend', 'oop', 'logic'],
+      [
+        'artificial-intelligence',
+        'machine-learning',
+        'deep-learning',
+        'neural-networks',
+        'generative-ai',
+      ],
+      ['data-science', 'data-engineering'],
+    ];
+
+    for (const track of tracks) {
+      expect(
+        concepts.filter(({ category }) => track.includes(category)).length,
+      ).toBeGreaterThanOrEqual(15);
+    }
   });
 
   it('mantém quizzes completos, com opções únicas e uma resposta existente', () => {

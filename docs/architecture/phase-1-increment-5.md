@@ -1,6 +1,6 @@
 # Fase 1 — Incremento 5: evolução e consolidação
 
-Este incremento consolida a experiência do MVP e transforma os dados locais em retorno visível para quem estuda.
+Este incremento consolida a primeira versão e transforma os dados locais em retorno visível para quem estuda.
 
 ## Entregas
 
@@ -12,12 +12,13 @@ Este incremento consolida a experiência do MVP e transforma os dados locais em 
 - registro local das tentativas de quiz;
 - migração automática do progresso da versão 1 para a versão 2;
 - importação compatível com backups da versão anterior;
-- validação adicional da integridade editorial dos 75 conteúdos;
-- remoção do componente de filtros antigo e dos estilos órfãos do Design System.
+- validação adicional da integridade editorial dos 110 conteúdos;
+- remoção do componente de filtros antigo e dos estilos órfãos do Design System;
+- expansão da biblioteca de 50 para 85 conceitos, com pelo menos 15 em cada trilha principal.
 
 ## Verificações
 
-- 41 testes unitários e de integração;
+- 42 testes unitários e de integração;
 - 4 cenários ponta a ponta em desktop e celular, totalizando 8 verificações;
 - build de produção e lint sem erros;
 - auditoria automática de acessibilidade sem violações graves ou críticas;

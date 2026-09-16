@@ -2148,5 +2148,1510 @@
     "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "python-strings-slicing-formatting",
+    "title": "Strings, fatiamento e formatação",
+    "category": "python",
+    "level": "beginner",
+    "summary": "Strings são sequências imutáveis que podem ser recortadas, combinadas e formatadas.",
+    "whyItMatters": "Dominar texto é essencial para validar entradas, gerar mensagens e preparar dados.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Extrair o domínio de um e-mail e montar uma mensagem com f-string.",
+    "prerequisites": ["variáveis", "índices"],
+    "commonMistakes": [
+      "Alterar uma string como se ela fosse mutável.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["string", "slice", "f-string", "imutabilidade"],
+    "quickQuiz": [
+      {
+        "id": "python-strings-slicing-formatting-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Fatiamento cria uma nova string sem alterar a original.",
+          "Strings podem ser alteradas diretamente por índice.",
+          "f-strings funcionam apenas com números."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Fatiamento cria uma nova string sem alterar a original."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-exception-handling",
+    "title": "Tratamento de exceções",
+    "category": "python",
+    "level": "beginner",
+    "summary": "Exceções representam falhas de execução que podem ser tratadas com try, except, else e finally.",
+    "whyItMatters": "Um tratamento preciso evita encerramentos inesperados e produz mensagens úteis para quem usa o programa.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Converter uma entrada em número e informar quando o valor não é válido.",
+    "prerequisites": ["funções", "fluxo de controle"],
+    "commonMistakes": [
+      "Capturar Exception sem distinguir a falha esperada.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["try", "except", "finally", "raise"],
+    "quickQuiz": [
+      {
+        "id": "python-exception-handling-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "O bloco finally é executado mesmo quando ocorre uma exceção.",
+          "except impede qualquer erro futuro no programa.",
+          "raise serve apenas para exibir texto no terminal."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "O bloco finally é executado mesmo quando ocorre uma exceção."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-modules-packages-venv",
+    "title": "Módulos, pacotes e ambientes virtuais",
+    "category": "python",
+    "level": "beginner",
+    "summary": "Módulos organizam código, pacotes agrupam módulos e ambientes virtuais isolam dependências.",
+    "whyItMatters": "A separação reduz conflitos de versões e torna o projeto mais simples de manter e distribuir.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Criar um pacote de utilitários e instalar suas dependências dentro de um venv.",
+    "prerequisites": ["funções", "arquivos"],
+    "commonMistakes": [
+      "Instalar todas as dependências no ambiente global.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["import", "package", "venv", "dependency"],
+    "quickQuiz": [
+      {
+        "id": "python-modules-packages-venv-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Um ambiente virtual mantém dependências isoladas por projeto.",
+          "Todo arquivo Python precisa ser um pacote instalado.",
+          "import copia permanentemente o módulo para o projeto."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Um ambiente virtual mantém dependências isoladas por projeto."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-files-context-managers",
+    "title": "Arquivos e context managers",
+    "category": "python",
+    "level": "intermediate",
+    "summary": "Context managers controlam aquisição e liberação de recursos por meio do bloco with.",
+    "whyItMatters": "Eles garantem fechamento de arquivos e limpeza de recursos mesmo quando uma operação falha.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Ler um arquivo com with open(...) sem chamar close manualmente.",
+    "prerequisites": ["exceções", "arquivos"],
+    "commonMistakes": [
+      "Manter arquivos abertos além do tempo necessário.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["with", "context manager", "__enter__", "__exit__"],
+    "quickQuiz": [
+      {
+        "id": "python-files-context-managers-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "O bloco with encerra o recurso conforme o protocolo do context manager.",
+          "with carrega qualquer arquivo inteiro na memória.",
+          "Context managers só podem ser usados com bancos de dados."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "O bloco with encerra o recurso conforme o protocolo do context manager."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-dataclasses-modeling",
+    "title": "Dataclasses e modelagem de dados",
+    "category": "python",
+    "level": "intermediate",
+    "summary": "Dataclasses reduzem código repetitivo ao representar entidades com campos bem definidos.",
+    "whyItMatters": "Modelos explícitos facilitam leitura, comparação, validação e evolução dos dados da aplicação.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Representar uma tarefa com título, prioridade e estado usando @dataclass.",
+    "prerequisites": ["classes", "type hints"],
+    "commonMistakes": [
+      "Usar valores mutáveis como padrão sem default_factory.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["dataclass", "field", "default_factory", "type hint"],
+    "quickQuiz": [
+      {
+        "id": "python-dataclasses-modeling-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "default_factory cria um novo valor mutável para cada instância.",
+          "@dataclass torna todos os atributos privados.",
+          "Dataclasses não podem ter métodos."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "default_factory cria um novo valor mutável para cada instância."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-async-await",
+    "title": "Async e await",
+    "category": "python",
+    "level": "intermediate",
+    "summary": "Async e await permitem intercalar tarefas cooperativas enquanto operações de entrada e saída aguardam.",
+    "whyItMatters": "Esse modelo melhora a utilização do tempo em aplicações com muitas esperas por rede ou disco.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Consultar várias APIs concorrentemente com asyncio.gather.",
+    "prerequisites": ["funções", "exceções"],
+    "commonMistakes": [
+      "Usar código bloqueante dentro do event loop.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["coroutine", "event loop", "await", "task"],
+    "quickQuiz": [
+      {
+        "id": "python-async-await-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "await libera o event loop enquanto a operação assíncrona está aguardando.",
+          "async torna automaticamente qualquer cálculo mais rápido.",
+          "Toda função chamada por uma coroutine precisa criar uma thread."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "await libera o event loop enquanto a operação assíncrona está aguardando."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-gil-multiprocessing",
+    "title": "GIL e multiprocessing",
+    "category": "python",
+    "level": "advanced",
+    "summary": "O GIL limita a execução simultânea de bytecode Python em threads; processos oferecem paralelismo separado.",
+    "whyItMatters": "A escolha entre threads, async e processos depende de a carga esperar por I/O ou consumir CPU.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Distribuir transformações pesadas entre processos com ProcessPoolExecutor.",
+    "prerequisites": ["concorrência", "processos"],
+    "commonMistakes": [
+      "Esperar aceleração de CPU apenas adicionando threads.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["GIL", "thread", "process", "parallelism"],
+    "quickQuiz": [
+      {
+        "id": "python-gil-multiprocessing-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Processos separados podem executar cargas de CPU em paralelo.",
+          "O GIL impede qualquer concorrência em Python.",
+          "Multiprocessing sempre compartilha memória sem custo."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Processos separados podem executar cargas de CPU em paralelo."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-descriptors-properties",
+    "title": "Descriptors e properties",
+    "category": "python",
+    "level": "advanced",
+    "summary": "Descriptors controlam acesso a atributos; property oferece uma interface declarativa para esse controle.",
+    "whyItMatters": "Eles permitem validar, calcular ou proteger atributos preservando uma API simples.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Validar um preço positivo por meio de uma property.",
+    "prerequisites": ["classes", "dunder methods"],
+    "commonMistakes": [
+      "Criar comportamento oculto e caro em um simples acesso de atributo.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["descriptor", "property", "__get__", "__set__"],
+    "quickQuiz": [
+      {
+        "id": "python-descriptors-properties-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "property pode expor um método como acesso de atributo controlado.",
+          "Descriptors existem apenas para atributos de classe.",
+          "property transforma automaticamente o valor em constante."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "property pode expor um método como acesso de atributo controlado."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-metaclasses",
+    "title": "Metaclasses e criação de classes",
+    "category": "python",
+    "level": "advanced",
+    "summary": "Metaclasses personalizam como classes são construídas, assim como classes definem como instâncias são criadas.",
+    "whyItMatters": "Frameworks usam esse mecanismo para registrar, validar e transformar definições de classes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Registrar automaticamente subclasses durante a criação da classe.",
+    "prerequisites": ["classes", "herança"],
+    "commonMistakes": [
+      "Usar metaclass quando um decorator ou função simples resolve o problema.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["metaclass", "type", "__new__", "class decorator"],
+    "quickQuiz": [
+      {
+        "id": "python-metaclasses-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "type é a metaclass padrão da maioria das classes Python.",
+          "Metaclasses são executadas a cada chamada de método.",
+          "Toda herança exige uma metaclass personalizada."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "type é a metaclass padrão da maioria das classes Python."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-memory-garbage-collector",
+    "title": "Memória e garbage collector",
+    "category": "python",
+    "level": "advanced",
+    "summary": "Python combina contagem de referências com coleta de ciclos para recuperar objetos sem uso.",
+    "whyItMatters": "Entender o ciclo de vida dos objetos ajuda a investigar consumo excessivo e referências persistentes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Usar weakref para um cache que não deve manter objetos vivos.",
+    "prerequisites": ["objetos", "referências"],
+    "commonMistakes": [
+      "Confundir liberação de objeto com devolução imediata de memória ao sistema.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["reference counting", "garbage collector", "cycle", "weakref"],
+    "quickQuiz": [
+      {
+        "id": "python-memory-garbage-collector-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Referências circulares podem exigir atuação do garbage collector.",
+          "del sempre libera imediatamente a memória física.",
+          "Objetos Python nunca formam ciclos de referência."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Referências circulares podem exigir atuação do garbage collector."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-data-modification",
+    "title": "INSERT, UPDATE e DELETE",
+    "category": "sql-databases",
+    "level": "beginner",
+    "summary": "Comandos de modificação inserem, atualizam e removem linhas de uma tabela.",
+    "whyItMatters": "Alterações seguras exigem filtros corretos, validação e uso consciente de transações.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Atualizar o status de um pedido específico usando WHERE e uma transação.",
+    "prerequisites": ["tabelas", "WHERE"],
+    "commonMistakes": [
+      "Executar UPDATE ou DELETE sem conferir o filtro.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["INSERT", "UPDATE", "DELETE", "RETURNING"],
+    "quickQuiz": [
+      {
+        "id": "sql-data-modification-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "A cláusula WHERE limita as linhas afetadas por UPDATE e DELETE.",
+          "INSERT altera todas as linhas existentes.",
+          "DELETE remove automaticamente a estrutura da tabela."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "A cláusula WHERE limita as linhas afetadas por UPDATE e DELETE."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-constraints-null-integrity",
+    "title": "Restrições, NULL e integridade",
+    "category": "sql-databases",
+    "level": "beginner",
+    "summary": "Constraints definem regras como unicidade, obrigatoriedade e relacionamento entre tabelas.",
+    "whyItMatters": "Regras no banco impedem estados inválidos mesmo quando diferentes aplicações gravam dados.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Combinar NOT NULL, UNIQUE e FOREIGN KEY em uma tabela de usuários.",
+    "prerequisites": ["tabelas", "tipos de dados"],
+    "commonMistakes": [
+      "Comparar NULL usando o operador de igualdade.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["PRIMARY KEY", "FOREIGN KEY", "UNIQUE", "NULL"],
+    "quickQuiz": [
+      {
+        "id": "sql-constraints-null-integrity-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "NULL deve ser testado com IS NULL ou IS NOT NULL.",
+          "NULL é sempre igual a zero.",
+          "FOREIGN KEY garante que duas colunas tenham o mesmo nome."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "NULL deve ser testado com IS NULL ou IS NOT NULL."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-normalization",
+    "title": "Normalização de dados",
+    "category": "sql-databases",
+    "level": "beginner",
+    "summary": "Normalização organiza entidades e dependências para reduzir redundância e anomalias de atualização.",
+    "whyItMatters": "Uma estrutura coerente protege a consistência e simplifica mudanças nos dados.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Separar clientes e pedidos em tabelas relacionadas por uma chave.",
+    "prerequisites": ["tabelas", "chaves"],
+    "commonMistakes": [
+      "Duplicar dados de uma entidade em muitas linhas sem necessidade.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["normal form", "dependency", "redundancy", "anomaly"],
+    "quickQuiz": [
+      {
+        "id": "sql-normalization-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Normalização busca reduzir redundância causada por dependências mal representadas.",
+          "Normalização exige guardar tudo em uma única tabela.",
+          "Toda desnormalização é um erro de modelagem."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Normalização busca reduzir redundância causada por dependências mal representadas."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-subqueries-correlated",
+    "title": "Subqueries e subqueries correlacionadas",
+    "category": "sql-databases",
+    "level": "intermediate",
+    "summary": "Subqueries produzem valores ou conjuntos usados por outra consulta; as correlacionadas dependem da linha externa.",
+    "whyItMatters": "Elas expressam filtros e comparações complexas quando joins ou agregações não são suficientes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Encontrar produtos com preço acima da média de sua própria categoria.",
+    "prerequisites": ["SELECT", "JOIN"],
+    "commonMistakes": [
+      "Usar subquery correlacionada custosa sem analisar o plano.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["subquery", "correlation", "EXISTS", "IN"],
+    "quickQuiz": [
+      {
+        "id": "sql-subqueries-correlated-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma subquery correlacionada referencia valores da consulta externa.",
+          "Toda subquery retorna obrigatoriamente uma única linha.",
+          "EXISTS compara apenas valores numéricos."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma subquery correlacionada referencia valores da consulta externa."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-views-materialized-views",
+    "title": "Views e materialized views",
+    "category": "sql-databases",
+    "level": "intermediate",
+    "summary": "Views armazenam uma consulta; materialized views também persistem seu resultado para leitura posterior.",
+    "whyItMatters": "Elas simplificam consultas, controlam acesso e podem acelerar leituras com custos de atualização diferentes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Materializar um resumo diário de vendas e atualizá-lo após a carga.",
+    "prerequisites": ["SELECT", "agregações"],
+    "commonMistakes": [
+      "Esperar dados sempre atuais em uma materialized view sem refresh.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["view", "materialized view", "refresh", "projection"],
+    "quickQuiz": [
+      {
+        "id": "sql-views-materialized-views-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma materialized view precisa ser atualizada para refletir novos dados.",
+          "Uma view comum sempre armazena uma cópia física das linhas.",
+          "Views eliminam a necessidade de permissões."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma materialized view precisa ser atualizada para refletir novos dados."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-set-operations",
+    "title": "Operações de conjunto",
+    "category": "sql-databases",
+    "level": "intermediate",
+    "summary": "UNION, INTERSECT e EXCEPT combinam resultados compatíveis segundo regras de conjuntos.",
+    "whyItMatters": "Esses operadores tornam comparações e consolidações entre consultas mais diretas.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Listar clientes presentes em duas campanhas usando INTERSECT.",
+    "prerequisites": ["SELECT", "tipos de dados"],
+    "commonMistakes": [
+      "Usar UNION quando duplicatas precisam ser preservadas.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["UNION", "UNION ALL", "INTERSECT", "EXCEPT"],
+    "quickQuiz": [
+      {
+        "id": "sql-set-operations-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "UNION remove duplicatas, enquanto UNION ALL as preserva.",
+          "INTERSECT concatena colunas lado a lado.",
+          "EXCEPT apaga linhas da tabela original."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "UNION remove duplicatas, enquanto UNION ALL as preserva."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-mvcc-isolation-locking",
+    "title": "MVCC, isolamento e bloqueios",
+    "category": "sql-databases",
+    "level": "advanced",
+    "summary": "MVCC mantém versões de linhas; níveis de isolamento e locks controlam o que transações concorrentes observam.",
+    "whyItMatters": "Esses mecanismos determinam consistência, concorrência e riscos como leituras não repetíveis.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Escolher isolamento serializable para uma operação financeira crítica.",
+    "prerequisites": ["transações", "concorrência"],
+    "commonMistakes": [
+      "Aumentar o isolamento sem medir contenção e retries.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["MVCC", "isolation level", "lock", "deadlock"],
+    "quickQuiz": [
+      {
+        "id": "sql-mvcc-isolation-locking-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Níveis de isolamento mais fortes podem exigir mais espera ou repetição de transações.",
+          "MVCC impede qualquer conflito de escrita.",
+          "Deadlocks só acontecem em consultas SELECT."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Níveis de isolamento mais fortes podem exigir mais espera ou repetição de transações."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-table-partitioning",
+    "title": "Particionamento de tabelas",
+    "category": "sql-databases",
+    "level": "advanced",
+    "summary": "Particionamento divide logicamente uma tabela grande segundo uma chave, como data ou faixa.",
+    "whyItMatters": "A estratégia pode reduzir dados examinados e facilitar retenção, manutenção e carga.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Particionar eventos por mês e remover períodos expirados por partição.",
+    "prerequisites": ["índices", "planos de execução"],
+    "commonMistakes": [
+      "Criar muitas partições pequenas sem padrão de consulta compatível.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["partition key", "pruning", "range", "hash"],
+    "quickQuiz": [
+      {
+        "id": "sql-table-partitioning-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Partition pruning evita ler partições incompatíveis com o filtro.",
+          "Particionamento substitui todos os índices.",
+          "A chave de partição não afeta o desempenho das consultas."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Partition pruning evita ler partições incompatíveis com o filtro."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-replication-high-availability",
+    "title": "Replicação e alta disponibilidade",
+    "category": "sql-databases",
+    "level": "advanced",
+    "summary": "Replicação mantém cópias dos dados; alta disponibilidade coordena recuperação e continuidade do serviço.",
+    "whyItMatters": "Arquiteturas resilientes precisam considerar atraso, failover, consistência e objetivos de recuperação.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Direcionar leituras tolerantes a atraso para uma réplica e testar o failover.",
+    "prerequisites": ["transações", "redes"],
+    "commonMistakes": [
+      "Tratar réplica como backup independente e imutável.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["replica", "failover", "replication lag", "RPO"],
+    "quickQuiz": [
+      {
+        "id": "sql-replication-high-availability-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma réplica pode apresentar dados atrasados em relação ao nó principal.",
+          "Replicação elimina a necessidade de backups.",
+          "Failover nunca interrompe conexões existentes."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma réplica pode apresentar dados atrasados em relação ao nó principal."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-procedures-functions-triggers",
+    "title": "Procedures, functions e triggers",
+    "category": "sql-databases",
+    "level": "advanced",
+    "summary": "Rotinas armazenadas encapsulam lógica no banco; triggers reagem automaticamente a determinados eventos.",
+    "whyItMatters": "Elas centralizam regras próximas aos dados, mas também criam acoplamento e efeitos menos visíveis.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Registrar uma auditoria após alteração de uma linha sensível.",
+    "prerequisites": ["transações", "funções"],
+    "commonMistakes": [
+      "Ocultar regras de negócio extensas em triggers difíceis de observar.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["procedure", "function", "trigger", "audit"],
+    "quickQuiz": [
+      {
+        "id": "sql-procedures-functions-triggers-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Um trigger é acionado por um evento configurado no banco.",
+          "Uma function sempre modifica dados.",
+          "Procedures são executadas automaticamente em todo SELECT."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Um trigger é acionado por um evento configurado no banco."
+      }
+    ],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "logic-dynamic-programming-memoization",
+    "title": "Programação dinâmica e memoization",
+    "category": "logic",
+    "level": "advanced",
+    "summary": "Programação dinâmica resolve subproblemas sobrepostos uma vez e reaproveita seus resultados.",
+    "whyItMatters": "Ela transforma algumas soluções exponenciais em algoritmos viáveis por meio de cache ou tabelas.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Calcular o menor custo em uma grade armazenando o melhor resultado de cada posição.",
+    "prerequisites": ["recursão", "complexidade"],
+    "commonMistakes": [
+      "Aplicar memoization quando não existem subproblemas repetidos.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["memoization", "tabulation", "subproblem", "optimal substructure"],
+    "quickQuiz": [
+      {
+        "id": "logic-dynamic-programming-memoization-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Memoization guarda resultados de chamadas já resolvidas.",
+          "Programação dinâmica exige sempre uma solução recursiva.",
+          "O cache aumenta obrigatoriamente o tempo de execução."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Memoization guarda resultados de chamadas já resolvidas."
+      }
+    ],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "oop-inversion-control-dependency-injection",
+    "title": "Inversão de controle e dependency injection",
+    "category": "oop",
+    "level": "advanced",
+    "summary": "Inversão de controle entrega a coordenação a um componente externo; injeção fornece dependências prontas.",
+    "whyItMatters": "Separar criação e uso de dependências melhora substituição, testes e evolução dos componentes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Injetar um repositório em um serviço em vez de instanciá-lo internamente.",
+    "prerequisites": ["interfaces", "composição"],
+    "commonMistakes": [
+      "Transformar qualquer valor simples em uma dependência abstrata.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["IoC", "dependency injection", "container", "interface"],
+    "quickQuiz": [
+      {
+        "id": "oop-inversion-control-dependency-injection-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Dependency injection permite trocar uma implementação sem alterar quem a utiliza.",
+          "Injeção de dependência exige herança múltipla.",
+          "IoC significa que nenhum componente controla o fluxo."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Dependency injection permite trocar uma implementação sem alterar quem a utiliza."
+      }
+    ],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "backend-api-pagination-versioning",
+    "title": "Paginação e versionamento de APIs",
+    "category": "backend",
+    "level": "intermediate",
+    "summary": "Paginação limita coleções retornadas; versionamento administra mudanças incompatíveis no contrato da API.",
+    "whyItMatters": "Essas práticas mantêm respostas previsíveis e permitem evolução sem interromper clientes existentes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Usar cursor para paginar eventos e preservar uma versão antiga durante uma migração.",
+    "prerequisites": ["HTTP", "APIs REST"],
+    "commonMistakes": [
+      "Usar offset alto em dados que mudam rapidamente sem avaliar inconsistências.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["cursor", "offset", "API version", "backward compatibility"],
+    "quickQuiz": [
+      {
+        "id": "backend-api-pagination-versioning-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Paginação por cursor pode ser mais estável quando novos registros são inseridos.",
+          "Versionar uma API elimina a necessidade de documentar mudanças.",
+          "Paginação reduz permanentemente o número de registros no banco."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Paginação por cursor pode ser mais estável quando novos registros são inseridos."
+      }
+    ],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "backend-timeouts-retries-circuit-breaker",
+    "title": "Timeouts, retries e circuit breaker",
+    "category": "backend",
+    "level": "advanced",
+    "summary": "Timeouts limitam espera, retries repetem falhas transitórias e circuit breakers interrompem chamadas degradadas.",
+    "whyItMatters": "Combinados com limites e observabilidade, esses padrões evitam falhas em cascata entre serviços.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Repetir uma leitura idempotente com backoff e abrir o circuito após falhas consecutivas.",
+    "prerequisites": ["HTTP", "sistemas distribuídos"],
+    "commonMistakes": [
+      "Repetir indefinidamente operações não idempotentes.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["timeout", "retry", "backoff", "circuit breaker"],
+    "quickQuiz": [
+      {
+        "id": "backend-timeouts-retries-circuit-breaker-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Backoff com jitter reduz novas tentativas simultâneas após uma falha.",
+          "Circuit breaker corrige automaticamente o serviço remoto.",
+          "Retries são seguros para qualquer operação de escrita."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Backoff com jitter reduz novas tentativas simultâneas após uma falha."
+      }
+    ],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "ai-heuristic-search-adversarial-games",
+    "title": "Busca heurística e jogos adversariais",
+    "category": "artificial-intelligence",
+    "level": "intermediate",
+    "summary": "Heurísticas orientam a busca; algoritmos adversariais consideram decisões de agentes com objetivos opostos.",
+    "whyItMatters": "Essas técnicas tornam tratáveis espaços de estados grandes em planejamento, rotas e jogos.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Usar A* para encontrar uma rota e minimax para escolher uma jogada.",
+    "prerequisites": ["grafos", "busca"],
+    "commonMistakes": [
+      "Tratar uma heurística não admissível como garantia de solução ótima.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["A*", "heuristic", "minimax", "alpha-beta pruning"],
+    "quickQuiz": [
+      {
+        "id": "ai-heuristic-search-adversarial-games-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "A* combina o custo percorrido com uma estimativa do custo restante.",
+          "Minimax pressupõe que todos os agentes têm o mesmo objetivo.",
+          "Uma heurística sempre encontra a solução ótima."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "A* combina o custo percorrido com uma estimativa do custo restante."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "ml-ensemble-methods",
+    "title": "Ensemble methods",
+    "category": "machine-learning",
+    "level": "intermediate",
+    "summary": "Ensembles combinam vários modelos para obter previsões mais robustas que as de um estimador isolado.",
+    "whyItMatters": "Bagging, boosting e stacking exploram diferentes formas de reduzir variância ou viés.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Comparar random forest e gradient boosting em validação cruzada.",
+    "prerequisites": ["árvores de decisão", "validação"],
+    "commonMistakes": [
+      "Avaliar modelos do ensemble no mesmo dado usado para ajustá-los.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["bagging", "boosting", "stacking", "random forest"],
+    "quickQuiz": [
+      {
+        "id": "ml-ensemble-methods-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Bagging treina estimadores em amostras variadas e agrega suas previsões.",
+          "Boosting treina todos os modelos sem considerar erros anteriores.",
+          "Todo ensemble é mais interpretável que um único modelo."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Bagging treina estimadores em amostras variadas e agrega suas previsões."
+      }
+    ],
+    "references": [
+      {
+        "title": "scikit-learn User Guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "deep-learning-autoencoders-representations",
+    "title": "Autoencoders e representações",
+    "category": "deep-learning",
+    "level": "advanced",
+    "summary": "Autoencoders comprimem entradas em uma representação latente e aprendem a reconstruí-las.",
+    "whyItMatters": "A estrutura pode apoiar redução de dimensionalidade, detecção de anomalias e aprendizado de características.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Treinar um autoencoder em operações normais e medir erro de reconstrução em anomalias.",
+    "prerequisites": ["redes neurais", "backpropagation"],
+    "commonMistakes": [
+      "Assumir que baixa perda de reconstrução garante representação útil para qualquer tarefa.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["encoder", "decoder", "latent space", "reconstruction loss"],
+    "quickQuiz": [
+      {
+        "id": "deep-learning-autoencoders-representations-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "O espaço latente representa a informação comprimida aprendida pelo encoder.",
+          "Autoencoders precisam de rótulos para cada classe.",
+          "O decoder é usado para calcular apenas a entrada original, sem treino."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "O espaço latente representa a informação comprimida aprendida pelo encoder."
+      }
+    ],
+    "references": [
+      {
+        "title": "Deep Learning Book",
+        "url": "https://www.deeplearningbook.org/",
+        "kind": "book"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "neural-networks-gradient-stability",
+    "title": "Inicialização e estabilidade de gradientes",
+    "category": "neural-networks",
+    "level": "advanced",
+    "summary": "Inicialização, ativação e normalização influenciam a propagação de sinais e gradientes em redes profundas.",
+    "whyItMatters": "Configurações inadequadas podem produzir gradientes que desaparecem ou explodem e impedir o aprendizado.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Combinar inicialização He com ReLU e monitorar normas dos gradientes.",
+    "prerequisites": ["backpropagation", "funções de ativação"],
+    "commonMistakes": [
+      "Inicializar todos os pesos com o mesmo valor.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["vanishing gradient", "exploding gradient", "Xavier", "He initialization"],
+    "quickQuiz": [
+      {
+        "id": "neural-networks-gradient-stability-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Pesos idênticos mantêm neurônios simétricos e dificultam que aprendam funções diferentes.",
+          "Gradient clipping aumenta qualquer gradiente pequeno.",
+          "A inicialização não afeta redes com muitas camadas."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Pesos idênticos mantêm neurônios simétricos e dificultam que aprendam funções diferentes."
+      }
+    ],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "genai-fine-tuning-alignment-evaluation",
+    "title": "Fine-tuning, alinhamento e avaliação de LLMs",
+    "category": "generative-ai",
+    "level": "advanced",
+    "summary": "Fine-tuning adapta o modelo; alinhamento orienta comportamento; avaliação mede qualidade, segurança e limites.",
+    "whyItMatters": "Alterar um modelo exige dados adequados e testes que cubram utilidade, regressões, vieses e riscos.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Comparar o modelo-base e o ajustado em um conjunto separado de casos reais e adversariais.",
+    "prerequisites": ["LLMs", "métricas"],
+    "commonMistakes": [
+      "Avaliar o modelo somente com exemplos usados no ajuste.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["fine-tuning", "alignment", "evals", "red teaming"],
+    "quickQuiz": [
+      {
+        "id": "genai-fine-tuning-alignment-evaluation-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma avaliação confiável usa casos separados dos dados de treinamento e ajuste.",
+          "Fine-tuning garante que o modelo nunca alucine.",
+          "Alinhamento pode ser medido por uma única resposta escolhida."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma avaliação confiável usa casos separados dos dados de treinamento e ajuste."
+      }
+    ],
+    "references": [
+      {
+        "title": "OWASP GenAI Security Project",
+        "url": "https://genai.owasp.org/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-science-sampling-bias",
+    "title": "Amostragem e viés",
+    "category": "data-science",
+    "level": "beginner",
+    "summary": "Amostragem seleciona observações de uma população; vieses sistemáticos tornam a amostra pouco representativa.",
+    "whyItMatters": "Conclusões confiáveis dependem mais de como os dados foram obtidos do que apenas do volume coletado.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Estratificar uma pesquisa para representar proporcionalmente diferentes grupos.",
+    "prerequisites": ["estatística descritiva"],
+    "commonMistakes": [
+      "Generalizar resultados de uma amostra de conveniência para toda a população.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["population", "sample", "selection bias", "stratification"],
+    "quickQuiz": [
+      {
+        "id": "data-science-sampling-bias-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma amostra grande ainda pode ser enviesada se o processo de seleção for inadequado.",
+          "Amostragem aleatória elimina todo tipo de erro.",
+          "Viés é apenas a diferença causada pelo acaso."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma amostra grande ainda pode ser enviesada se o processo de seleção for inadequado."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-science-correlation-causation",
+    "title": "Correlação e causalidade",
+    "category": "data-science",
+    "level": "beginner",
+    "summary": "Correlação descreve associação; causalidade afirma que uma mudança produz efeito em outra variável.",
+    "whyItMatters": "Confundir os dois conceitos leva a decisões baseadas em coincidências ou fatores não observados.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Investigar uma terceira variável antes de atribuir vendas maiores a uma campanha.",
+    "prerequisites": ["variáveis", "gráficos"],
+    "commonMistakes": [
+      "Concluir causa apenas porque duas séries variam juntas.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["correlation", "causality", "confounder", "experiment"],
+    "quickQuiz": [
+      {
+        "id": "data-science-correlation-causation-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma variável de confusão pode explicar uma correlação sem relação causal direta.",
+          "Correlação alta prova causalidade.",
+          "Ausência de correlação linear prova ausência de qualquer relação."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma variável de confusão pode explicar uma correlação sem relação causal direta."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-science-time-series-decomposition",
+    "title": "Séries temporais e decomposição",
+    "category": "data-science",
+    "level": "intermediate",
+    "summary": "Séries temporais preservam ordem no tempo e podem combinar tendência, sazonalidade e ruído.",
+    "whyItMatters": "Separar componentes ajuda a compreender padrões e evita validações que vazam informação do futuro.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Decompor vendas semanais e validar previsões mantendo a ordem cronológica.",
+    "prerequisites": ["estatística", "visualização"],
+    "commonMistakes": [
+      "Embaralhar passado e futuro ao dividir dados para validação.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["trend", "seasonality", "lag", "autocorrelation"],
+    "quickQuiz": [
+      {
+        "id": "data-science-time-series-decomposition-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "A validação temporal deve treinar no passado e avaliar em períodos posteriores.",
+          "Sazonalidade é qualquer variação aleatória.",
+          "Toda série temporal possui tendência crescente."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "A validação temporal deve treinar no passado e avaliar em períodos posteriores."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-engineering-lakes-lakehouse",
+    "title": "Data lakes e lakehouse",
+    "category": "data-engineering",
+    "level": "intermediate",
+    "summary": "Data lakes armazenam dados diversos; lakehouse adiciona recursos de gestão e confiabilidade típicos de warehouses.",
+    "whyItMatters": "A arquitetura influencia governança, desempenho, custo e acesso aos dados analíticos.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Organizar dados brutos e tabelas curadas com metadados e controle transacional.",
+    "prerequisites": ["ETL", "armazenamento"],
+    "commonMistakes": [
+      "Acumular arquivos sem catálogo, propriedade ou regras de qualidade.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["data lake", "lakehouse", "table format", "object storage"],
+    "quickQuiz": [
+      {
+        "id": "data-engineering-lakes-lakehouse-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Um catálogo ajuda a descobrir, compreender e governar conjuntos de dados.",
+          "Data lake exige que todos os dados tenham o mesmo esquema.",
+          "Lakehouse elimina a necessidade de qualidade de dados."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Um catálogo ajuda a descobrir, compreender e governar conjuntos de dados."
+      }
+    ],
+    "references": [
+      {
+        "title": "Apache Airflow Documentation",
+        "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-engineering-change-data-capture",
+    "title": "Change Data Capture",
+    "category": "data-engineering",
+    "level": "advanced",
+    "summary": "Change Data Capture identifica inserções, alterações e exclusões para propagá-las a outros sistemas.",
+    "whyItMatters": "CDC reduz cargas completas e permite integrações próximas do tempo real com rastreabilidade.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Consumir o log transacional para atualizar uma camada analítica incrementalmente.",
+    "prerequisites": ["bancos de dados", "streaming"],
+    "commonMistakes": [
+      "Ignorar ordenação, duplicatas e eventos de exclusão.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["CDC", "transaction log", "offset", "tombstone"],
+    "quickQuiz": [
+      {
+        "id": "data-engineering-change-data-capture-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Consumidores de CDC devem lidar com repetição sem corromper o estado final.",
+          "CDC captura apenas novas linhas.",
+          "Ler o log garante processamento exatamente uma vez em qualquer sistema."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Consumidores de CDC devem lidar com repetição sem corromper o estado final."
+      }
+    ],
+    "references": [
+      {
+        "title": "Apache Airflow Documentation",
+        "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-engineering-contracts-catalog-lineage",
+    "title": "Contratos, catálogo e linhagem de dados",
+    "category": "data-engineering",
+    "level": "advanced",
+    "summary": "Contratos definem expectativas; catálogo descreve ativos; linhagem registra origem e transformações.",
+    "whyItMatters": "Esses mecanismos reduzem quebras silenciosas e tornam impacto, responsabilidade e uso mais visíveis.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Bloquear uma carga que viola o esquema e consultar quais painéis seriam afetados.",
+    "prerequisites": ["pipelines", "data quality"],
+    "commonMistakes": [
+      "Criar documentação sem responsável ou processo de atualização.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["data contract", "catalog", "lineage", "data owner"],
+    "quickQuiz": [
+      {
+        "id": "data-engineering-contracts-catalog-lineage-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Linhagem permite rastrear dependências entre origem, transformação e consumo.",
+          "Um contrato de dados substitui todos os testes.",
+          "Catálogo serve apenas para armazenar arquivos brutos."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Linhagem permite rastrear dependências entre origem, transformação e consumo."
+      }
+    ],
+    "references": [
+      {
+        "title": "Apache Airflow Documentation",
+        "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
   }
 ]
