@@ -2,14 +2,14 @@
 
 Laboratório de aprendizagem ativa para desenvolvimento de software, inteligência artificial, machine learning e ciência de dados.
 
-O [DevSpin](https://agathalafaiety.github.io/devspin-learning-lab/) transforma o estudo em ciclos curtos de prática. Escolha uma área e um nível, sorteie um conceito ou desafio, teste seu conhecimento e organize revisões de acordo com sua própria avaliação.
+O [DevSpin](https://agathalafaiety.github.io/devspin-learning-lab/) transforma o estudo em ciclos curtos de prática. Escolha uma trilha, categoria e nível, sorteie um conceito ou desafio, teste seu conhecimento e organize revisões de acordo com sua própria avaliação.
 
 ![Tela inicial do DevSpin](docs/images/devspin-desktop.png)
 
 ## Funcionalidades
 
 - 100 conceitos e 50 desafios em 25 categorias
-- Filtros por área e nível de dificuldade
+- Filtros por trilha, categoria e nível de dificuldade
 - Mini-quizzes com respostas explicadas
 - Sorteios em ciclos sem repetição
 - Sessões de estudo com temporizador

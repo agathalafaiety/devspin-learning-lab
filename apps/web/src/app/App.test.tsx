@@ -133,6 +133,25 @@ describe('experiência inicial', () => {
     );
   });
 
+  it('permite escolher uma categoria específica dentro da trilha', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole('button', { name: 'IA & ML' }));
+    expect(
+      screen.getByRole('group', { name: 'Categorias da trilha selecionada' }),
+    ).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Visão Computacional' }));
+
+    expect(screen.getByRole('button', { name: 'IA & ML' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'Visão Computacional' })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    );
+    expect(await screen.findByText(/Visão Computacional ·/)).toBeInTheDocument();
+  });
+
   it('oferece um mini-quiz com correção explicada', async () => {
     const user = userEvent.setup();
     render(<App />);

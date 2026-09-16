@@ -1,6 +1,6 @@
 import { BrainCircuit, ChartNoAxesCombined, Code2, Cuboid, Database } from 'lucide-react';
 import type { Category, Level } from '../domain/types';
-import { levelLabels } from '../domain/catalog';
+import { categoryLabels, levelLabels } from '../domain/catalog';
 import { levels } from '../domain/types';
 
 interface TrackSelectorProps {
@@ -72,18 +72,26 @@ export function TrackSelector({
   onSelectCategories,
   onLevelChange,
 }: TrackSelectorProps) {
+  const activeTrack = tracks.find(({ categories }) => {
+    if (sameCategories(selectedCategories, categories)) return true;
+    return selectedCategories.length === 1 && categories.includes(selectedCategories[0]!);
+  });
+
   return (
-    <section className="track-selector" aria-label="Trilha e nível de aprendizagem">
+    <section className="track-selector" aria-label="Trilha, categoria e nível de aprendizagem">
       <div className="track-list">
         {tracks.map(({ label, icon: Icon, categories }) => {
-          const selected = sameCategories(selectedCategories, categories);
+          const wholeTrackSelected = sameCategories(selectedCategories, categories);
+          const selected =
+            wholeTrackSelected ||
+            (selectedCategories.length === 1 && categories.includes(selectedCategories[0]!));
           return (
             <button
               type="button"
               className={`track-pill ${selected ? 'selected' : ''}`}
               aria-pressed={selected}
               key={label}
-              onClick={() => onSelectCategories(selected ? [] : categories)}
+              onClick={() => onSelectCategories(wholeTrackSelected ? [] : categories)}
             >
               <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
               {label}
@@ -91,6 +99,34 @@ export function TrackSelector({
           );
         })}
       </div>
+
+      {activeTrack && (
+        <div className="category-filter" role="group" aria-label="Categorias da trilha selecionada">
+          <span>Categoria</span>
+          <button
+            type="button"
+            className={sameCategories(selectedCategories, activeTrack.categories) ? 'active' : ''}
+            aria-pressed={sameCategories(selectedCategories, activeTrack.categories)}
+            onClick={() => onSelectCategories(activeTrack.categories)}
+          >
+            Todas
+          </button>
+          {activeTrack.categories.map((category) => {
+            const selected = selectedCategories.length === 1 && selectedCategories[0] === category;
+            return (
+              <button
+                type="button"
+                className={selected ? 'active' : ''}
+                aria-pressed={selected}
+                key={category}
+                onClick={() => onSelectCategories([category])}
+              >
+                {categoryLabels[category]}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       <div className="compact-levels">
         <span>Nível</span>

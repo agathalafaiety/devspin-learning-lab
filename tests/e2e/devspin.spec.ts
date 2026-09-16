@@ -33,6 +33,23 @@ test('explora um conceito e responde ao mini-quiz', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'Tentar novamente' })).toBeVisible();
 });
 
+test('filtra uma categoria específica dentro da trilha', async ({ page }) => {
+  await page.getByRole('button', { name: 'IA & ML' }).click();
+  await expect(page.getByRole('group', { name: 'Categorias da trilha selecionada' })).toBeVisible();
+
+  await page.getByRole('button', { name: 'Visão Computacional' }).click();
+
+  await expect(page.getByRole('button', { name: 'IA & ML' })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+  await expect(page.getByRole('button', { name: 'Visão Computacional' })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+  await expect(page.getByText(/Visão Computacional ·/)).toBeVisible();
+});
+
 test('aguarda o comando para iniciar cada etapa do temporizador', async ({ page }) => {
   await page.getByRole('button', { name: /Explorar · 30 min/i }).click();
 

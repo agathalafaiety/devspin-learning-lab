@@ -17,6 +17,26 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: '../../dist',
       emptyOutDir: true,
+      rolldownOptions: {
+        output: {
+          codeSplitting: {
+            groups: [
+              {
+                name: 'learning-content',
+                test: /content[\\/](?:concepts|challenges)[\\/]seed\.json$/,
+              },
+              {
+                name: 'ui-vendor',
+                test: /node_modules[\\/](?:react|react-dom|scheduler|lucide-react)[\\/]/,
+              },
+              {
+                name: 'validation-vendor',
+                test: /node_modules[\\/]zod[\\/]/,
+              },
+            ],
+          },
+        },
+      },
     },
     server: {
       host: '127.0.0.1',

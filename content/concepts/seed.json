@@ -40,7 +40,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "logic-conditionals-loops",
@@ -83,7 +83,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "logic-recursion-complexity",
@@ -126,7 +126,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "python-list-comprehensions",
@@ -169,7 +169,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "python-functions-collections",
@@ -212,7 +212,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "python-iterators-generators",
@@ -255,7 +255,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "python-typing-testing",
@@ -298,7 +298,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "python-concurrency-decorators",
@@ -341,7 +341,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "sql-select-filtering",
@@ -384,7 +384,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "sql-group-aggregation",
@@ -427,7 +427,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "sql-joins",
@@ -470,7 +470,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "sql-ctes-window-functions",
@@ -513,7 +513,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "sql-indexes-transactions",
@@ -556,7 +556,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "oop-classes-objects",
@@ -599,7 +599,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "oop-encapsulation-polymorphism",
@@ -642,7 +642,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "oop-composition-solid",
@@ -685,7 +685,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "backend-http-rest",
@@ -728,7 +728,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "backend-validation-auth",
@@ -771,7 +771,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "backend-cache-queues",
@@ -814,7 +814,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "backend-idempotency-distributed",
@@ -857,7 +857,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "backend-observability-architecture",
@@ -900,7 +900,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ai-search-problem-solving",
@@ -943,7 +943,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ai-ethics-bias",
@@ -986,7 +986,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ai-agents-knowledge",
@@ -1029,7 +1029,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ml-learning-paradigms",
@@ -1072,7 +1072,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ml-training-validation",
@@ -1115,7 +1115,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ml-evaluation-metrics",
@@ -1158,7 +1158,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ml-feature-engineering",
@@ -1201,7 +1201,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "ml-overfitting-generalization",
@@ -1244,7 +1244,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "dl-perceptron-activations",
@@ -1287,7 +1287,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "dl-backprop-optimization",
@@ -1330,7 +1330,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "dl-cnns-transfer-learning",
@@ -1373,7 +1373,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "dl-transformers-attention",
@@ -1416,7 +1416,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "nn-neurons-layers",
@@ -1459,7 +1459,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "nn-loss-training-loop",
@@ -1502,7 +1502,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "nn-rnn-lstm",
@@ -1545,7 +1545,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "nn-regularization-normalization",
@@ -1588,7 +1588,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "genai-language-models-tokens",
@@ -1631,7 +1631,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "genai-prompting-guardrails",
@@ -1674,7 +1674,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "genai-embeddings-vector-search",
@@ -1717,7 +1717,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "generative-ai-rag",
@@ -1760,7 +1760,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "data-numpy-pandas",
@@ -1803,7 +1803,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "data-descriptive-statistics",
@@ -1846,7 +1846,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "data-cleaning-eda",
@@ -1889,7 +1889,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "data-visualization-communication",
@@ -1932,7 +1932,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "data-inference-experiments",
@@ -1975,7 +1975,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "engineering-etl-elt",
@@ -2018,7 +2018,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "engineering-warehouse-dimensional",
@@ -2061,7 +2061,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "engineering-streaming-semantics",
@@ -2104,7 +2104,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "engineering-orchestration-quality",
@@ -2147,7 +2147,7 @@
     ],
     "contentVersion": 2,
     "reviewStatus": "reviewed",
-    "lastContentReviewAt": "2026-09-15"
+    "lastContentReviewAt": "2026-09-16"
   },
   {
     "id": "python-strings-slicing-formatting",

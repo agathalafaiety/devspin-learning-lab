@@ -1,0 +1,3 @@
+# Arquivos auxiliares que não representam uma linguagem principal do produto.
+eslint.config.js linguist-detectable=false
+apps/web/index.html linguist-detectable=false
