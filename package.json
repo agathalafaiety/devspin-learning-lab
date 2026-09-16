@@ -14,6 +14,8 @@
   "scripts": {
     "dev": "npm run dev --workspace @devspin/web",
     "build": "npm run build --workspace @devspin/web",
+    "predeploy": "npm run build --workspace @devspin/web -- --base=/devspin-learning-lab/",
+    "deploy": "gh-pages -d dist",
     "preview": "npm run preview --workspace @devspin/web",
     "lint": "eslint . --max-warnings=0",
     "format": "prettier --write .",
@@ -33,6 +35,7 @@
     "eslint": "10.10.0",
     "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-react-refresh": "0.5.7",
+    "gh-pages": "^6.3.0",
     "globals": "17.12.0",
     "prettier": "3.9.6",
     "typescript": "6.0.2"
