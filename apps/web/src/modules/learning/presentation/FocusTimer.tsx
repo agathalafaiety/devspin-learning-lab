@@ -31,7 +31,10 @@ export function FocusTimer({
   onComplete,
 }: FocusTimerProps) {
   const durationMs = durationMinutes * 60_000;
-  const [timer, setTimer] = useState<TimerSnapshot>(() => createTimer(durationMs, startedAtMs));
+  const [timer, setTimer] = useState<TimerSnapshot>(() =>
+    pauseTimer(createTimer(durationMs, startedAtMs), startedAtMs),
+  );
+  const [hasStarted, setHasStarted] = useState(false);
   const [now, setNow] = useState(startedAtMs);
   const warned = useRef(false);
   const completed = useRef(false);
@@ -96,18 +99,33 @@ export function FocusTimer({
             />
           </svg>
           <div>
-            <span>{paused ? 'PAUSADO' : stage === 'work' ? 'EM FOCO' : 'EXPLICANDO'}</span>
+            <span>
+              {!hasStarted
+                ? 'PRONTO'
+                : paused
+                  ? 'PAUSADO'
+                  : stage === 'work'
+                    ? 'EM FOCO'
+                    : 'EXPLICANDO'}
+            </span>
             <strong aria-live="off">{formatTime(remaining)}</strong>
-            <small aria-live="polite">{paused ? 'O tempo está parado' : 'Tempo restante'}</small>
+            <small aria-live="polite">
+              {!hasStarted
+                ? 'Clique em Começar'
+                : paused
+                  ? 'O tempo está parado'
+                  : 'Tempo restante'}
+            </small>
           </div>
         </div>
 
         <div className="focus-actions">
           <button
             type="button"
-            className="secondary-button"
+            className={hasStarted ? 'secondary-button' : 'primary-button'}
             onClick={() => {
               if (paused) {
+                setHasStarted(true);
                 setTimer((current) => resumeTimer(current, Date.now()));
                 setNow(Date.now());
                 onCue('resume');
@@ -119,11 +137,13 @@ export function FocusTimer({
             }}
           >
             {paused ? <Play size={18} /> : <Pause size={18} />}
-            {paused ? 'Continuar' : 'Pausar'}
+            {!hasStarted ? 'Começar' : paused ? 'Continuar' : 'Pausar'}
           </button>
-          <button type="button" className="primary-button" onClick={onComplete}>
-            <Check size={18} /> Concluir agora
-          </button>
+          {hasStarted && (
+            <button type="button" className="primary-button" onClick={onComplete}>
+              <Check size={18} /> Concluir agora
+            </button>
+          )}
         </div>
       </section>
     </div>

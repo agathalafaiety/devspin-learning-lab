@@ -33,6 +33,27 @@ test('explora um conceito e responde ao mini-quiz', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'Tentar novamente' })).toBeVisible();
 });
 
+test('aguarda o comando para iniciar cada etapa do temporizador', async ({ page }) => {
+  await page.getByRole('button', { name: /Explorar · 30 min/i }).click();
+
+  await expect(page.getByRole('dialog', { name: 'Tempo de foco' })).toBeVisible();
+  await expect(page.getByText('PRONTO')).toBeVisible();
+  await expect(page.getByText('30:00')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Começar' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Concluir agora' })).toBeHidden();
+
+  await page.waitForTimeout(1_100);
+  await expect(page.getByText('30:00')).toBeVisible();
+
+  await page.getByRole('button', { name: 'Começar' }).click();
+  await expect(page.getByRole('button', { name: 'Pausar' })).toBeVisible();
+  await page.getByRole('button', { name: 'Concluir agora' }).click();
+
+  await expect(page.getByRole('dialog', { name: 'Hora de explicar' })).toBeVisible();
+  await expect(page.getByText('15:00')).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Começar' })).toBeVisible();
+});
+
 test('salva e limpa o progresso local com confirmação', async ({ page }) => {
   await page.getByRole('button', { name: 'Salvar' }).click();
   await page.getByRole('button', { name: /1 item salvo/i }).click();

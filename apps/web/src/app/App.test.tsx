@@ -57,10 +57,15 @@ describe('experiência inicial', () => {
     await user.click(screen.getByRole('button', { name: /Explorar · 30 min/i }));
     expect(screen.getByRole('dialog', { name: 'Tempo de foco' })).toBeInTheDocument();
     expect(screen.getByText('30:00')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Começar' })).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Concluir agora' })).not.toBeInTheDocument();
 
+    await user.click(screen.getByRole('button', { name: 'Começar' }));
+    expect(screen.getByRole('button', { name: 'Pausar' })).toBeInTheDocument();
     await user.click(screen.getByRole('button', { name: 'Concluir agora' }));
     expect(screen.getByRole('dialog', { name: 'Hora de explicar' })).toBeInTheDocument();
     expect(screen.getByText('15:00')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Começar' })).toBeInTheDocument();
   });
 
   it('conclui o ciclo com autoavaliação e agenda uma revisão', async () => {
@@ -68,7 +73,9 @@ describe('experiência inicial', () => {
     render(<App />);
 
     await user.click(screen.getByRole('button', { name: /Explorar · 30 min/i }));
+    await user.click(screen.getByRole('button', { name: 'Começar' }));
     await user.click(screen.getByRole('button', { name: 'Concluir agora' }));
+    await user.click(screen.getByRole('button', { name: 'Começar' }));
     await user.click(screen.getByRole('button', { name: 'Concluir agora' }));
 
     expect(screen.getByRole('dialog', { name: /Como você se sente/i })).toBeInTheDocument();

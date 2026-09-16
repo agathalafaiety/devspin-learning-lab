@@ -19,7 +19,7 @@ Este incremento consolida a primeira versão e transforma os dados locais em ret
 ## Verificações
 
 - 42 testes unitários e de integração;
-- 4 cenários ponta a ponta em desktop e celular, totalizando 8 verificações;
+- 5 cenários ponta a ponta em desktop e celular, totalizando 10 verificações;
 - build de produção e lint sem erros;
 - auditoria automática de acessibilidade sem violações graves ou críticas;
 - auditoria de dependências sem vulnerabilidades conhecidas.

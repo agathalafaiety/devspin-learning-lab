@@ -20,7 +20,7 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 - Biblioteca local em `content`, com 85 conceitos e 25 desafios.
 - Documentação técnica e decisões arquiteturais em `docs`.
 - 42 testes unitários e de integração aprovados.
-- 4 cenários ponta a ponta executados em desktop e celular, totalizando 8 verificações.
+- 5 cenários ponta a ponta executados em desktop e celular, totalizando 10 verificações.
 - `lint` e build de produção aprovados.
 - `.gitignore` exclui `.env` e variantes, preservando somente `.env.example`.
 - Repositório remoto configurado em `https://github.com/agathalafaiety/devspin-learning-lab.git`.
