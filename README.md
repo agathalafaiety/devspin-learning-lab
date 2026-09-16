@@ -8,7 +8,7 @@ O [DevSpin](https://agathalafaiety.github.io/devspin-learning-lab/) transforma o
 
 ## Funcionalidades
 
-- 85 conceitos e 25 desafios em 12 categorias
+- 100 conceitos e 50 desafios em 25 categorias
 - Filtros por área e nível de dificuldade
 - Mini-quizzes com respostas explicadas
 - Sorteios em ciclos sem repetição

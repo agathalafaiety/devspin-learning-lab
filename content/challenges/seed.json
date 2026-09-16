@@ -29,7 +29,7 @@
   {
     "id": "logic-delivery-route",
     "title": "Menor rota de entregas",
-    "category": "logic",
+    "category": "algorithms-data-structures",
     "level": "intermediate",
     "realWorldContext": "Um entregador precisa atravessar um mapa de conexões sem pesos.",
     "statement": "Modele o mapa como grafo e encontre a rota com menos conexões entre dois pontos.",
@@ -83,7 +83,7 @@
   {
     "id": "python-stream-csv",
     "title": "Processador de CSV em fluxo",
-    "category": "python",
+    "category": "backend",
     "level": "intermediate",
     "realWorldContext": "Um arquivo grande não cabe confortavelmente na memória.",
     "statement": "Crie um generator que leia registros válidos e produza totais sem materializar o arquivo.",
@@ -110,7 +110,7 @@
   {
     "id": "python-async-rate-limit",
     "title": "Cliente assíncrono com limite",
-    "category": "python",
+    "category": "python-internals-concurrency",
     "level": "advanced",
     "realWorldContext": "Uma API permite poucas requisições simultâneas e pode falhar temporariamente.",
     "statement": "Projete um cliente asyncio com limite de concorrência, timeout e retry controlado.",
@@ -164,7 +164,7 @@
   {
     "id": "sql-customer-ranking",
     "title": "Ranking de clientes por período",
-    "category": "sql-databases",
+    "category": "data-modeling",
     "level": "intermediate",
     "realWorldContext": "O time quer os três clientes com maior receita em cada mês.",
     "statement": "Use CTE, JOIN e window function para produzir o ranking mensal.",
@@ -218,7 +218,7 @@
   {
     "id": "oop-notification-strategies",
     "title": "Estratégias de notificação",
-    "category": "oop",
+    "category": "software-architecture",
     "level": "intermediate",
     "realWorldContext": "Um sistema envia avisos por canais diferentes.",
     "statement": "Modele um contrato de envio e componha o serviço sem condicionais por canal.",
@@ -245,7 +245,7 @@
   {
     "id": "backend-products-api",
     "title": "API paginada de produtos",
-    "category": "backend",
+    "category": "api-design",
     "level": "beginner",
     "realWorldContext": "Um catálogo precisa expor busca sem retornar milhares de registros.",
     "statement": "Desenhe rotas REST com validação, filtros, paginação e status adequados.",
@@ -272,7 +272,7 @@
   {
     "id": "backend-idempotency-key",
     "title": "Endpoint de cobrança idempotente",
-    "category": "backend",
+    "category": "distributed-systems",
     "level": "advanced",
     "realWorldContext": "Uma cobrança pode ser repetida após timeout sem duplicar o efeito.",
     "statement": "Projete uma rota POST com chave de idempotência, concorrência segura e resposta repetível.",
@@ -326,7 +326,7 @@
   {
     "id": "ai-explainable-rules",
     "title": "Sistema de regras explicável",
-    "category": "artificial-intelligence",
+    "category": "responsible-ai",
     "level": "intermediate",
     "realWorldContext": "Uma triagem usa regras e precisa justificar cada recomendação.",
     "statement": "Modele fatos, regras e uma trilha de evidências para a decisão.",
@@ -380,7 +380,7 @@
   {
     "id": "ml-imbalanced-evaluation",
     "title": "Avaliação com classes desbalanceadas",
-    "category": "machine-learning",
+    "category": "data-visualization",
     "level": "intermediate",
     "realWorldContext": "Casos positivos são raros e têm custo alto quando não detectados.",
     "statement": "Compare matriz de confusão, precision, recall e limiares de decisão.",
@@ -407,7 +407,7 @@
   {
     "id": "dl-image-transfer",
     "title": "Classificador visual por transferência",
-    "category": "deep-learning",
+    "category": "computer-vision",
     "level": "intermediate",
     "realWorldContext": "Há poucas imagens rotuladas de defeitos industriais.",
     "statement": "Planeje pré-processamento, base pré-treinada, congelamento e validação.",
@@ -488,7 +488,7 @@
   {
     "id": "nn-sequence-model",
     "title": "Modelo neural para sequências",
-    "category": "neural-networks",
+    "category": "natural-language-processing",
     "level": "advanced",
     "realWorldContext": "Uma série temporal possui dependências entre passos e valores ausentes.",
     "statement": "Projete janelas, arquitetura recorrente, máscara e avaliação temporal.",
@@ -515,7 +515,7 @@
   {
     "id": "genai-prompt-comparison",
     "title": "Comparação controlada de prompts",
-    "category": "generative-ai",
+    "category": "software-testing",
     "level": "beginner",
     "realWorldContext": "Uma equipe quer melhorar respostas sem depender de impressão subjetiva.",
     "statement": "Crie dois prompts, um conjunto fixo de casos e critérios explícitos de comparação.",
@@ -596,7 +596,7 @@
   {
     "id": "data-ab-analysis",
     "title": "Análise de um teste A/B",
-    "category": "data-science",
+    "category": "statistics-probability",
     "level": "intermediate",
     "realWorldContext": "Duas versões foram exibidas aleatoriamente e possuem conversões diferentes.",
     "statement": "Calcule efeito, intervalo de confiança e limitações antes da recomendação.",
@@ -650,7 +650,7 @@
   {
     "id": "engineering-stream-orders",
     "title": "Pedidos em streaming com duplicatas",
-    "category": "data-engineering",
+    "category": "database-engineering",
     "level": "advanced",
     "realWorldContext": "Eventos podem chegar fora de ordem e ser entregues novamente.",
     "statement": "Projete janelas, watermark, deduplicação e escrita consistente no destino.",
@@ -673,5 +673,680 @@
     "contentVersion": 1,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
+  },
+  {
+    "id": "logic-access-rules",
+    "title": "Regras de acesso sem contradições",
+    "category": "logic",
+    "level": "beginner",
+    "realWorldContext": "Um sistema precisa decidir acesso com base em plano, permissão e bloqueio.",
+    "statement": "Modele a regra, construa uma tabela-verdade e identifique combinações contraditórias.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de lógica booleana.",
+      "Use tabela-verdade para verificar a solução."
+    ],
+    "expectedConcepts": ["lógica booleana", "tabela-verdade"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "algorithms-priority-scheduler",
+    "title": "Agendador com fila de prioridade",
+    "category": "algorithms-data-structures",
+    "level": "intermediate",
+    "realWorldContext": "Uma central precisa atender tarefas por urgência e ordem de chegada.",
+    "statement": "Implemente um agendador que insira, consulte e remova a próxima tarefa com eficiência.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de heap.",
+      "Use fila de prioridade e complexidade para verificar a solução."
+    ],
+    "expectedConcepts": ["heap", "fila de prioridade", "complexidade"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-log-parser",
+    "title": "Analisador de logs em Python",
+    "category": "python",
+    "level": "beginner",
+    "realWorldContext": "Uma aplicação gera linhas de log com nível, horário e mensagem.",
+    "statement": "Crie funções que validem as linhas e resumam ocorrências por nível.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de strings.",
+      "Use funções e dicionários para verificar a solução."
+    ],
+    "expectedConcepts": ["strings", "funções", "dicionários"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "testing-checkout-strategy",
+    "title": "Estratégia de testes para checkout",
+    "category": "software-testing",
+    "level": "intermediate",
+    "realWorldContext": "Um checkout combina cálculo, estoque, pagamento e integração externa.",
+    "statement": "Defina testes unitários, de integração e ponta a ponta para os principais riscos.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de pirâmide de testes.",
+      "Use mocks e casos de borda para verificar a solução."
+    ],
+    "expectedConcepts": ["pirâmide de testes", "mocks", "casos de borda"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "python-parallel-images",
+    "title": "Processamento paralelo de imagens",
+    "category": "python-internals-concurrency",
+    "level": "advanced",
+    "realWorldContext": "Uma pasta grande de imagens exige transformações intensivas de CPU.",
+    "statement": "Compare threads e processos e implemente a alternativa adequada com limite de trabalhadores.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de GIL.",
+      "Use multiprocessing e pool para verificar a solução."
+    ],
+    "expectedConcepts": ["GIL", "multiprocessing", "pool"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "sql-active-customers",
+    "title": "Clientes ativos por período",
+    "category": "sql-databases",
+    "level": "beginner",
+    "realWorldContext": "A equipe comercial precisa listar clientes com compras recentes acima de um valor.",
+    "statement": "Escreva uma consulta com filtros, agregação e ordenação do maior total para o menor.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de SELECT.",
+      "Use WHERE e GROUP BY para verificar a solução."
+    ],
+    "expectedConcepts": ["SELECT", "WHERE", "GROUP BY"],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "database-slow-query",
+    "title": "Diagnóstico de consulta lenta",
+    "category": "database-engineering",
+    "level": "advanced",
+    "realWorldContext": "Uma consulta crítica ficou lenta após o crescimento da tabela de eventos.",
+    "statement": "Analise o plano, proponha índice ou particionamento e explique o custo da mudança.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de EXPLAIN.",
+      "Use índice e particionamento para verificar a solução."
+    ],
+    "expectedConcepts": ["EXPLAIN", "índice", "particionamento"],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "modeling-marketplace-schema",
+    "title": "Modelo de dados de marketplace",
+    "category": "data-modeling",
+    "level": "intermediate",
+    "realWorldContext": "Um marketplace conecta clientes, vendedores, produtos e pedidos.",
+    "statement": "Modele entidades, cardinalidades, chaves e restrições sem duplicar dados essenciais.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de entidades.",
+      "Use cardinalidade e normalização para verificar a solução."
+    ],
+    "expectedConcepts": ["entidades", "cardinalidade", "normalização"],
+    "references": [
+      {
+        "title": "PostgreSQL Documentation",
+        "url": "https://www.postgresql.org/docs/current/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "oop-payment-methods",
+    "title": "Métodos de pagamento extensíveis",
+    "category": "oop",
+    "level": "intermediate",
+    "realWorldContext": "Uma aplicação precisa incluir novos meios de pagamento sem alterar o checkout.",
+    "statement": "Modele um contrato comum e implemente duas estratégias substituíveis.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de polimorfismo.",
+      "Use composição e SOLID para verificar a solução."
+    ],
+    "expectedConcepts": ["polimorfismo", "composição", "SOLID"],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "backend-background-job",
+    "title": "Processamento em segundo plano",
+    "category": "backend",
+    "level": "intermediate",
+    "realWorldContext": "Uma exportação demora mais do que o tempo aceitável de uma requisição.",
+    "statement": "Projete o endpoint, a fila, o estado do trabalho e a consulta do resultado.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de fila.",
+      "Use job e estado para verificar a solução."
+    ],
+    "expectedConcepts": ["fila", "job", "estado"],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "api-webhook-consumer",
+    "title": "Consumidor confiável de webhook",
+    "category": "api-design",
+    "level": "intermediate",
+    "realWorldContext": "Um provedor pode repetir notificações de pagamento e entregá-las fora de ordem.",
+    "statement": "Valide a assinatura, deduplique eventos e responda sem bloquear o provedor.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de webhook.",
+      "Use idempotência e assinatura para verificar a solução."
+    ],
+    "expectedConcepts": ["webhook", "idempotência", "assinatura"],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "distributed-inventory-events",
+    "title": "Reserva distribuída de estoque",
+    "category": "distributed-systems",
+    "level": "advanced",
+    "realWorldContext": "Pedidos concorrentes disputam as últimas unidades em serviços separados.",
+    "statement": "Desenhe o fluxo com retries, deduplicação e compensação para falhas parciais.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de consistência.",
+      "Use retry e saga para verificar a solução."
+    ],
+    "expectedConcepts": ["consistência", "retry", "saga"],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "architecture-modular-monolith",
+    "title": "Separação de um monólito modular",
+    "category": "software-architecture",
+    "level": "advanced",
+    "realWorldContext": "Um sistema cresceu e seus módulos alteram dados uns dos outros diretamente.",
+    "statement": "Defina limites, contratos e uma sequência segura para reduzir o acoplamento.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de módulos.",
+      "Use interfaces e dependências para verificar a solução."
+    ],
+    "expectedConcepts": ["módulos", "interfaces", "dependências"],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "ai-constraint-schedule",
+    "title": "Agenda com restrições",
+    "category": "artificial-intelligence",
+    "level": "intermediate",
+    "realWorldContext": "Uma escola precisa alocar aulas sem conflitos de sala ou professor.",
+    "statement": "Modele variáveis, domínios e restrições e encontre uma grade válida.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de CSP.",
+      "Use busca e restrições para verificar a solução."
+    ],
+    "expectedConcepts": ["CSP", "busca", "restrições"],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "responsible-ai-decision-audit",
+    "title": "Auditoria de decisão automatizada",
+    "category": "responsible-ai",
+    "level": "advanced",
+    "realWorldContext": "Uma decisão de alto impacto apresentou resultados diferentes entre grupos.",
+    "statement": "Defina métricas, documentação, revisão humana e ações de mitigação.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de fairness.",
+      "Use transparência e supervisão humana para verificar a solução."
+    ],
+    "expectedConcepts": ["fairness", "transparência", "supervisão humana"],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "ml-leakage-pipeline",
+    "title": "Pipeline sem data leakage",
+    "category": "machine-learning",
+    "level": "intermediate",
+    "realWorldContext": "Um modelo tem ótima validação, mas falha depois da publicação.",
+    "statement": "Encontre vazamentos, reorganize o pipeline e proponha uma validação realista.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de data leakage.",
+      "Use pipeline e validação para verificar a solução."
+    ],
+    "expectedConcepts": ["data leakage", "pipeline", "validação"],
+    "references": [
+      {
+        "title": "scikit-learn User Guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "deep-learning-learning-rate",
+    "title": "Treino com perda instável",
+    "category": "deep-learning",
+    "level": "advanced",
+    "realWorldContext": "A perda oscila e o modelo não converge durante o treinamento.",
+    "statement": "Investigue learning rate, otimizador e curvas de treino e validação.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de otimizador.",
+      "Use learning rate e scheduler para verificar a solução."
+    ],
+    "expectedConcepts": ["otimizador", "learning rate", "scheduler"],
+    "references": [
+      {
+        "title": "Deep Learning Book",
+        "url": "https://www.deeplearningbook.org/",
+        "kind": "book"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "neural-network-gradient-monitor",
+    "title": "Monitor de gradientes",
+    "category": "neural-networks",
+    "level": "advanced",
+    "realWorldContext": "Uma rede profunda deixa de aprender após poucas épocas.",
+    "statement": "Registre normas dos gradientes e teste inicialização, clipping e normalização.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de gradientes.",
+      "Use inicialização e clipping para verificar a solução."
+    ],
+    "expectedConcepts": ["gradientes", "inicialização", "clipping"],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "nlp-support-triage",
+    "title": "Triagem de mensagens de suporte",
+    "category": "natural-language-processing",
+    "level": "intermediate",
+    "realWorldContext": "Uma equipe precisa direcionar mensagens curtas para filas especializadas.",
+    "statement": "Prepare o texto, gere representações e avalie erros por intenção.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de tokenização.",
+      "Use embeddings e classificação para verificar a solução."
+    ],
+    "expectedConcepts": ["tokenização", "embeddings", "classificação"],
+    "references": [
+      {
+        "title": "scikit-learn User Guide",
+        "url": "https://scikit-learn.org/stable/user_guide.html",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "computer-vision-defect-detection",
+    "title": "Detecção de defeitos visuais",
+    "category": "computer-vision",
+    "level": "advanced",
+    "realWorldContext": "Uma linha de produção precisa localizar defeitos pequenos em peças.",
+    "statement": "Defina anotação, augmentation e métricas de localização para o modelo.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de detecção.",
+      "Use IoU e augmentation para verificar a solução."
+    ],
+    "expectedConcepts": ["detecção", "IoU", "augmentation"],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "genai-structured-tool-call",
+    "title": "Assistente com ferramenta segura",
+    "category": "generative-ai",
+    "level": "advanced",
+    "realWorldContext": "Um assistente consulta pedidos e pode solicitar cancelamento.",
+    "statement": "Defina schemas, valide argumentos e exija confirmação para a ação destrutiva.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de tool calling.",
+      "Use schema e permissões para verificar a solução."
+    ],
+    "expectedConcepts": ["tool calling", "schema", "permissões"],
+    "references": [
+      {
+        "title": "OWASP GenAI Security Project",
+        "url": "https://genai.owasp.org/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-science-reproducible-report",
+    "title": "Relatório analítico reproduzível",
+    "category": "data-science",
+    "level": "intermediate",
+    "realWorldContext": "Uma análise mensal depende de passos manuais e resultados não rastreados.",
+    "statement": "Organize dados, código, parâmetros e saídas em um fluxo reproduzível.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de reprodutibilidade.",
+      "Use versionamento e workflow para verificar a solução."
+    ],
+    "expectedConcepts": ["reprodutibilidade", "versionamento", "workflow"],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "statistics-confidence-interval",
+    "title": "Intervalo de confiança de conversão",
+    "category": "statistics-probability",
+    "level": "intermediate",
+    "realWorldContext": "Um produto quer estimar a conversão real a partir de uma amostra.",
+    "statement": "Calcule e interprete um intervalo de confiança, explicitando as premissas.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de amostragem.",
+      "Use intervalo de confiança e incerteza para verificar a solução."
+    ],
+    "expectedConcepts": ["amostragem", "intervalo de confiança", "incerteza"],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "visualization-accessible-dashboard",
+    "title": "Dashboard operacional acessível",
+    "category": "data-visualization",
+    "level": "intermediate",
+    "realWorldContext": "Uma equipe monitora atrasos, volume e taxa de erro em diferentes serviços.",
+    "statement": "Escolha gráficos, hierarquia e codificações que não dependam apenas de cor.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de dashboard.",
+      "Use codificação visual e acessibilidade para verificar a solução."
+    ],
+    "expectedConcepts": ["dashboard", "codificação visual", "acessibilidade"],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-engineering-incremental-cdc",
+    "title": "Pipeline incremental com CDC",
+    "category": "data-engineering",
+    "level": "advanced",
+    "realWorldContext": "Uma tabela grande precisa alimentar o analytics sem cargas completas.",
+    "statement": "Projete captura, checkpoint, deduplicação e tratamento de exclusões.",
+    "constraints": [
+      "Explique as decisões e os casos de borda considerados.",
+      "Mantenha a solução pequena o bastante para uma sessão de até 30 minutos."
+    ],
+    "hints": [
+      "Comece definindo entradas, saídas e o papel de CDC.",
+      "Use checkpoint e idempotência para verificar a solução."
+    ],
+    "expectedConcepts": ["CDC", "checkpoint", "idempotência"],
+    "references": [
+      {
+        "title": "Apache Airflow Documentation",
+        "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
   }
 ]

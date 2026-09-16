@@ -17,7 +17,7 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 ## Evidências atuais
 
 - Aplicação web React, TypeScript e Vite em `apps/web`.
-- Biblioteca local em `content`, com 85 conceitos e 25 desafios.
+- Biblioteca local em `content`, com 100 conceitos e 50 desafios em 25 categorias.
 - Documentação técnica e decisões arquiteturais em `docs`.
 - 42 testes unitários e de integração aprovados.
 - 5 cenários ponta a ponta executados em desktop e celular, totalizando 10 verificações.

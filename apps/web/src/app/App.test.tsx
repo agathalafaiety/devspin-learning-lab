@@ -113,7 +113,7 @@ describe('experiência inicial', () => {
     expect(screen.getByRole('button', { name: 'Ver conceitos esperados' })).toBeInTheDocument();
   });
 
-  it('reaplica os filtros ao trocar de modo e mostra combinação vazia', async () => {
+  it('reaplica trilha e nível ao trocar de modo', async () => {
     const user = userEvent.setup();
     render(<App />);
 
@@ -122,8 +122,15 @@ describe('experiência inicial', () => {
     await user.click(screen.getByRole('button', { name: 'Executar' }));
 
     expect(
-      screen.getByRole('heading', { name: 'Ainda não há item nessa órbita.' }),
+      await screen.findByText(
+        /(?:SQL e Bancos de Dados|Engenharia de Bancos de Dados|Modelagem de Dados) · Avançado/,
+      ),
     ).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'SQL' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'Avançado' })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    );
   });
 
   it('oferece um mini-quiz com correção explicada', async () => {

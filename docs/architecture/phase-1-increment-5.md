@@ -12,9 +12,9 @@ Este incremento consolida a primeira versão e transforma os dados locais em ret
 - registro local das tentativas de quiz;
 - migração automática do progresso da versão 1 para a versão 2;
 - importação compatível com backups da versão anterior;
-- validação adicional da integridade editorial dos 110 conteúdos;
+- validação adicional da integridade editorial dos 150 conteúdos;
 - remoção do componente de filtros antigo e dos estilos órfãos do Design System;
-- expansão da biblioteca de 50 para 85 conceitos, com pelo menos 15 em cada trilha principal.
+- expansão da biblioteca para 100 conceitos e 50 desafios em 25 categorias equilibradas.
 
 ## Verificações
 

@@ -15,24 +15,50 @@ const tracks: Array<{
   icon: typeof Code2;
   categories: Category[];
 }> = [
-  { label: 'Python', icon: Code2, categories: ['python'] },
-  { label: 'SQL', icon: Database, categories: ['sql-databases'] },
-  { label: 'Backend', icon: Cuboid, categories: ['backend', 'oop', 'logic'] },
+  {
+    label: 'Python',
+    icon: Code2,
+    categories: [
+      'logic',
+      'algorithms-data-structures',
+      'python',
+      'software-testing',
+      'python-internals-concurrency',
+    ],
+  },
+  {
+    label: 'SQL',
+    icon: Database,
+    categories: ['sql-databases', 'database-engineering', 'data-modeling'],
+  },
+  {
+    label: 'Backend',
+    icon: Cuboid,
+    categories: ['oop', 'backend', 'api-design', 'distributed-systems', 'software-architecture'],
+  },
   {
     label: 'IA & ML',
     icon: BrainCircuit,
     categories: [
       'artificial-intelligence',
+      'responsible-ai',
       'machine-learning',
       'deep-learning',
       'neural-networks',
+      'natural-language-processing',
+      'computer-vision',
       'generative-ai',
     ],
   },
   {
     label: 'Ciência de Dados',
     icon: ChartNoAxesCombined,
-    categories: ['data-science', 'data-engineering'],
+    categories: [
+      'data-science',
+      'statistics-probability',
+      'data-visualization',
+      'data-engineering',
+    ],
   },
 ];
 

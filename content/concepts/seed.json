@@ -88,7 +88,7 @@
   {
     "id": "logic-recursion-complexity",
     "title": "Recursão e complexidade de algoritmos",
-    "category": "logic",
+    "category": "algorithms-data-structures",
     "level": "intermediate",
     "summary": "Recursão resolve versões menores de um problema; complexidade descreve como o custo cresce.",
     "whyItMatters": "Compreender recursão e complexidade de algoritmos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -217,7 +217,7 @@
   {
     "id": "python-iterators-generators",
     "title": "Iteradores e generators",
-    "category": "python",
+    "category": "algorithms-data-structures",
     "level": "intermediate",
     "summary": "Iteradores entregam valores sob demanda; generators os produzem com funções que usam yield.",
     "whyItMatters": "Compreender iteradores e generators ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -260,7 +260,7 @@
   {
     "id": "python-typing-testing",
     "title": "Type hints e testes automatizados",
-    "category": "python",
+    "category": "software-testing",
     "level": "intermediate",
     "summary": "Type hints documentam contratos; testes verificam automaticamente comportamentos esperados.",
     "whyItMatters": "Compreender type hints e testes automatizados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -303,7 +303,7 @@
   {
     "id": "python-concurrency-decorators",
     "title": "Concorrência e decorators em Python",
-    "category": "python",
+    "category": "python-internals-concurrency",
     "level": "advanced",
     "summary": "Concorrência coordena tarefas sobrepostas; decorators adicionam comportamento a funções.",
     "whyItMatters": "Compreender concorrência e decorators em python ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -432,7 +432,7 @@
   {
     "id": "sql-joins",
     "title": "JOINs e relações entre tabelas",
-    "category": "sql-databases",
+    "category": "data-modeling",
     "level": "intermediate",
     "summary": "JOIN combina linhas de tabelas diferentes a partir de uma condição relacionada.",
     "whyItMatters": "Compreender joins e relações entre tabelas ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -475,7 +475,7 @@
   {
     "id": "sql-ctes-window-functions",
     "title": "CTEs e window functions",
-    "category": "sql-databases",
+    "category": "algorithms-data-structures",
     "level": "intermediate",
     "summary": "CTEs nomeiam etapas; window functions calculam resultados relacionados sem agrupar as linhas.",
     "whyItMatters": "Compreender ctes e window functions ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -518,7 +518,7 @@
   {
     "id": "sql-indexes-transactions",
     "title": "Índices, transações e planos de execução",
-    "category": "sql-databases",
+    "category": "database-engineering",
     "level": "advanced",
     "summary": "Índices aceleram acessos; transações preservam consistência; planos revelam a execução.",
     "whyItMatters": "Compreender índices, transações e planos de execução ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -647,7 +647,7 @@
   {
     "id": "oop-composition-solid",
     "title": "Composição e princípios SOLID",
-    "category": "oop",
+    "category": "software-architecture",
     "level": "intermediate",
     "summary": "Composição combina objetos; SOLID orienta responsabilidades, contratos e dependências.",
     "whyItMatters": "Compreender composição e princípios solid ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -690,7 +690,7 @@
   {
     "id": "backend-http-rest",
     "title": "HTTP e APIs REST",
-    "category": "backend",
+    "category": "api-design",
     "level": "beginner",
     "summary": "HTTP organiza requisições e respostas; REST modela recursos com métodos e status semânticos.",
     "whyItMatters": "Compreender http e apis rest ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -819,7 +819,7 @@
   {
     "id": "backend-idempotency-distributed",
     "title": "Idempotência em sistemas distribuídos",
-    "category": "backend",
+    "category": "api-design",
     "level": "advanced",
     "summary": "Idempotência faz repetições da mesma intenção produzirem o mesmo efeito observável.",
     "whyItMatters": "Compreender idempotência em sistemas distribuídos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -862,7 +862,7 @@
   {
     "id": "backend-observability-architecture",
     "title": "Observabilidade e arquitetura de serviços",
-    "category": "backend",
+    "category": "software-architecture",
     "level": "advanced",
     "summary": "Logs, métricas e traces explicam comportamento; limites de serviço organizam falhas.",
     "whyItMatters": "Compreender observabilidade e arquitetura de serviços ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -948,7 +948,7 @@
   {
     "id": "ai-ethics-bias",
     "title": "Ética, vieses e uso responsável de IA",
-    "category": "artificial-intelligence",
+    "category": "responsible-ai",
     "level": "beginner",
     "summary": "Sistemas de IA refletem dados, objetivos e decisões humanas com impactos potencialmente desiguais.",
     "whyItMatters": "Compreender ética, vieses e uso responsável de ia ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1077,7 +1077,7 @@
   {
     "id": "ml-training-validation",
     "title": "Treino, validação e teste",
-    "category": "machine-learning",
+    "category": "software-testing",
     "level": "beginner",
     "summary": "Treino ajusta o modelo, validação orienta escolhas e teste estima o resultado final.",
     "whyItMatters": "Compreender treino, validação e teste ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1120,7 +1120,7 @@
   {
     "id": "ml-evaluation-metrics",
     "title": "Métricas de classificação e regressão",
-    "category": "machine-learning",
+    "category": "software-testing",
     "level": "intermediate",
     "summary": "Métricas transformam tipos de erro em números alinhados ao custo do problema.",
     "whyItMatters": "Compreender métricas de classificação e regressão ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1335,7 +1335,7 @@
   {
     "id": "dl-cnns-transfer-learning",
     "title": "CNNs e transfer learning",
-    "category": "deep-learning",
+    "category": "computer-vision",
     "level": "advanced",
     "summary": "CNNs exploram estrutura espacial; transfer learning reutiliza representações pré-treinadas.",
     "whyItMatters": "Compreender cnns e transfer learning ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1378,7 +1378,7 @@
   {
     "id": "dl-transformers-attention",
     "title": "Attention e transformers",
-    "category": "deep-learning",
+    "category": "natural-language-processing",
     "level": "advanced",
     "summary": "Attention combina informações por relevância; transformers empilham atenção e projeções.",
     "whyItMatters": "Compreender attention e transformers ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1507,7 +1507,7 @@
   {
     "id": "nn-rnn-lstm",
     "title": "RNNs, LSTMs e dependências temporais",
-    "category": "neural-networks",
+    "category": "natural-language-processing",
     "level": "advanced",
     "summary": "Redes recorrentes mantêm estado; LSTMs usam portões para controlar memória.",
     "whyItMatters": "Compreender rnns, lstms e dependências temporais ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1593,7 +1593,7 @@
   {
     "id": "genai-language-models-tokens",
     "title": "Modelos de linguagem e tokens",
-    "category": "generative-ai",
+    "category": "natural-language-processing",
     "level": "beginner",
     "summary": "Modelos de linguagem estimam sequências de tokens e geram continuação a partir do contexto.",
     "whyItMatters": "Compreender modelos de linguagem e tokens ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1636,7 +1636,7 @@
   {
     "id": "genai-prompting-guardrails",
     "title": "Prompting e guardrails",
-    "category": "generative-ai",
+    "category": "responsible-ai",
     "level": "beginner",
     "summary": "Prompts fornecem contexto e tarefa; guardrails combinam validação, limites e monitoramento.",
     "whyItMatters": "Compreender prompting e guardrails ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1679,7 +1679,7 @@
   {
     "id": "genai-embeddings-vector-search",
     "title": "Embeddings e busca vetorial",
-    "category": "generative-ai",
+    "category": "natural-language-processing",
     "level": "intermediate",
     "summary": "Embeddings representam itens como vetores; busca vetorial recupera vizinhos similares.",
     "whyItMatters": "Compreender embeddings e busca vetorial ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1808,7 +1808,7 @@
   {
     "id": "data-descriptive-statistics",
     "title": "Estatística descritiva e distribuições",
-    "category": "data-science",
+    "category": "statistics-probability",
     "level": "beginner",
     "summary": "Medidas de centro, dispersão e forma resumem como os valores se distribuem.",
     "whyItMatters": "Compreender estatística descritiva e distribuições ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1894,7 +1894,7 @@
   {
     "id": "data-visualization-communication",
     "title": "Visualização e comunicação de resultados",
-    "category": "data-science",
+    "category": "data-visualization",
     "level": "intermediate",
     "summary": "Visualizações escolhem marcas e escalas para comunicar perguntas com contexto e honestidade.",
     "whyItMatters": "Compreender visualização e comunicação de resultados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -1937,7 +1937,7 @@
   {
     "id": "data-inference-experiments",
     "title": "Inferência estatística e experimentos",
-    "category": "data-science",
+    "category": "statistics-probability",
     "level": "advanced",
     "summary": "Inferência quantifica incerteza; experimentos controlados ajudam a estimar efeitos causais.",
     "whyItMatters": "Compreender inferência estatística e experimentos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -2023,7 +2023,7 @@
   {
     "id": "engineering-warehouse-dimensional",
     "title": "Data warehouses e modelagem dimensional",
-    "category": "data-engineering",
+    "category": "data-modeling",
     "level": "intermediate",
     "summary": "Warehouses integram dados; modelos dimensionais organizam fatos e dimensões.",
     "whyItMatters": "Compreender data warehouses e modelagem dimensional ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -2066,7 +2066,7 @@
   {
     "id": "engineering-streaming-semantics",
     "title": "Streaming e semântica de processamento",
-    "category": "data-engineering",
+    "category": "distributed-systems",
     "level": "advanced",
     "summary": "Streaming processa eventos contínuos e define tempo, ordem, janelas e repetição.",
     "whyItMatters": "Compreender streaming e semântica de processamento ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -2109,7 +2109,7 @@
   {
     "id": "engineering-orchestration-quality",
     "title": "Orquestração, qualidade e observabilidade de dados",
-    "category": "data-engineering",
+    "category": "software-testing",
     "level": "advanced",
     "summary": "Orquestração coordena dependências; testes monitoram contratos, atrasos e qualidade.",
     "whyItMatters": "Compreender orquestração, qualidade e observabilidade de dados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
@@ -2238,7 +2238,7 @@
   {
     "id": "python-modules-packages-venv",
     "title": "Módulos, pacotes e ambientes virtuais",
-    "category": "python",
+    "category": "software-architecture",
     "level": "beginner",
     "summary": "Módulos organizam código, pacotes agrupam módulos e ambientes virtuais isolam dependências.",
     "whyItMatters": "A separação reduz conflitos de versões e torna o projeto mais simples de manter e distribuir.",
@@ -2281,7 +2281,7 @@
   {
     "id": "python-files-context-managers",
     "title": "Arquivos e context managers",
-    "category": "python",
+    "category": "backend",
     "level": "intermediate",
     "summary": "Context managers controlam aquisição e liberação de recursos por meio do bloco with.",
     "whyItMatters": "Eles garantem fechamento de arquivos e limpeza de recursos mesmo quando uma operação falha.",
@@ -2324,7 +2324,7 @@
   {
     "id": "python-dataclasses-modeling",
     "title": "Dataclasses e modelagem de dados",
-    "category": "python",
+    "category": "oop",
     "level": "intermediate",
     "summary": "Dataclasses reduzem código repetitivo ao representar entidades com campos bem definidos.",
     "whyItMatters": "Modelos explícitos facilitam leitura, comparação, validação e evolução dos dados da aplicação.",
@@ -2367,7 +2367,7 @@
   {
     "id": "python-async-await",
     "title": "Async e await",
-    "category": "python",
+    "category": "distributed-systems",
     "level": "intermediate",
     "summary": "Async e await permitem intercalar tarefas cooperativas enquanto operações de entrada e saída aguardam.",
     "whyItMatters": "Esse modelo melhora a utilização do tempo em aplicações com muitas esperas por rede ou disco.",
@@ -2410,7 +2410,7 @@
   {
     "id": "python-gil-multiprocessing",
     "title": "GIL e multiprocessing",
-    "category": "python",
+    "category": "python-internals-concurrency",
     "level": "advanced",
     "summary": "O GIL limita a execução simultânea de bytecode Python em threads; processos oferecem paralelismo separado.",
     "whyItMatters": "A escolha entre threads, async e processos depende de a carga esperar por I/O ou consumir CPU.",
@@ -2453,7 +2453,7 @@
   {
     "id": "python-descriptors-properties",
     "title": "Descriptors e properties",
-    "category": "python",
+    "category": "oop",
     "level": "advanced",
     "summary": "Descriptors controlam acesso a atributos; property oferece uma interface declarativa para esse controle.",
     "whyItMatters": "Eles permitem validar, calcular ou proteger atributos preservando uma API simples.",
@@ -2496,7 +2496,7 @@
   {
     "id": "python-metaclasses",
     "title": "Metaclasses e criação de classes",
-    "category": "python",
+    "category": "python-internals-concurrency",
     "level": "advanced",
     "summary": "Metaclasses personalizam como classes são construídas, assim como classes definem como instâncias são criadas.",
     "whyItMatters": "Frameworks usam esse mecanismo para registrar, validar e transformar definições de classes.",
@@ -2539,7 +2539,7 @@
   {
     "id": "python-memory-garbage-collector",
     "title": "Memória e garbage collector",
-    "category": "python",
+    "category": "python-internals-concurrency",
     "level": "advanced",
     "summary": "Python combina contagem de referências com coleta de ciclos para recuperar objetos sem uso.",
     "whyItMatters": "Entender o ciclo de vida dos objetos ajuda a investigar consumo excessivo e referências persistentes.",
@@ -2625,7 +2625,7 @@
   {
     "id": "sql-constraints-null-integrity",
     "title": "Restrições, NULL e integridade",
-    "category": "sql-databases",
+    "category": "data-modeling",
     "level": "beginner",
     "summary": "Constraints definem regras como unicidade, obrigatoriedade e relacionamento entre tabelas.",
     "whyItMatters": "Regras no banco impedem estados inválidos mesmo quando diferentes aplicações gravam dados.",
@@ -2668,7 +2668,7 @@
   {
     "id": "sql-normalization",
     "title": "Normalização de dados",
-    "category": "sql-databases",
+    "category": "data-modeling",
     "level": "beginner",
     "summary": "Normalização organiza entidades e dependências para reduzir redundância e anomalias de atualização.",
     "whyItMatters": "Uma estrutura coerente protege a consistência e simplifica mudanças nos dados.",
@@ -2754,7 +2754,7 @@
   {
     "id": "sql-views-materialized-views",
     "title": "Views e materialized views",
-    "category": "sql-databases",
+    "category": "database-engineering",
     "level": "intermediate",
     "summary": "Views armazenam uma consulta; materialized views também persistem seu resultado para leitura posterior.",
     "whyItMatters": "Elas simplificam consultas, controlam acesso e podem acelerar leituras com custos de atualização diferentes.",
@@ -2797,7 +2797,7 @@
   {
     "id": "sql-set-operations",
     "title": "Operações de conjunto",
-    "category": "sql-databases",
+    "category": "logic",
     "level": "intermediate",
     "summary": "UNION, INTERSECT e EXCEPT combinam resultados compatíveis segundo regras de conjuntos.",
     "whyItMatters": "Esses operadores tornam comparações e consolidações entre consultas mais diretas.",
@@ -2840,7 +2840,7 @@
   {
     "id": "sql-mvcc-isolation-locking",
     "title": "MVCC, isolamento e bloqueios",
-    "category": "sql-databases",
+    "category": "database-engineering",
     "level": "advanced",
     "summary": "MVCC mantém versões de linhas; níveis de isolamento e locks controlam o que transações concorrentes observam.",
     "whyItMatters": "Esses mecanismos determinam consistência, concorrência e riscos como leituras não repetíveis.",
@@ -2883,7 +2883,7 @@
   {
     "id": "sql-table-partitioning",
     "title": "Particionamento de tabelas",
-    "category": "sql-databases",
+    "category": "database-engineering",
     "level": "advanced",
     "summary": "Particionamento divide logicamente uma tabela grande segundo uma chave, como data ou faixa.",
     "whyItMatters": "A estratégia pode reduzir dados examinados e facilitar retenção, manutenção e carga.",
@@ -2926,7 +2926,7 @@
   {
     "id": "sql-replication-high-availability",
     "title": "Replicação e alta disponibilidade",
-    "category": "sql-databases",
+    "category": "distributed-systems",
     "level": "advanced",
     "summary": "Replicação mantém cópias dos dados; alta disponibilidade coordena recuperação e continuidade do serviço.",
     "whyItMatters": "Arquiteturas resilientes precisam considerar atraso, failover, consistência e objetivos de recuperação.",
@@ -2969,7 +2969,7 @@
   {
     "id": "sql-procedures-functions-triggers",
     "title": "Procedures, functions e triggers",
-    "category": "sql-databases",
+    "category": "backend",
     "level": "advanced",
     "summary": "Rotinas armazenadas encapsulam lógica no banco; triggers reagem automaticamente a determinados eventos.",
     "whyItMatters": "Elas centralizam regras próximas aos dados, mas também criam acoplamento e efeitos menos visíveis.",
@@ -3012,7 +3012,7 @@
   {
     "id": "logic-dynamic-programming-memoization",
     "title": "Programação dinâmica e memoization",
-    "category": "logic",
+    "category": "algorithms-data-structures",
     "level": "advanced",
     "summary": "Programação dinâmica resolve subproblemas sobrepostos uma vez e reaproveita seus resultados.",
     "whyItMatters": "Ela transforma algumas soluções exponenciais em algoritmos viáveis por meio de cache ou tabelas.",
@@ -3055,7 +3055,7 @@
   {
     "id": "oop-inversion-control-dependency-injection",
     "title": "Inversão de controle e dependency injection",
-    "category": "oop",
+    "category": "software-architecture",
     "level": "advanced",
     "summary": "Inversão de controle entrega a coordenação a um componente externo; injeção fornece dependências prontas.",
     "whyItMatters": "Separar criação e uso de dependências melhora substituição, testes e evolução dos componentes.",
@@ -3098,7 +3098,7 @@
   {
     "id": "backend-api-pagination-versioning",
     "title": "Paginação e versionamento de APIs",
-    "category": "backend",
+    "category": "api-design",
     "level": "intermediate",
     "summary": "Paginação limita coleções retornadas; versionamento administra mudanças incompatíveis no contrato da API.",
     "whyItMatters": "Essas práticas mantêm respostas previsíveis e permitem evolução sem interromper clientes existentes.",
@@ -3141,7 +3141,7 @@
   {
     "id": "backend-timeouts-retries-circuit-breaker",
     "title": "Timeouts, retries e circuit breaker",
-    "category": "backend",
+    "category": "distributed-systems",
     "level": "advanced",
     "summary": "Timeouts limitam espera, retries repetem falhas transitórias e circuit breakers interrompem chamadas degradadas.",
     "whyItMatters": "Combinados com limites e observabilidade, esses padrões evitam falhas em cascata entre serviços.",
@@ -3399,7 +3399,7 @@
   {
     "id": "data-science-sampling-bias",
     "title": "Amostragem e viés",
-    "category": "data-science",
+    "category": "statistics-probability",
     "level": "beginner",
     "summary": "Amostragem seleciona observações de uma população; vieses sistemáticos tornam a amostra pouco representativa.",
     "whyItMatters": "Conclusões confiáveis dependem mais de como os dados foram obtidos do que apenas do volume coletado.",
@@ -3442,7 +3442,7 @@
   {
     "id": "data-science-correlation-causation",
     "title": "Correlação e causalidade",
-    "category": "data-science",
+    "category": "statistics-probability",
     "level": "beginner",
     "summary": "Correlação descreve associação; causalidade afirma que uma mudança produz efeito em outra variável.",
     "whyItMatters": "Confundir os dois conceitos leva a decisões baseadas em coincidências ou fatores não observados.",
@@ -3647,6 +3647,651 @@
       {
         "title": "Apache Airflow Documentation",
         "url": "https://airflow.apache.org/docs/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "logic-boolean-truth-tables",
+    "title": "Lógica booleana e tabelas-verdade",
+    "category": "logic",
+    "level": "beginner",
+    "summary": "Operadores booleanos combinam condições; tabelas-verdade tornam explícito o resultado de cada combinação.",
+    "whyItMatters": "Expressões claras evitam regras contraditórias e ajudam a verificar todos os caminhos de uma decisão.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Validar acesso combinando assinatura ativa, permissão e bloqueio da conta.",
+    "prerequisites": ["variáveis", "condicionais"],
+    "commonMistakes": [
+      "Misturar muitos operadores sem parênteses ou nomes intermediários.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["boolean", "AND", "OR", "NOT"],
+    "quickQuiz": [
+      {
+        "id": "logic-boolean-truth-tables-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma tabela-verdade enumera as combinações possíveis das entradas booleanas.",
+          "NOT sempre transforma o valor em texto.",
+          "AND é verdadeiro quando apenas uma condição é verdadeira."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma tabela-verdade enumera as combinações possíveis das entradas booleanas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Python Documentation",
+        "url": "https://docs.python.org/3/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "api-webhooks-delivery",
+    "title": "Webhooks e entrega confiável",
+    "category": "api-design",
+    "level": "intermediate",
+    "summary": "Webhooks notificam outro sistema por HTTP quando um evento ocorre.",
+    "whyItMatters": "Assinaturas, retries e idempotência tornam integrações assíncronas mais seguras e previsíveis.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Enviar um evento de pagamento com assinatura, identificador único e política de repetição.",
+    "prerequisites": ["HTTP", "APIs"],
+    "commonMistakes": [
+      "Considerar sucesso antes de validar status e autenticidade da resposta.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["webhook", "signature", "retry", "event id"],
+    "quickQuiz": [
+      {
+        "id": "api-webhooks-delivery-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "O consumidor deve tratar novamente o mesmo evento sem duplicar seus efeitos.",
+          "Webhooks dispensam autenticação porque partem do servidor.",
+          "Todo webhook recebe resposta exatamente uma vez."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "O consumidor deve tratar novamente o mesmo evento sem duplicar seus efeitos."
+      }
+    ],
+    "references": [
+      {
+        "title": "RFC 9110 — HTTP Semantics",
+        "url": "https://www.rfc-editor.org/rfc/rfc9110.html",
+        "kind": "standard"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "ai-constraint-satisfaction-planning",
+    "title": "Satisfação de restrições e planejamento",
+    "category": "artificial-intelligence",
+    "level": "intermediate",
+    "summary": "Problemas de restrições buscam atribuições válidas; planejamento organiza ações até um objetivo.",
+    "whyItMatters": "A modelagem reduz espaços de busca em agendas, alocação e tomada de decisão.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Montar uma grade de horários respeitando salas, professores e conflitos.",
+    "prerequisites": ["busca", "lógica"],
+    "commonMistakes": [
+      "Omitir uma restrição e interpretar qualquer solução encontrada como válida.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["CSP", "constraint", "planning", "state"],
+    "quickQuiz": [
+      {
+        "id": "ai-constraint-satisfaction-planning-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Propagação de restrições elimina valores incompatíveis antes da busca completa.",
+          "Planejamento ignora o estado inicial.",
+          "Todo CSP possui uma única solução."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Propagação de restrições elimina valores incompatíveis antes da busca completa."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "responsible-ai-explainability-transparency",
+    "title": "Explicabilidade e transparência em IA",
+    "category": "responsible-ai",
+    "level": "intermediate",
+    "summary": "Explicabilidade ajuda a entender resultados; transparência comunica dados, limites e responsabilidades do sistema.",
+    "whyItMatters": "Decisões de alto impacto precisam ser contestáveis, documentadas e compreensíveis para públicos diferentes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Acompanhar uma decisão de crédito com fatores relevantes, limites e canal de revisão humana.",
+    "prerequisites": ["modelos de IA", "métricas"],
+    "commonMistakes": [
+      "Apresentar uma explicação plausível sem verificar se ela representa o comportamento real.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["explainability", "transparency", "model card", "contestability"],
+    "quickQuiz": [
+      {
+        "id": "responsible-ai-explainability-transparency-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "A explicação deve ser adequada ao público e fiel ao comportamento avaliado.",
+          "Transparência exige divulgar qualquer dado pessoal de treinamento.",
+          "Um modelo interpretável não precisa ser monitorado."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "A explicação deve ser adequada ao público e fiel ao comportamento avaliado."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "responsible-ai-privacy-human-oversight",
+    "title": "Privacidade e supervisão humana",
+    "category": "responsible-ai",
+    "level": "advanced",
+    "summary": "Privacidade limita coleta e exposição; supervisão humana define quando revisar, interromper ou corrigir decisões.",
+    "whyItMatters": "Controles técnicos e organizacionais reduzem danos quando dados sensíveis ou decisões críticas estão envolvidos.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Exigir revisão humana para casos incertos e registrar justificativa sem expor dados desnecessários.",
+    "prerequisites": ["governança de IA", "avaliação de risco"],
+    "commonMistakes": [
+      "Usar uma aprovação humana apenas formal, sem informação ou poder de intervenção.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["privacy", "human oversight", "data minimization", "escalation"],
+    "quickQuiz": [
+      {
+        "id": "responsible-ai-privacy-human-oversight-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Supervisão efetiva exige autoridade, contexto e um caminho claro de intervenção.",
+          "Anonimização elimina qualquer risco de privacidade.",
+          "Toda decisão automatizada precisa do mesmo nível de revisão."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Supervisão efetiva exige autoridade, contexto e um caminho claro de intervenção."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "deep-learning-optimizers-learning-rate",
+    "title": "Otimizadores e learning rate",
+    "category": "deep-learning",
+    "level": "intermediate",
+    "summary": "Otimizadores atualizam parâmetros; o learning rate controla o tamanho de cada passo.",
+    "whyItMatters": "Uma taxa inadequada pode tornar o treino lento, instável ou incapaz de convergir.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Comparar Adam e SGD com uma curva de learning rate e validação separada.",
+    "prerequisites": ["gradiente", "backpropagation"],
+    "commonMistakes": [
+      "Escolher o otimizador sem acompanhar perda de treino e validação.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["SGD", "Adam", "learning rate", "scheduler"],
+    "quickQuiz": [
+      {
+        "id": "deep-learning-optimizers-learning-rate-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Learning rate muito alto pode fazer a perda oscilar ou divergir.",
+          "Adam garante o melhor resultado em qualquer problema.",
+          "O learning rate não afeta a atualização dos pesos."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Learning rate muito alto pode fazer a perda oscilar ou divergir."
+      }
+    ],
+    "references": [
+      {
+        "title": "Deep Learning Book",
+        "url": "https://www.deeplearningbook.org/",
+        "kind": "book"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "computer-vision-image-representation-convolution",
+    "title": "Representação de imagens e convolução",
+    "category": "computer-vision",
+    "level": "beginner",
+    "summary": "Imagens são tensores de pixels; convoluções detectam padrões locais reutilizando filtros.",
+    "whyItMatters": "Entender forma, canais e resolução evita entradas incorretas e esclarece como características visuais são extraídas.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Aplicar um filtro de bordas a uma imagem em tons de cinza.",
+    "prerequisites": ["matrizes", "redes neurais"],
+    "commonMistakes": [
+      "Ignorar a ordem dos canais ou a escala dos pixels.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["pixel", "channel", "kernel", "feature map"],
+    "quickQuiz": [
+      {
+        "id": "computer-vision-image-representation-convolution-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma convolução aplica o mesmo filtro em diferentes regiões da imagem.",
+          "Cada pixel exige uma rede diferente.",
+          "Convolução remove obrigatoriamente todas as cores."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma convolução aplica o mesmo filtro em diferentes regiões da imagem."
+      }
+    ],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "computer-vision-detection-segmentation",
+    "title": "Detecção e segmentação de objetos",
+    "category": "computer-vision",
+    "level": "advanced",
+    "summary": "Detecção localiza objetos com caixas; segmentação atribui classes a regiões ou pixels.",
+    "whyItMatters": "A escolha da tarefa e da anotação determina custo, métricas e precisão espacial esperada.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Comparar caixas de veículos com máscaras de áreas transitáveis em uma cena.",
+    "prerequisites": ["CNNs", "classificação de imagens"],
+    "commonMistakes": [
+      "Avaliar localização apenas com acurácia de classe.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["bounding box", "IoU", "semantic segmentation", "instance segmentation"],
+    "quickQuiz": [
+      {
+        "id": "computer-vision-detection-segmentation-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "IoU mede a sobreposição entre regiões prevista e esperada.",
+          "Segmentação sempre produz apenas uma caixa por imagem.",
+          "Detecção não precisa localizar o objeto."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "IoU mede a sobreposição entre regiões prevista e esperada."
+      }
+    ],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "computer-vision-augmentation-evaluation",
+    "title": "Data augmentation e avaliação visual",
+    "category": "computer-vision",
+    "level": "intermediate",
+    "summary": "Augmentation cria variações plausíveis; métricas e inspeção de erros revelam onde o modelo falha.",
+    "whyItMatters": "Transformações realistas melhoram generalização, mas podem destruir o sinal quando aplicadas sem contexto.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Aplicar cortes e iluminação variados, preservando rótulos, e revisar falsos positivos.",
+    "prerequisites": ["validação", "imagens"],
+    "commonMistakes": [
+      "Usar no conjunto de validação transformações aleatórias que mudam o alvo.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["augmentation", "confusion matrix", "precision", "recall"],
+    "quickQuiz": [
+      {
+        "id": "computer-vision-augmentation-evaluation-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Uma transformação só é útil quando preserva o significado do rótulo.",
+          "Augmentation substitui dados reais em qualquer cenário.",
+          "Avaliar imagens dispensa análise por classe."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Uma transformação só é útil quando preserva o significado do rótulo."
+      }
+    ],
+    "references": [
+      {
+        "title": "PyTorch Tutorials",
+        "url": "https://docs.pytorch.org/tutorials/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "genai-decoding-sampling",
+    "title": "Decoding, temperatura e amostragem",
+    "category": "generative-ai",
+    "level": "intermediate",
+    "summary": "Estratégias de decoding transformam probabilidades de tokens em uma sequência gerada.",
+    "whyItMatters": "Temperatura, top-k e top-p mudam diversidade, repetição e previsibilidade das respostas.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Comparar respostas factuais com baixa temperatura e variações criativas com top-p.",
+    "prerequisites": ["tokens", "modelos de linguagem"],
+    "commonMistakes": [
+      "Tratar temperatura como controle de veracidade.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["decoding", "temperature", "top-k", "top-p"],
+    "quickQuiz": [
+      {
+        "id": "genai-decoding-sampling-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Temperatura mais alta tende a distribuir mais a probabilidade entre alternativas.",
+          "Top-p limita sempre a resposta ao mesmo número de tokens.",
+          "Decoding consulta fontes externas automaticamente."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Temperatura mais alta tende a distribuir mais a probabilidade entre alternativas."
+      }
+    ],
+    "references": [
+      {
+        "title": "OWASP GenAI Security Project",
+        "url": "https://genai.owasp.org/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "genai-tools-structured-output",
+    "title": "Tool use e saída estruturada",
+    "category": "generative-ai",
+    "level": "advanced",
+    "summary": "Modelos podem selecionar ferramentas e produzir argumentos estruturados para executar ações externas.",
+    "whyItMatters": "Schemas, validação e limites de permissão reduzem chamadas inválidas ou perigosas.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Solicitar uma previsão do tempo, validar os argumentos e só então chamar a ferramenta permitida.",
+    "prerequisites": ["LLMs", "APIs"],
+    "commonMistakes": [
+      "Executar argumentos gerados sem validação ou confirmação proporcional ao risco.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["tool calling", "JSON Schema", "validation", "least privilege"],
+    "quickQuiz": [
+      {
+        "id": "genai-tools-structured-output-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "A aplicação deve validar a saída estruturada antes de executar uma ferramenta.",
+          "Tool use torna o modelo a fonte dos dados externos.",
+          "Um schema elimina a necessidade de controlar permissões."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "A aplicação deve validar a saída estruturada antes de executar uma ferramenta."
+      }
+    ],
+    "references": [
+      {
+        "title": "OWASP GenAI Security Project",
+        "url": "https://genai.owasp.org/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-science-reproducible-workflows",
+    "title": "Análises reproduzíveis e workflows",
+    "category": "data-science",
+    "level": "intermediate",
+    "summary": "Uma análise reproduzível registra dados, código, parâmetros e ambiente necessários para repetir o resultado.",
+    "whyItMatters": "Rastreabilidade facilita revisão, colaboração e atualização quando os dados mudam.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Transformar um notebook exploratório em etapas executáveis com versões fixadas.",
+    "prerequisites": ["Python", "análise exploratória"],
+    "commonMistakes": [
+      "Depender de células executadas fora de ordem ou arquivos locais não documentados.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["reproducibility", "notebook", "environment", "data versioning"],
+    "quickQuiz": [
+      {
+        "id": "data-science-reproducible-workflows-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Fixar dependências e registrar a origem dos dados melhora a reprodução da análise.",
+          "Salvar o gráfico final é suficiente para reproduzir o estudo.",
+          "Reprodutibilidade impede qualquer exploração interativa."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Fixar dependências e registrar a origem dos dados melhora a reprodução da análise."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-visualization-chart-selection",
+    "title": "Escolha de gráficos",
+    "category": "data-visualization",
+    "level": "beginner",
+    "summary": "O gráfico deve corresponder à pergunta: comparação, distribuição, relação, composição ou evolução temporal.",
+    "whyItMatters": "Uma forma visual inadequada pode esconder diferenças ou sugerir relações inexistentes.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Usar barras para comparar categorias e linha para mostrar evolução no tempo.",
+    "prerequisites": ["tipos de dados", "estatística descritiva"],
+    "commonMistakes": [
+      "Escolher o gráfico pela aparência antes de definir a pergunta.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["bar chart", "line chart", "scatter plot", "histogram"],
+    "quickQuiz": [
+      {
+        "id": "data-visualization-chart-selection-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Scatter plots ajudam a observar a relação entre duas variáveis numéricas.",
+          "Gráfico de pizza é ideal para centenas de categorias.",
+          "Toda série temporal deve ser exibida em barras empilhadas."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Scatter plots ajudam a observar a relação entre duas variáveis numéricas."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-visualization-visual-encoding-accessibility",
+    "title": "Codificação visual e acessibilidade",
+    "category": "data-visualization",
+    "level": "intermediate",
+    "summary": "Posição, tamanho, cor e forma codificam valores com diferentes níveis de precisão.",
+    "whyItMatters": "Contraste, rótulos e redundância visual tornam informações compreensíveis sem depender apenas de cor.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Combinar cores acessíveis, marcadores e rótulos diretos em uma série.",
+    "prerequisites": ["gráficos", "percepção visual"],
+    "commonMistakes": [
+      "Usar cores parecidas como único meio de diferenciar categorias.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["visual encoding", "contrast", "label", "color blindness"],
+    "quickQuiz": [
+      {
+        "id": "data-visualization-visual-encoding-accessibility-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Posição em uma escala comum costuma permitir comparação mais precisa que área.",
+          "Quanto mais cores, mais acessível fica o gráfico.",
+          "Rótulos são desnecessários quando existe legenda."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Posição em uma escala comum costuma permitir comparação mais precisa que área."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
+        "kind": "official-docs"
+      }
+    ],
+    "contentVersion": 1,
+    "reviewStatus": "reviewed",
+    "lastContentReviewAt": "2026-09-16"
+  },
+  {
+    "id": "data-visualization-dashboards-storytelling",
+    "title": "Dashboards e narrativa com dados",
+    "category": "data-visualization",
+    "level": "advanced",
+    "summary": "Dashboards monitoram decisões recorrentes; narrativas conduzem uma audiência por uma conclusão específica.",
+    "whyItMatters": "Hierarquia, contexto e métricas acionáveis evitam painéis cheios que não apoiam decisões.",
+    "guidingQuestions": [
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
+    ],
+    "practicalExample": "Organizar um painel de operação do resumo aos detalhes e destacar desvios relevantes.",
+    "prerequisites": ["visualização", "métricas de negócio"],
+    "commonMistakes": [
+      "Exibir todos os indicadores disponíveis sem prioridade ou contexto.",
+      "Validar somente o caso ideal e ignorar limites ou efeitos colaterais."
+    ],
+    "relatedTerms": ["dashboard", "KPI", "annotation", "drill-down"],
+    "quickQuiz": [
+      {
+        "id": "data-visualization-dashboards-storytelling-q1",
+        "prompt": "Qual alternativa está correta?",
+        "options": [
+          "Um bom dashboard relaciona cada indicador a uma pergunta ou ação.",
+          "Narrativa com dados exige esconder incertezas.",
+          "Mais elementos na tela sempre aumentam a informação útil."
+        ],
+        "correctOptionIndex": 0,
+        "explanation": "Um bom dashboard relaciona cada indicador a uma pergunta ou ação."
+      }
+    ],
+    "references": [
+      {
+        "title": "NIST Engineering Statistics Handbook",
+        "url": "https://www.itl.nist.gov/div898/handbook/",
         "kind": "official-docs"
       }
     ],

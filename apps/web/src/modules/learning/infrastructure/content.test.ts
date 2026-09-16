@@ -1,66 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { categories, levels } from '../domain/types';
-import type { Category, Level } from '../domain/types';
+import type { Category } from '../domain/types';
 import { challenges, concepts } from './content';
 
-const expectedMatrix: Record<
-  Category,
-  { concepts: Record<Level, number>; challenges: Record<Level, number> }
-> = {
-  logic: {
-    concepts: { beginner: 2, intermediate: 1, advanced: 1 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 0 },
-  },
-  python: {
-    concepts: { beginner: 5, intermediate: 5, advanced: 5 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 1 },
-  },
-  'sql-databases': {
-    concepts: { beginner: 5, intermediate: 5, advanced: 5 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 0 },
-  },
-  oop: {
-    concepts: { beginner: 2, intermediate: 1, advanced: 1 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 0 },
-  },
-  backend: {
-    concepts: { beginner: 1, intermediate: 3, advanced: 3 },
-    challenges: { beginner: 1, intermediate: 0, advanced: 1 },
-  },
-  'artificial-intelligence': {
-    concepts: { beginner: 2, intermediate: 2, advanced: 0 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 0 },
-  },
-  'machine-learning': {
-    concepts: { beginner: 2, intermediate: 3, advanced: 1 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 0 },
-  },
-  'deep-learning': {
-    concepts: { beginner: 1, intermediate: 1, advanced: 3 },
-    challenges: { beginner: 0, intermediate: 1, advanced: 1 },
-  },
-  'neural-networks': {
-    concepts: { beginner: 1, intermediate: 1, advanced: 3 },
-    challenges: { beginner: 0, intermediate: 1, advanced: 1 },
-  },
-  'generative-ai': {
-    concepts: { beginner: 2, intermediate: 1, advanced: 2 },
-    challenges: { beginner: 1, intermediate: 0, advanced: 1 },
-  },
-  'data-science': {
-    concepts: { beginner: 4, intermediate: 3, advanced: 1 },
-    challenges: { beginner: 1, intermediate: 1, advanced: 0 },
-  },
-  'data-engineering': {
-    concepts: { beginner: 1, intermediate: 2, advanced: 4 },
-    challenges: { beginner: 1, intermediate: 0, advanced: 1 },
-  },
-};
-
 describe('biblioteca oficial de conteúdo', () => {
-  it('carrega exatamente 85 conceitos e 25 desafios', () => {
-    expect(concepts).toHaveLength(85);
-    expect(challenges).toHaveLength(25);
+  it('carrega exatamente 100 conceitos e 50 desafios', () => {
+    expect(concepts).toHaveLength(100);
+    expect(challenges).toHaveLength(50);
   });
 
   it('mantém IDs únicos entre as coleções', () => {
@@ -68,48 +14,50 @@ describe('biblioteca oficial de conteúdo', () => {
     expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it('respeita a matriz obrigatória por categoria e nível', () => {
+  it('mantém 4 conceitos e 2 desafios em cada uma das 25 categorias', () => {
+    expect(categories).toHaveLength(25);
     for (const category of categories) {
-      for (const level of levels) {
-        expect(
-          concepts.filter((item) => item.category === category && item.level === level),
-        ).toHaveLength(expectedMatrix[category].concepts[level]);
-        expect(
-          challenges.filter((item) => item.category === category && item.level === level),
-        ).toHaveLength(expectedMatrix[category].challenges[level]);
-      }
+      expect(concepts.filter((item) => item.category === category)).toHaveLength(4);
+      expect(challenges.filter((item) => item.category === category)).toHaveLength(2);
     }
   });
 
-  it('mantém 28/28/29 conceitos e 10/9/6 desafios por nível', () => {
+  it('mantém 31/36/33 conceitos e 13/21/16 desafios por nível', () => {
     expect(levels.map((level) => concepts.filter((item) => item.level === level).length)).toEqual([
-      28, 28, 29,
+      31, 36, 33,
     ]);
     expect(levels.map((level) => challenges.filter((item) => item.level === level).length)).toEqual(
-      [10, 9, 6],
+      [13, 21, 16],
     );
   });
 
-  it('oferece pelo menos 15 conceitos em cada trilha principal', () => {
+  it('distribui todos os conceitos entre as cinco trilhas principais', () => {
     const tracks: Category[][] = [
-      ['python'],
-      ['sql-databases'],
-      ['backend', 'oop', 'logic'],
+      [
+        'logic',
+        'algorithms-data-structures',
+        'python',
+        'software-testing',
+        'python-internals-concurrency',
+      ],
+      ['sql-databases', 'database-engineering', 'data-modeling'],
+      ['oop', 'backend', 'api-design', 'distributed-systems', 'software-architecture'],
       [
         'artificial-intelligence',
+        'responsible-ai',
         'machine-learning',
         'deep-learning',
         'neural-networks',
+        'natural-language-processing',
+        'computer-vision',
         'generative-ai',
       ],
-      ['data-science', 'data-engineering'],
+      ['data-science', 'statistics-probability', 'data-visualization', 'data-engineering'],
     ];
 
-    for (const track of tracks) {
-      expect(
-        concepts.filter(({ category }) => track.includes(category)).length,
-      ).toBeGreaterThanOrEqual(15);
-    }
+    expect(
+      tracks.map((track) => concepts.filter(({ category }) => track.includes(category)).length),
+    ).toEqual([20, 12, 20, 32, 16]);
   });
 
   it('mantém quizzes completos, com opções únicas e uma resposta existente', () => {
