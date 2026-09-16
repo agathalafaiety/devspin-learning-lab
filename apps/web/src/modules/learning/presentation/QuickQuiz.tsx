@@ -1,15 +1,17 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { CheckCircle2, CircleHelp, RotateCcw, XCircle } from 'lucide-react';
 import type { QuizQuestion } from '../domain/types';
+import { shuffleQuizQuestion } from '../domain/quiz';
 
 interface QuickQuizProps {
   question: QuizQuestion;
 }
 
 export function QuickQuiz({ question }: QuickQuizProps) {
+  const shuffledQuestion = useMemo(() => shuffleQuizQuestion(question), [question]);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
-  const isCorrect = selectedOption === question.correctOptionIndex;
+  const isCorrect = selectedOption === shuffledQuestion.correctOptionIndex;
 
   const reset = () => {
     setSelectedOption(null);
@@ -23,13 +25,13 @@ export function QuickQuiz({ question }: QuickQuizProps) {
       </summary>
       <div className="quick-quiz-content">
         <fieldset disabled={submitted}>
-          <legend>{question.prompt}</legend>
+          <legend>{shuffledQuestion.prompt}</legend>
           <div className="quiz-options">
-            {question.options.map((option, index) => (
+            {shuffledQuestion.options.map((option, index) => (
               <label key={option} className={selectedOption === index ? 'selected' : ''}>
                 <input
                   type="radio"
-                  name={question.id}
+                  name={shuffledQuestion.id}
                   checked={selectedOption === index}
                   onChange={() => setSelectedOption(index)}
                 />
@@ -48,7 +50,7 @@ export function QuickQuiz({ question }: QuickQuizProps) {
             )}
             <span>
               <strong>{isCorrect ? 'Resposta correta!' : 'Ainda não.'}</strong>
-              {question.explanation}
+              {shuffledQuestion.explanation}
             </span>
             <button type="button" onClick={reset}>
               <RotateCcw size={15} aria-hidden="true" /> Tentar novamente
