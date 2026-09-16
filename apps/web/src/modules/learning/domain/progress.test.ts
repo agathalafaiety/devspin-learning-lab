@@ -2,18 +2,21 @@ import { describe, expect, it } from 'vitest';
 import { concepts } from '../infrastructure/content';
 import {
   clearLearningProgress,
+  calculateProgressStats,
   countDueReviews,
   createItemKey,
   recordAssessment,
+  recordQuizAttempt,
   toggleFavorite,
 } from './progress';
 import type { LocalProgress } from './progress';
 
 const emptyProgress: LocalProgress = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   favoriteKeys: [],
   history: [],
   reviews: [],
+  quizAttempts: [],
   preferences: { audio: { enabled: true, volume: 0.28 } },
 };
 
@@ -72,5 +75,62 @@ describe('progresso local', () => {
     );
 
     expect(clearLearningProgress(populated)).toEqual(emptyProgress);
+  });
+
+  it('registra tentativas de quiz e calcula a taxa de acerto', () => {
+    const first = recordQuizAttempt(
+      emptyProgress,
+      concepts[0]!,
+      concepts[0]!.quickQuiz[0]!.id,
+      true,
+      new Date('2026-09-15T12:00:00.000Z'),
+    );
+    const second = recordQuizAttempt(
+      first,
+      concepts[0]!,
+      concepts[0]!.quickQuiz[0]!.id,
+      false,
+      new Date('2026-09-15T12:05:00.000Z'),
+    );
+    const stats = calculateProgressStats(second, concepts, new Date('2026-09-15T15:00:00.000Z'));
+
+    expect(stats.quizAttempts).toBe(2);
+    expect(stats.correctQuizAttempts).toBe(1);
+    expect(stats.quizAccuracy).toBe(50);
+    expect(stats.streakDays).toBe(1);
+  });
+
+  it('calcula progresso único, revisões e sequência de estudo', () => {
+    const firstDay = recordAssessment(
+      emptyProgress,
+      concepts[0]!,
+      'almost-there',
+      'session',
+      new Date('2026-09-14T12:00:00.000Z'),
+    );
+    const currentDay = recordAssessment(
+      firstDay,
+      concepts[1]!,
+      'can-explain',
+      'review',
+      new Date('2026-09-15T12:00:00.000Z'),
+    );
+    const repeatedItem = recordAssessment(
+      currentDay,
+      concepts[0]!,
+      'can-explain',
+      'review',
+      new Date('2026-09-15T13:00:00.000Z'),
+    );
+    const stats = calculateProgressStats(
+      repeatedItem,
+      concepts,
+      new Date('2026-09-15T15:00:00.000Z'),
+    );
+
+    expect(stats.completedItems).toBe(2);
+    expect(stats.conceptsCompleted).toBe(2);
+    expect(stats.reviewsCompleted).toBe(2);
+    expect(stats.streakDays).toBe(2);
   });
 });

@@ -42,7 +42,7 @@ const conceptSchema = baseSchema
     prerequisites: z.array(z.string().min(1).max(100)).max(12),
     commonMistakes: z.array(z.string().min(1).max(300)).max(12),
     relatedTerms: z.array(z.string().min(1).max(100)).max(16),
-    quickQuiz: z.array(quizSchema).max(5),
+    quickQuiz: z.array(quizSchema).min(1).max(5),
   })
   .strict();
 

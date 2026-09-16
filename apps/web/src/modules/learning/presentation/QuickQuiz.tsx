@@ -5,9 +5,10 @@ import { shuffleQuizQuestion } from '../domain/quiz';
 
 interface QuickQuizProps {
   question: QuizQuestion;
+  onAnswered: (questionId: string, correct: boolean) => void;
 }
 
-export function QuickQuiz({ question }: QuickQuizProps) {
+export function QuickQuiz({ question, onAnswered }: QuickQuizProps) {
   const shuffledQuestion = useMemo(() => shuffleQuizQuestion(question), [question]);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
@@ -61,7 +62,10 @@ export function QuickQuiz({ question }: QuickQuizProps) {
             type="button"
             className="quiz-submit"
             disabled={selectedOption === null}
-            onClick={() => setSubmitted(true)}
+            onClick={() => {
+              setSubmitted(true);
+              onAnswered(shuffledQuestion.id, isCorrect);
+            }}
           >
             Confirmar resposta
           </button>

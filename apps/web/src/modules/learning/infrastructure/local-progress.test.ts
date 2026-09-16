@@ -35,8 +35,27 @@ describe('armazenamento local versionado', () => {
       }),
     });
     const migrated = loadProgress(storage);
-    expect(migrated.schemaVersion).toBe(1);
+    expect(migrated.schemaVersion).toBe(2);
     expect(migrated.favoriteKeys).toEqual(['challenge:logic-password-rules']);
+  });
+
+  it('migra a versão anterior preservando o progresso existente', () => {
+    const storage = createMemoryStorage({
+      [PROGRESS_STORAGE_KEY]: JSON.stringify({
+        schemaVersion: 1,
+        favoriteKeys: ['concept:python-list-comprehensions'],
+        history: [],
+        reviews: [],
+        preferences: { audio: { enabled: false, volume: 0.5 } },
+      }),
+    });
+
+    expect(loadProgress(storage)).toMatchObject({
+      schemaVersion: 2,
+      favoriteKeys: ['concept:python-list-comprehensions'],
+      quizAttempts: [],
+      preferences: { audio: { enabled: false, volume: 0.5 } },
+    });
   });
 
   it('descarta dados inválidos sem quebrar a aplicação', () => {
@@ -54,8 +73,29 @@ describe('armazenamento local versionado', () => {
     expect(parseProgressBackup(backup)).toEqual(progress);
     expect(JSON.parse(backup)).toMatchObject({
       app: 'devspin',
+      formatVersion: 2,
+      exportedAt: '2026-09-15T12:00:00.000Z',
+    });
+  });
+
+  it('importa backups da versão anterior', () => {
+    const previousBackup = JSON.stringify({
+      app: 'devspin',
       formatVersion: 1,
       exportedAt: '2026-09-15T12:00:00.000Z',
+      progress: {
+        schemaVersion: 1,
+        favoriteKeys: ['concept:logic-variables-types'],
+        history: [],
+        reviews: [],
+        preferences: { audio: { enabled: true, volume: 0.28 } },
+      },
+    });
+
+    expect(parseProgressBackup(previousBackup)).toMatchObject({
+      schemaVersion: 2,
+      favoriteKeys: ['concept:logic-variables-types'],
+      quizAttempts: [],
     });
   });
 

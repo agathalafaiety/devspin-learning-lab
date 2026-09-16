@@ -6,7 +6,27 @@ import { App } from './App';
 describe('experiência inicial', () => {
   beforeEach(() => {
     localStorage.clear();
+    localStorage.setItem('devspin.onboarding.v1', 'complete');
     window.history.replaceState({}, '', '/');
+  });
+
+  it('orienta a primeira visita em três passos', async () => {
+    const user = userEvent.setup();
+    localStorage.removeItem('devspin.onboarding.v1');
+    render(<App />);
+
+    expect(
+      screen.getByRole('dialog', { name: 'Comece com três pequenos giros' }),
+    ).toBeInTheDocument();
+    expect(screen.getByText('Escolha seu foco')).toBeInTheDocument();
+    expect(screen.getByText('Gire um conteúdo')).toBeInTheDocument();
+    expect(screen.getByText('Teste e revise')).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Começar a explorar' }));
+    expect(
+      screen.queryByRole('dialog', { name: 'Comece com três pequenos giros' }),
+    ).not.toBeInTheDocument();
+    expect(localStorage.getItem('devspin.onboarding.v1')).toBe('complete');
   });
 
   it('alterna do modo Explorar para Executar com nomes acessíveis', async () => {
@@ -115,6 +135,9 @@ describe('experiência inicial', () => {
     expect(screen.getByRole('status')).toHaveTextContent(
       'Variáveis dão nomes a valores; tipos definem quais operações fazem sentido para eles.',
     );
+
+    await user.click(screen.getByRole('button', { name: /0 itens salvos/i }));
+    expect(screen.getByText('1 tentativa em quizzes')).toBeInTheDocument();
   });
 
   it('limpa favoritos, histórico e revisões após confirmação', async () => {

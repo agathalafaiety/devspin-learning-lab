@@ -1,12 +1,28 @@
 import { useEffect, useRef, useState } from 'react';
-import { Bookmark, Clock3, Download, ExternalLink, Trash2, Upload, X } from 'lucide-react';
+import {
+  BarChart3,
+  Bookmark,
+  BrainCircuit,
+  Clock3,
+  Download,
+  ExternalLink,
+  Flame,
+  RotateCcw,
+  Target,
+  Terminal,
+  Trash2,
+  Upload,
+  X,
+} from 'lucide-react';
+import { categoryLabels } from '../domain/catalog';
 import { assessmentLabels } from '../domain/progress';
-import type { HistoryEntry } from '../domain/progress';
+import type { HistoryEntry, ProgressStats } from '../domain/progress';
 import type { LearningItem } from '../domain/types';
 
 interface ProgressDialogProps {
   favoriteItems: LearningItem[];
   history: HistoryEntry[];
+  stats: ProgressStats;
   onOpenItem: (item: LearningItem) => void;
   onRemoveFavorite: (item: LearningItem) => void;
   onExport: () => void;
@@ -27,6 +43,7 @@ function formatActivityDate(value: string) {
 export function ProgressDialog({
   favoriteItems,
   history,
+  stats,
   onOpenItem,
   onRemoveFavorite,
   onExport,
@@ -67,6 +84,75 @@ export function ProgressDialog({
         <span className="section-kicker">SALVO SOMENTE NESTE DISPOSITIVO</span>
         <h2 id="progress-title">Seu progresso local</h2>
 
+        <section className="progress-overview" aria-labelledby="evolution-title">
+          <div className="progress-overview-heading">
+            <h3 id="evolution-title">
+              <BarChart3 size={18} aria-hidden="true" /> Painel de evolução
+            </h3>
+            <strong>{stats.overallPercentage}% concluído</strong>
+          </div>
+          <div
+            className="overall-progress"
+            role="progressbar"
+            aria-label="Progresso geral do laboratório"
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={stats.overallPercentage}
+          >
+            <span style={{ width: `${stats.overallPercentage}%` }} />
+          </div>
+
+          <div className="progress-metrics">
+            <article>
+              <BrainCircuit size={18} aria-hidden="true" />
+              <strong>{stats.conceptsCompleted}</strong>
+              <span>conceitos concluídos</span>
+            </article>
+            <article>
+              <Terminal size={18} aria-hidden="true" />
+              <strong>{stats.challengesCompleted}</strong>
+              <span>desafios concluídos</span>
+            </article>
+            <article>
+              <Target size={18} aria-hidden="true" />
+              <strong>{stats.quizAccuracy}%</strong>
+              <span>
+                {stats.quizAttempts} {stats.quizAttempts === 1 ? 'tentativa' : 'tentativas'} em
+                quizzes
+              </span>
+            </article>
+            <article>
+              <RotateCcw size={18} aria-hidden="true" />
+              <strong>{stats.reviewsCompleted}</strong>
+              <span>revisões concluídas</span>
+            </article>
+            <article>
+              <Flame size={18} aria-hidden="true" />
+              <strong>{stats.streakDays}</strong>
+              <span>{stats.streakDays === 1 ? 'dia em sequência' : 'dias em sequência'}</span>
+            </article>
+          </div>
+
+          <div className="category-progress">
+            <h4>Progresso por área</h4>
+            <ul>
+              {stats.categories.map((category) => (
+                <li key={category.category}>
+                  <span>
+                    <strong>{categoryLabels[category.category]}</strong>
+                    <small>
+                      {category.completed}/{category.total}
+                    </small>
+                  </span>
+                  <div aria-hidden="true">
+                    <i style={{ width: `${category.percentage}%` }} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         <div className="progress-tools" aria-label="Ferramentas de progresso">
           <button type="button" onClick={onExport}>
             <Download size={17} aria-hidden="true" /> Exportar backup
@@ -99,7 +185,7 @@ export function ProgressDialog({
 
         {confirmClear && (
           <div className="clear-confirmation" role="alert">
-            <span>Isso remove favoritos, histórico e revisões deste dispositivo.</span>
+            <span>Isso remove favoritos, histórico, quizzes e revisões deste dispositivo.</span>
             <div>
               <button
                 type="button"

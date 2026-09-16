@@ -18,8 +18,8 @@ Este incremento fecha as funcionalidades locais, a verificação de qualidade e 
 
 ## Verificações
 
-- 34 testes unitários e de integração;
-- 3 cenários ponta a ponta executados em desktop e celular, totalizando 6 verificações;
+- 40 testes unitários e de integração;
+- 4 cenários ponta a ponta executados em desktop e celular, totalizando 8 verificações;
 - lint e build de produção;
 - auditoria de dependências;
 - ausência de violações automáticas graves ou críticas de acessibilidade nas telas testadas;

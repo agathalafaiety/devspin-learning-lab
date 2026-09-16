@@ -35,7 +35,28 @@ const reviewEntrySchema = z
   })
   .strict();
 
+const quizAttemptSchema = z
+  .object({
+    id: z.string().min(1).max(220),
+    itemKey: z.string().min(3).max(160),
+    questionId: z.string().min(1).max(100),
+    correct: z.boolean(),
+    answeredAt: z.iso.datetime(),
+  })
+  .strict();
+
 const progressSchema = z
+  .object({
+    schemaVersion: z.literal(2),
+    favoriteKeys: z.array(z.string().min(3).max(160)).max(5000),
+    history: z.array(historyEntrySchema).max(100),
+    reviews: z.array(reviewEntrySchema).max(5000),
+    quizAttempts: z.array(quizAttemptSchema).max(500),
+    preferences: z.object({ audio: audioPreferencesSchema }).strict(),
+  })
+  .strict();
+
+const previousProgressSchema = z
   .object({
     schemaVersion: z.literal(1),
     favoriteKeys: z.array(z.string().min(3).max(160)).max(5000),
@@ -55,9 +76,18 @@ const legacyProgressSchema = z
 const progressBackupSchema = z
   .object({
     app: z.literal('devspin'),
-    formatVersion: z.literal(1),
+    formatVersion: z.literal(2),
     exportedAt: z.iso.datetime(),
     progress: progressSchema,
+  })
+  .strict();
+
+const previousProgressBackupSchema = z
+  .object({
+    app: z.literal('devspin'),
+    formatVersion: z.literal(1),
+    exportedAt: z.iso.datetime(),
+    progress: previousProgressSchema,
   })
   .strict();
 
@@ -81,15 +111,21 @@ function readLegacyAudio(storage: ReadStorage) {
 
 export function createDefaultProgress(storage: ReadStorage = localStorage): LocalProgress {
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     favoriteKeys: [],
     history: [],
     reviews: [],
+    quizAttempts: [],
     preferences: { audio: readLegacyAudio(storage) },
   };
 }
 
 function migrateProgress(value: unknown, storage: ReadStorage): LocalProgress | null {
+  const previous = previousProgressSchema.safeParse(value);
+  if (previous.success) {
+    return { ...previous.data, schemaVersion: 2, quizAttempts: [] };
+  }
+
   const legacy = legacyProgressSchema.safeParse(value);
   if (!legacy.success) return null;
   return {
@@ -124,7 +160,7 @@ export function serializeProgressBackup(progress: LocalProgress, now = new Date(
   return JSON.stringify(
     progressBackupSchema.parse({
       app: 'devspin',
-      formatVersion: 1,
+      formatVersion: 2,
       exportedAt: now.toISOString(),
       progress,
     }),
@@ -142,9 +178,12 @@ export function parseProgressBackup(raw: string): LocalProgress {
   }
 
   const backup = progressBackupSchema.safeParse(parsed);
-  if (!backup.success) {
-    throw new Error('Este arquivo não é um backup válido do DevSpin.');
+  if (backup.success) return backup.data.progress;
+
+  const previousBackup = previousProgressBackupSchema.safeParse(parsed);
+  if (previousBackup.success) {
+    return { ...previousBackup.data.progress, schemaVersion: 2, quizAttempts: [] };
   }
 
-  return backup.data.progress;
+  throw new Error('Este arquivo não é um backup válido do DevSpin.');
 }

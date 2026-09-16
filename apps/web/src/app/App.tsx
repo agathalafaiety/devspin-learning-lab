@@ -8,6 +8,7 @@ import { TrackSelector } from '../modules/learning/presentation/TrackSelector';
 import { AssessmentDialog } from '../modules/learning/presentation/AssessmentDialog';
 import { ProgressDialog } from '../modules/learning/presentation/ProgressDialog';
 import { ReviewPanel } from '../modules/learning/presentation/ReviewPanel';
+import { OnboardingDialog } from '../modules/learning/presentation/OnboardingDialog';
 import type { ReviewCandidate } from '../modules/learning/presentation/ReviewPanel';
 import { drawLearningItem } from '../modules/learning/domain/catalog';
 import type {
@@ -24,11 +25,13 @@ import { AudioFeedback } from '../shared/audio/audio-service';
 import type { AudioPreferences, SoundCue } from '../shared/audio/audio-service';
 import {
   assessmentLabels,
+  calculateProgressStats,
   clearLearningProgress,
   countDueReviews,
   getItemKey,
   getItemType,
   recordAssessment,
+  recordQuizAttempt,
   toggleFavorite,
 } from '../modules/learning/domain/progress';
 import type { SelfAssessment } from '../modules/learning/domain/progress';
@@ -47,6 +50,23 @@ interface ActiveTimer {
 
 const allItems: LearningItem[] = [...concepts, ...challenges];
 const itemByKey = new Map(allItems.map((item) => [getItemKey(item), item]));
+const ONBOARDING_STORAGE_KEY = 'devspin.onboarding.v1';
+
+function shouldShowOnboarding() {
+  try {
+    return localStorage.getItem(ONBOARDING_STORAGE_KEY) !== 'complete';
+  } catch {
+    return true;
+  }
+}
+
+function completeOnboarding() {
+  try {
+    localStorage.setItem(ONBOARDING_STORAGE_KEY, 'complete');
+  } catch {
+    // A introdução continua dispensável mesmo sem armazenamento disponível.
+  }
+}
 
 function Home() {
   const [mode, setMode] = useState<LearningMode>('explore');
@@ -59,6 +79,7 @@ function Home() {
   const [activeTimer, setActiveTimer] = useState<ActiveTimer | null>(null);
   const [pendingAssessment, setPendingAssessment] = useState<LearningItem | null>(null);
   const [progressOpen, setProgressOpen] = useState(false);
+  const [onboardingOpen, setOnboardingOpen] = useState(shouldShowOnboarding);
   const [progress, setProgress] = useState(loadProgress);
   const audio = useRef(new AudioFeedback());
   const drawCycles = useRef(new Map<string, string[]>());
@@ -78,6 +99,7 @@ function Home() {
       return item ? ({ entry, item } satisfies ReviewCandidate) : null;
     })
     .filter((candidate): candidate is ReviewCandidate => candidate !== null);
+  const progressStats = useMemo(() => calculateProgressStats(progress, allItems), [progress]);
 
   useEffect(() => {
     saveProgress(progress);
@@ -253,6 +275,9 @@ function Home() {
             isFavorite={progress.favoriteKeys.includes(activeItemKey)}
             lastAssessmentLabel={activeReview ? assessmentLabels[activeReview.assessment] : null}
             onToggleFavorite={() => toggleItemFavorite(activeItem)}
+            onQuizAnswered={(questionId, correct) => {
+              setProgress((current) => recordQuizAttempt(current, activeItem, questionId, correct));
+            }}
             onStart={() => {
               setActiveTimer({ stage: 'work', startedAtMs: Date.now(), item: activeItem });
               play('action');
@@ -308,6 +333,15 @@ function Home() {
 
       <Footer />
 
+      {onboardingOpen && (
+        <OnboardingDialog
+          onClose={() => {
+            completeOnboarding();
+            setOnboardingOpen(false);
+          }}
+        />
+      )}
+
       {activeTimer && (
         <FocusTimer
           key={`${activeTimer.item.id}-${activeTimer.stage}-${activeTimer.startedAtMs}`}
@@ -347,6 +381,7 @@ function Home() {
         <ProgressDialog
           favoriteItems={favoriteItems}
           history={progress.history}
+          stats={progressStats}
           onOpenItem={openSavedItem}
           onRemoveFavorite={toggleItemFavorite}
           onExport={exportProgress}

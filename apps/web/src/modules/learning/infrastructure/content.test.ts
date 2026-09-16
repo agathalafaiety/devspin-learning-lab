@@ -90,11 +90,21 @@ describe('biblioteca oficial de conteúdo', () => {
     );
   });
 
-  it('mantém quizzes com uma resposta existente', () => {
+  it('mantém quizzes completos, com opções únicas e uma resposta existente', () => {
     for (const concept of concepts) {
+      expect(concept.quickQuiz.length).toBeGreaterThan(0);
       for (const question of concept.quickQuiz) {
         expect(question.options[question.correctOptionIndex]).toBeDefined();
+        expect(new Set(question.options).size).toBe(question.options.length);
       }
+    }
+  });
+
+  it('mantém todo o conteúdo marcado como revisado e referenciado', () => {
+    for (const item of [...concepts, ...challenges]) {
+      expect(item.reviewStatus).toBe('reviewed');
+      expect(item.references.length).toBeGreaterThan(0);
+      expect(Number.isNaN(new Date(item.lastContentReviewAt).getTime())).toBe(false);
     }
   });
 });

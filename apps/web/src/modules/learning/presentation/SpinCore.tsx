@@ -25,6 +25,7 @@ interface SpinCoreProps {
   isFavorite: boolean;
   lastAssessmentLabel: string | null;
   onToggleFavorite: () => void;
+  onQuizAnswered: (questionId: string, correct: boolean) => void;
 }
 
 function isConcept(item: ConceptItem | ChallengeItem): item is ConceptItem {
@@ -42,6 +43,7 @@ export function SpinCore({
   isFavorite,
   lastAssessmentLabel,
   onToggleFavorite,
+  onQuizAnswered,
 }: SpinCoreProps) {
   const concept = isConcept(item);
   const [revealedHints, setRevealedHints] = useState(0);
@@ -127,7 +129,7 @@ export function SpinCore({
                     </div>
                   </div>
                 </details>
-                <QuickQuiz question={item.quickQuiz[0]!} />
+                <QuickQuiz question={item.quickQuiz[0]!} onAnswered={onQuizAnswered} />
               </div>
             ) : (
               <div className="challenge-support">

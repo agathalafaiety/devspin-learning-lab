@@ -3,8 +3,22 @@ import { expect, test } from '@playwright/test';
 
 test.beforeEach(async ({ page }) => {
   await page.goto('/');
-  await page.evaluate(() => localStorage.clear());
+  await page.evaluate(() => {
+    localStorage.clear();
+    localStorage.setItem('devspin.onboarding.v1', 'complete');
+  });
   await page.reload();
+});
+
+test('orienta a primeira visita e inicia a experiência', async ({ page }) => {
+  await page.evaluate(() => localStorage.removeItem('devspin.onboarding.v1'));
+  await page.reload();
+
+  await expect(page.getByRole('dialog', { name: 'Comece com três pequenos giros' })).toBeVisible();
+  await page.getByRole('button', { name: 'Começar a explorar' }).click();
+
+  await expect(page.getByRole('dialog', { name: 'Comece com três pequenos giros' })).toBeHidden();
+  await expect(page.getByRole('heading', { name: 'O que você quer dominar hoje?' })).toBeVisible();
 });
 
 test('explora um conceito e responde ao mini-quiz', async ({ page }) => {

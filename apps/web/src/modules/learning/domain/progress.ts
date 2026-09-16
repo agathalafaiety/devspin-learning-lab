@@ -1,5 +1,5 @@
 import type { AudioPreferences } from '../../../shared/audio/audio-service';
-import type { ItemType, LearningItem } from './types';
+import type { Category, ItemType, LearningItem } from './types';
 
 export const assessmentValues = ['needs-review', 'almost-there', 'can-explain'] as const;
 export type SelfAssessment = (typeof assessmentValues)[number];
@@ -29,14 +29,44 @@ export interface ReviewEntry {
   reviewCount: number;
 }
 
+export interface QuizAttempt {
+  id: string;
+  itemKey: string;
+  questionId: string;
+  correct: boolean;
+  answeredAt: string;
+}
+
 export interface LocalProgress {
-  schemaVersion: 1;
+  schemaVersion: 2;
   favoriteKeys: string[];
   history: HistoryEntry[];
   reviews: ReviewEntry[];
+  quizAttempts: QuizAttempt[];
   preferences: {
     audio: AudioPreferences;
   };
+}
+
+export interface CategoryProgress {
+  category: Category;
+  completed: number;
+  total: number;
+  percentage: number;
+}
+
+export interface ProgressStats {
+  completedItems: number;
+  totalItems: number;
+  overallPercentage: number;
+  conceptsCompleted: number;
+  challengesCompleted: number;
+  reviewsCompleted: number;
+  quizAttempts: number;
+  correctQuizAttempts: number;
+  quizAccuracy: number;
+  streakDays: number;
+  categories: CategoryProgress[];
 }
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -67,7 +97,27 @@ export function clearLearningProgress(progress: LocalProgress): LocalProgress {
     favoriteKeys: [],
     history: [],
     reviews: [],
+    quizAttempts: [],
   };
+}
+
+export function recordQuizAttempt(
+  progress: LocalProgress,
+  item: LearningItem,
+  questionId: string,
+  correct: boolean,
+  now = new Date(),
+): LocalProgress {
+  const itemKey = getItemKey(item);
+  const attempt: QuizAttempt = {
+    id: `${now.getTime()}-${questionId}-${progress.quizAttempts.length}`,
+    itemKey,
+    questionId,
+    correct,
+    answeredAt: now.toISOString(),
+  };
+
+  return { ...progress, quizAttempts: [attempt, ...progress.quizAttempts].slice(0, 500) };
 }
 
 function nextIntervalDays(previous: ReviewEntry | undefined, assessment: SelfAssessment) {
@@ -118,4 +168,66 @@ export function recordAssessment(
 export function countDueReviews(reviews: readonly ReviewEntry[], now = new Date()) {
   const timestamp = now.getTime();
   return reviews.filter((entry) => new Date(entry.dueAt).getTime() <= timestamp).length;
+}
+
+function localDateKey(value: Date) {
+  const year = value.getFullYear();
+  const month = String(value.getMonth() + 1).padStart(2, '0');
+  const day = String(value.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
+}
+
+function calculateStreak(progress: LocalProgress, now: Date) {
+  const activeDays = new Set([
+    ...progress.history.map(({ completedAt }) => localDateKey(new Date(completedAt))),
+    ...progress.quizAttempts.map(({ answeredAt }) => localDateKey(new Date(answeredAt))),
+  ]);
+  const cursor = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+  if (!activeDays.has(localDateKey(cursor))) cursor.setDate(cursor.getDate() - 1);
+
+  let streak = 0;
+  while (activeDays.has(localDateKey(cursor))) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
+}
+
+export function calculateProgressStats(
+  progress: LocalProgress,
+  items: readonly LearningItem[],
+  now = new Date(),
+): ProgressStats {
+  const completedKeys = new Set(progress.history.map(({ itemKey }) => itemKey));
+  const completedItems = items.filter((item) => completedKeys.has(getItemKey(item)));
+  const correctQuizAttempts = progress.quizAttempts.filter(({ correct }) => correct).length;
+  const categorySet = new Set(items.map(({ category }) => category));
+  const categories = [...categorySet].map((category) => {
+    const categoryItems = items.filter((item) => item.category === category);
+    const completed = categoryItems.filter((item) => completedKeys.has(getItemKey(item))).length;
+    return {
+      category,
+      completed,
+      total: categoryItems.length,
+      percentage: Math.round((completed / categoryItems.length) * 100),
+    };
+  });
+
+  return {
+    completedItems: completedItems.length,
+    totalItems: items.length,
+    overallPercentage: Math.round((completedItems.length / items.length) * 100),
+    conceptsCompleted: completedItems.filter((item) => getItemType(item) === 'concept').length,
+    challengesCompleted: completedItems.filter((item) => getItemType(item) === 'challenge').length,
+    reviewsCompleted: progress.history.filter(({ source }) => source === 'review').length,
+    quizAttempts: progress.quizAttempts.length,
+    correctQuizAttempts,
+    quizAccuracy:
+      progress.quizAttempts.length === 0
+        ? 0
+        : Math.round((correctQuizAttempts / progress.quizAttempts.length) * 100),
+    streakDays: calculateStreak(progress, now),
+    categories,
+  };
 }
