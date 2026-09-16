@@ -13,7 +13,6 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 - [x] Licença MIT adicionada ao repositório.
 - [x] Código commitado e publicado no repositório GitHub configurado como `origin`.
 - [x] Prints atualizados de desktop e celular no README.
-- [x] Deploy público com endereço registrado no README.
 
 ## Evidências atuais
 
@@ -27,4 +26,4 @@ Este documento reúne os critérios que precisam estar concluídos antes de cons
 
 ## Resultado
 
-Todos os critérios definidos para a primeira versão foram concluídos. A demonstração pública está disponível em `https://agathalafaiety.github.io/devspin-learning-lab/`.
+Todos os critérios definidos para a primeira versão foram concluídos. A apresentação do projeto é feita pelo print atualizado no README, e a aplicação pode ser executada localmente.

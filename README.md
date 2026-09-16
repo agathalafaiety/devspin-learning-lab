@@ -4,8 +4,6 @@ Laboratório de aprendizagem ativa para desenvolvimento de software, inteligênc
 
 O DevSpin transforma o estudo em ciclos curtos de prática. Escolha uma área e um nível, sorteie um conceito ou desafio, teste seu conhecimento e organize revisões de acordo com sua própria avaliação.
 
-[Acessar o DevSpin](https://agathalafaiety.github.io/devspin-learning-lab/)
-
 ![Tela inicial do DevSpin](docs/images/devspin-desktop.png)
 
 ## Funcionalidades

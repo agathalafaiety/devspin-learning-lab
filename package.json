@@ -21,7 +21,6 @@
     "test": "npm run test --workspace @devspin/web",
     "test:coverage": "npm run test:coverage --workspace @devspin/web",
     "test:e2e": "playwright test",
-    "deploy:pages": "cross-env VITE_BASE_PATH=/devspin-learning-lab/ npm run build && gh-pages -d dist",
     "check": "npm run lint && npm run test && npm run build && npm run test:e2e"
   },
   "devDependencies": {
@@ -31,11 +30,9 @@
     "@types/node": "24.13.5",
     "@typescript-eslint/eslint-plugin": "8.70.0",
     "@typescript-eslint/parser": "8.70.0",
-    "cross-env": "^10.1.0",
     "eslint": "10.10.0",
     "eslint-plugin-react-hooks": "7.1.1",
     "eslint-plugin-react-refresh": "0.5.7",
-    "gh-pages": "^6.3.0",
     "globals": "17.12.0",
     "prettier": "3.9.6",
     "typescript": "6.0.2"
