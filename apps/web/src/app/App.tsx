@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Bookmark, CalendarDays, ChevronRight } from 'lucide-react';
-import { DesignSystemPage } from './DesignSystemPage';
 import { Header } from '../shared/components/Header';
 import { Footer } from '../shared/components/Footer';
 import { FocusTimer } from '../modules/learning/presentation/FocusTimer';
@@ -357,6 +356,5 @@ function Home() {
 }
 
 export function App() {
-  const isDesignSystem = window.location.pathname.replace(/\/$/, '').endsWith('/design-system');
-  return isDesignSystem ? <DesignSystemPage /> : <Home />;
+  return <Home />;
 }

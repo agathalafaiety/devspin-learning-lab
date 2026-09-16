@@ -6,6 +6,7 @@ import { App } from './App';
 describe('experiência inicial', () => {
   beforeEach(() => {
     localStorage.clear();
+    window.history.replaceState({}, '', '/');
   });
 
   it('alterna do modo Explorar para Executar com nomes acessíveis', async () => {
@@ -127,5 +128,15 @@ describe('experiência inicial', () => {
 
     expect(screen.getByRole('status')).toHaveTextContent('Progresso local removido.');
     expect(screen.getByText('Você ainda não salvou nenhum item.')).toBeInTheDocument();
+  });
+
+  it('não expõe uma página separada de Design System', () => {
+    window.history.replaceState({}, '', '/design-system');
+    render(<App />);
+
+    expect(
+      screen.getByRole('heading', { name: 'O que você quer dominar hoje?' }),
+    ).toBeInTheDocument();
+    expect(screen.queryByText('Design System')).not.toBeInTheDocument();
   });
 });

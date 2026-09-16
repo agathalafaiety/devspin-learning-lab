@@ -3,7 +3,7 @@
 ## Escopo entregue
 
 - toolchain Vite, React e TypeScript estrito;
-- tokens visuais e página interna de Design System;
+- tokens visuais reutilizáveis;
 - Home responsiva com modos Explorar, Executar e Revisar;
 - filtros combináveis, Spin Core e prevenção de repetição imediata;
 - temporizador baseado em horário final, com pausa e conclusão antecipada;
