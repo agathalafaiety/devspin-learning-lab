@@ -2332,7 +2332,7 @@ button:disabled {
 }
 .compact-levels > span {
   padding: 0 9px 0 12px;
-  color: #66717f;
+  color: var(--color-primary);
   font: 500 9px var(--font-code);
   letter-spacing: 0.11em;
   text-transform: uppercase;
