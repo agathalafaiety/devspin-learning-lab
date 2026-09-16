@@ -13,13 +13,13 @@ Este incremento fecha as funcionalidades locais, a verificação de qualidade e 
 - testes ponta a ponta em desktop e celular;
 - auditoria automática de acessibilidade;
 - README completo, licença MIT e prints responsivos;
-- pipeline de integração contínua ampliado com Playwright.
+- verificação local completa com lint, testes, build e Playwright.
 - código publicado no GitHub e print da aplicação incluído no README.
 
 ## Verificações
 
-- 30 testes unitários e de integração;
-- 6 cenários ponta a ponta;
+- 34 testes unitários e de integração;
+- 3 cenários ponta a ponta executados em desktop e celular, totalizando 6 verificações;
 - lint e build de produção;
 - auditoria de dependências;
 - ausência de violações automáticas graves ou críticas de acessibilidade nas telas testadas;

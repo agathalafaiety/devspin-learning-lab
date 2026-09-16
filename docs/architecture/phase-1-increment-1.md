@@ -9,7 +9,7 @@
 - temporizador baseado em horário final, com pausa e conclusão antecipada;
 - áudio sintetizado sem autoplay, com mute e volume persistidos;
 - 3 conceitos e 2 desafios provisórios, validados em build e testes;
-- CI para lint, testes, build e auditoria de dependências.
+- comandos locais para lint, testes, build e auditoria de dependências.
 
 ## Refinamento visual baseado no MVP da autora
 

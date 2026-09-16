@@ -61,6 +61,7 @@ function Home() {
   const [progressOpen, setProgressOpen] = useState(false);
   const [progress, setProgress] = useState(loadProgress);
   const audio = useRef(new AudioFeedback());
+  const drawCycles = useRef(new Map<string, string[]>());
 
   const filters = useMemo<LearningFilters>(() => ({ categories, level }), [categories, level]);
   const activeItem = mode === 'execute' ? challenge : concept;
@@ -95,22 +96,28 @@ function Home() {
     nextFilters: LearningFilters,
     targetMode: Exclude<LearningMode, 'review'> = mode === 'review' ? 'explore' : mode,
   ) => {
-    const next =
+    const cycleKey = [
+      targetMode,
+      [...nextFilters.categories].sort().join(','),
+      nextFilters.level ?? 'all',
+    ].join(':');
+    const result =
       targetMode === 'explore'
-        ? drawLearningItem(concepts, nextFilters, concept.id)
-        : drawLearningItem(challenges, nextFilters, challenge.id);
+        ? drawLearningItem(concepts, nextFilters, concept.id, drawCycles.current.get(cycleKey))
+        : drawLearningItem(challenges, nextFilters, challenge.id, drawCycles.current.get(cycleKey));
 
-    if (!next) {
+    if (!result) {
       setNoResult(true);
       return;
     }
 
+    drawCycles.current.set(cycleKey, result.seenIds);
     setNoResult(false);
     setIsSpinning(true);
     play('spin');
     window.setTimeout(() => {
-      if (targetMode === 'explore') setConcept(next as ConceptItem);
-      else setChallenge(next as ChallengeItem);
+      if (targetMode === 'explore') setConcept(result.item as ConceptItem);
+      else setChallenge(result.item as ChallengeItem);
       setIsSpinning(false);
       play('result');
     }, 680);
