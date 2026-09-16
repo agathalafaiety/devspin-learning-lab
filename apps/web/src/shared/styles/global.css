@@ -321,57 +321,6 @@ button:disabled {
   border-color: rgb(166 247 80 / 0.65);
   transform: scale(0.99);
 }
-.spin-progress {
-  height: 3px;
-  position: absolute;
-  inset: 0 0 auto;
-  background: var(--color-border);
-}
-.spin-progress span {
-  display: block;
-  width: 38%;
-  height: 100%;
-  background: var(--color-primary);
-  box-shadow: 0 0 14px rgb(166 247 80 / 0.65);
-}
-.spinning .spin-progress span {
-  animation: scan 680ms ease-in-out both;
-}
-@keyframes scan {
-  0% {
-    width: 0;
-    transform: translateX(0);
-  }
-  70% {
-    width: 48%;
-    transform: translateX(110%);
-  }
-  100% {
-    width: 100%;
-    transform: translateX(0);
-  }
-}
-.spin-card-meta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 9px;
-}
-.spin-card-meta span {
-  padding: 5px 9px;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  color: var(--color-text-muted);
-  font-family: var(--font-code);
-  font-size: 9px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-}
-.spin-card-meta span:first-child {
-  border-color: rgb(166 247 80 / 0.35);
-  color: var(--color-primary);
-}
 .core-glyph {
   width: 62px;
   height: 62px;
@@ -1924,14 +1873,11 @@ button:disabled {
 }
 
 .mvp-main .spin-stage {
-  width: min(100%, 940px);
+  width: min(100%, 820px);
   min-height: 0;
   margin: 19px auto 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 56px minmax(0, 820px) 56px;
-  align-items: center;
-  gap: 16px;
+  display: block;
 }
 .mvp-main .spin-stage::before,
 .mvp-main .spin-stage::after {
@@ -1940,7 +1886,7 @@ button:disabled {
 .mvp-main .spin-card {
   width: 100%;
   min-height: 470px;
-  padding: 54px 62px 32px;
+  padding: 38px 62px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1954,42 +1900,6 @@ button:disabled {
 }
 .mvp-main .spin-card::after {
   display: none;
-}
-.card-status-row {
-  position: absolute;
-  top: 22px;
-  right: 28px;
-  left: 28px;
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
-.mvp-main .spin-progress {
-  height: 4px;
-  position: relative;
-  inset: auto;
-  flex: 1;
-  overflow: hidden;
-  border-radius: 99px;
-  background: #36404b;
-}
-.mvp-main .spin-progress span {
-  width: 34%;
-  border-radius: inherit;
-}
-.carousel-dots {
-  display: flex;
-  gap: 8px;
-}
-.carousel-dots i {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #55606d;
-}
-.carousel-dots i.active {
-  background: var(--color-primary);
-  box-shadow: 0 0 8px rgb(166 247 80 / 0.45);
 }
 .mvp-main .core-glyph {
   width: 94px;
@@ -2089,23 +1999,6 @@ button:disabled {
 .session-button:hover {
   border-color: rgb(166 247 80 / 0.65);
   color: var(--color-primary);
-}
-.carousel-arrow {
-  width: 54px;
-  height: 54px;
-  display: grid;
-  place-items: center;
-  border: 1px solid #3a4652;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #202832, #131920);
-  color: #c5ccd5;
-  cursor: pointer;
-  transition: 180ms ease;
-}
-.carousel-arrow:hover {
-  border-color: var(--color-primary);
-  color: var(--color-primary);
-  transform: scale(1.04);
 }
 .mvp-main .empty-result {
   min-height: 340px;
@@ -2229,13 +2122,6 @@ button:disabled {
   }
   .mvp-main .spin-stage {
     width: min(100%, 820px);
-    grid-template-columns: 1fr;
-  }
-  .carousel-arrow {
-    display: none;
-  }
-  .mvp-main .spin-card {
-    grid-column: 1;
   }
 }
 
@@ -2292,20 +2178,8 @@ button:disabled {
   }
   .mvp-main .spin-card {
     min-height: 505px;
-    padding: 66px 20px 26px;
+    padding: 36px 20px 26px;
     border-radius: 14px;
-  }
-  .card-status-row {
-    top: 20px;
-    right: 18px;
-    left: 18px;
-  }
-  .carousel-dots {
-    gap: 5px;
-  }
-  .carousel-dots i {
-    width: 6px;
-    height: 6px;
   }
   .mvp-main .core-glyph {
     width: 76px;

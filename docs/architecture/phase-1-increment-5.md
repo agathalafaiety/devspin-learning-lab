@@ -17,7 +17,7 @@ Este incremento consolida a experiência do MVP e transforma os dados locais em 
 
 ## Verificações
 
-- 40 testes unitários e de integração;
+- 41 testes unitários e de integração;
 - 4 cenários ponta a ponta em desktop e celular, totalizando 8 verificações;
 - build de produção e lint sem erros;
 - auditoria automática de acessibilidade sem violações graves ou críticas;

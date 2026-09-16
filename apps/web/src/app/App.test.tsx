@@ -140,6 +140,21 @@ describe('experiência inicial', () => {
     expect(screen.getByText('1 tentativa em quizzes')).toBeInTheDocument();
   });
 
+  it('mantém o giro no botão principal e apresenta três perguntas-chave', async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    expect(screen.queryByRole('button', { name: 'Sortear item anterior' })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Sortear próximo item' })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Girar conceito' })).toBeInTheDocument();
+
+    await user.click(screen.getByText('Ver roteiro de estudo'));
+    expect(screen.getByText('3 perguntas-chave')).toBeInTheDocument();
+    expect(screen.getByText('Qual é a ideia principal?')).toBeInTheDocument();
+    expect(screen.getByText('Quando usar esse conceito?')).toBeInTheDocument();
+    expect(screen.getByText('Qual erro deve ser evitado?')).toBeInTheDocument();
+  });
+
   it('limpa favoritos, histórico e revisões após confirmação', async () => {
     const user = userEvent.setup();
     render(<App />);

@@ -4,8 +4,6 @@ import {
   BookmarkCheck,
   BookOpen,
   BrainCircuit,
-  ChevronLeft,
-  ChevronRight,
   Play,
   RotateCw,
   Terminal,
@@ -51,27 +49,7 @@ export function SpinCore({
 
   return (
     <section className={`spin-stage ${isSpinning ? 'spinning' : ''}`} aria-labelledby="spin-title">
-      <button
-        type="button"
-        className="carousel-arrow previous"
-        onClick={onDraw}
-        aria-label="Sortear item anterior"
-      >
-        <ChevronLeft size={28} />
-      </button>
-
       <article className="spin-card" aria-live="polite" aria-busy={isSpinning}>
-        <div className="card-status-row" aria-hidden="true">
-          <div className="spin-progress">
-            <span />
-          </div>
-          <div className="carousel-dots">
-            <i className="active" />
-            <i />
-            <i />
-            <i />
-          </div>
-        </div>
         {noResult ? (
           <div className="empty-result">
             <RotateCw size={34} />
@@ -114,7 +92,7 @@ export function SpinCore({
                 <details className="learning-details">
                   <summary>Ver roteiro de estudo</summary>
                   <div>
-                    <strong>Perguntas para investigar</strong>
+                    <strong>3 perguntas-chave</strong>
                     <ul>
                       {item.guidingQuestions.map((question) => (
                         <li key={question}>{question}</li>
@@ -176,14 +154,6 @@ export function SpinCore({
           </>
         )}
       </article>
-      <button
-        type="button"
-        className="carousel-arrow next"
-        onClick={onDraw}
-        aria-label="Sortear próximo item"
-      >
-        <ChevronRight size={28} />
-      </button>
     </section>
   );
 }

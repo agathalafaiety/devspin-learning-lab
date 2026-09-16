@@ -7,9 +7,9 @@
     "summary": "Variáveis dão nomes a valores; tipos definem quais operações fazem sentido para eles.",
     "whyItMatters": "Compreender variáveis, valores e tipos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar variáveis, valores e tipos com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Guardar nome, idade e situação de matrícula usando texto, número e booleano.",
     "prerequisites": ["atribuição", "string"],
@@ -21,7 +21,7 @@
     "quickQuiz": [
       {
         "id": "logic-variables-types-q1",
-        "prompt": "Qual frase descreve melhor variáveis, valores e tipos?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Variáveis dão nomes a valores; tipos definem quais operações fazem sentido para eles.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -38,7 +38,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -50,9 +50,9 @@
     "summary": "Condições escolhem caminhos; laços repetem ações enquanto uma regra ou sequência determinar.",
     "whyItMatters": "Compreender condições e laços de repetição ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar condições e laços de repetição com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Percorrer notas e informar quais estudantes atingiram a média.",
     "prerequisites": ["if", "for"],
@@ -64,7 +64,7 @@
     "quickQuiz": [
       {
         "id": "logic-conditionals-loops-q1",
-        "prompt": "Qual frase descreve melhor condições e laços de repetição?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Condições escolhem caminhos; laços repetem ações enquanto uma regra ou sequência determinar.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -81,7 +81,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -93,9 +93,9 @@
     "summary": "Recursão resolve versões menores de um problema; complexidade descreve como o custo cresce.",
     "whyItMatters": "Compreender recursão e complexidade de algoritmos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar recursão e complexidade de algoritmos com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Comparar busca linear e binária em uma lista ordenada.",
     "prerequisites": ["caso-base", "Big O"],
@@ -107,7 +107,7 @@
     "quickQuiz": [
       {
         "id": "logic-recursion-complexity-q1",
-        "prompt": "Qual frase descreve melhor recursão e complexidade de algoritmos?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Recursão resolve versões menores de um problema; complexidade descreve como o custo cresce.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -124,7 +124,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -136,9 +136,9 @@
     "summary": "Uma forma curta de criar uma lista: percorre valores, transforma cada um e pode aplicar um filtro.",
     "whyItMatters": "Compreender list comprehension: criação rápida de listas ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar list comprehension: criação rápida de listas com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Criar uma lista com os quadrados dos números pares de 1 a 10.",
     "prerequisites": ["iterável", "for"],
@@ -150,7 +150,7 @@
     "quickQuiz": [
       {
         "id": "python-list-comprehensions-q1",
-        "prompt": "Qual frase descreve melhor list comprehension: criação rápida de listas?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Uma forma curta de criar uma lista: percorre valores, transforma cada um e pode aplicar um filtro.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -167,7 +167,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -179,9 +179,9 @@
     "summary": "Funções agrupam comportamento; listas, tuplas, conjuntos e dicionários organizam valores.",
     "whyItMatters": "Compreender funções e coleções em python ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar funções e coleções em python com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Contar produtos por categoria usando uma função e um dicionário.",
     "prerequisites": ["parâmetro", "retorno"],
@@ -193,7 +193,7 @@
     "quickQuiz": [
       {
         "id": "python-functions-collections-q1",
-        "prompt": "Qual frase descreve melhor funções e coleções em python?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Funções agrupam comportamento; listas, tuplas, conjuntos e dicionários organizam valores.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -210,7 +210,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -222,9 +222,9 @@
     "summary": "Iteradores entregam valores sob demanda; generators os produzem com funções que usam yield.",
     "whyItMatters": "Compreender iteradores e generators ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar iteradores e generators com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Ler um arquivo grande linha por linha sem carregá-lo inteiro.",
     "prerequisites": ["yield", "iter"],
@@ -236,7 +236,7 @@
     "quickQuiz": [
       {
         "id": "python-iterators-generators-q1",
-        "prompt": "Qual frase descreve melhor iteradores e generators?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Iteradores entregam valores sob demanda; generators os produzem com funções que usam yield.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -253,7 +253,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -265,9 +265,9 @@
     "summary": "Type hints documentam contratos; testes verificam automaticamente comportamentos esperados.",
     "whyItMatters": "Compreender type hints e testes automatizados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar type hints e testes automatizados com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Tipar e testar uma função de desconto com casos de borda.",
     "prerequisites": ["typing", "pytest"],
@@ -279,7 +279,7 @@
     "quickQuiz": [
       {
         "id": "python-typing-testing-q1",
-        "prompt": "Qual frase descreve melhor type hints e testes automatizados?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Type hints documentam contratos; testes verificam automaticamente comportamentos esperados.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -296,7 +296,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -308,9 +308,9 @@
     "summary": "Concorrência coordena tarefas sobrepostas; decorators adicionam comportamento a funções.",
     "whyItMatters": "Compreender concorrência e decorators em python ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar concorrência e decorators em python com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Executar consultas concorrentes e medir cada chamada com um decorator.",
     "prerequisites": ["asyncio", "GIL"],
@@ -322,7 +322,7 @@
     "quickQuiz": [
       {
         "id": "python-concurrency-decorators-q1",
-        "prompt": "Qual frase descreve melhor concorrência e decorators em python?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Concorrência coordena tarefas sobrepostas; decorators adicionam comportamento a funções.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -339,7 +339,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -351,9 +351,9 @@
     "summary": "SELECT escolhe colunas, WHERE filtra linhas e ORDER BY define a ordem do resultado.",
     "whyItMatters": "Compreender select, filtros e ordenação ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar select, filtros e ordenação com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Listar os dez pedidos pagos mais recentes.",
     "prerequisites": ["SELECT", "WHERE"],
@@ -365,7 +365,7 @@
     "quickQuiz": [
       {
         "id": "sql-select-filtering-q1",
-        "prompt": "Qual frase descreve melhor select, filtros e ordenação?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "SELECT escolhe colunas, WHERE filtra linhas e ORDER BY define a ordem do resultado.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -382,7 +382,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -394,9 +394,9 @@
     "summary": "GROUP BY reúne linhas por chave para calcular contagens, somas, médias e outros resumos.",
     "whyItMatters": "Compreender agrupamentos e funções agregadas ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar agrupamentos e funções agregadas com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Calcular faturamento e quantidade de pedidos por mês.",
     "prerequisites": ["GROUP BY", "COUNT"],
@@ -408,7 +408,7 @@
     "quickQuiz": [
       {
         "id": "sql-group-aggregation-q1",
-        "prompt": "Qual frase descreve melhor agrupamentos e funções agregadas?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "GROUP BY reúne linhas por chave para calcular contagens, somas, médias e outros resumos.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -425,7 +425,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -437,9 +437,9 @@
     "summary": "JOIN combina linhas de tabelas diferentes a partir de uma condição relacionada.",
     "whyItMatters": "Compreender joins e relações entre tabelas ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar joins e relações entre tabelas com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Listar clientes e, quando existirem, seus pedidos recentes.",
     "prerequisites": ["INNER JOIN", "LEFT JOIN"],
@@ -451,7 +451,7 @@
     "quickQuiz": [
       {
         "id": "sql-joins-q1",
-        "prompt": "Qual frase descreve melhor joins e relações entre tabelas?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "JOIN combina linhas de tabelas diferentes a partir de uma condição relacionada.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -468,7 +468,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -480,9 +480,9 @@
     "summary": "CTEs nomeiam etapas; window functions calculam resultados relacionados sem agrupar as linhas.",
     "whyItMatters": "Compreender ctes e window functions ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar ctes e window functions com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Calcular o ranking de vendas de cada produto por categoria.",
     "prerequisites": ["WITH", "OVER"],
@@ -494,7 +494,7 @@
     "quickQuiz": [
       {
         "id": "sql-ctes-window-functions-q1",
-        "prompt": "Qual frase descreve melhor ctes e window functions?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "CTEs nomeiam etapas; window functions calculam resultados relacionados sem agrupar as linhas.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -511,7 +511,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -523,9 +523,9 @@
     "summary": "Índices aceleram acessos; transações preservam consistência; planos revelam a execução.",
     "whyItMatters": "Compreender índices, transações e planos de execução ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar índices, transações e planos de execução com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Otimizar a busca de pedidos sem comprometer uma atualização transacional.",
     "prerequisites": ["B-tree", "ACID"],
@@ -537,7 +537,7 @@
     "quickQuiz": [
       {
         "id": "sql-indexes-transactions-q1",
-        "prompt": "Qual frase descreve melhor índices, transações e planos de execução?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Índices aceleram acessos; transações preservam consistência; planos revelam a execução.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -554,7 +554,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -566,9 +566,9 @@
     "summary": "Uma classe define estrutura e comportamento; um objeto é uma instância com estado próprio.",
     "whyItMatters": "Compreender classes, objetos e responsabilidades ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar classes, objetos e responsabilidades com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Modelar uma conta com saldo e operação de depósito válida.",
     "prerequisites": ["instância", "atributo"],
@@ -580,7 +580,7 @@
     "quickQuiz": [
       {
         "id": "oop-classes-objects-q1",
-        "prompt": "Qual frase descreve melhor classes, objetos e responsabilidades?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Uma classe define estrutura e comportamento; um objeto é uma instância com estado próprio.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -597,7 +597,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -609,9 +609,9 @@
     "summary": "Encapsulamento protege invariantes; polimorfismo permite trocar implementações por contrato.",
     "whyItMatters": "Compreender encapsulamento e polimorfismo ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar encapsulamento e polimorfismo com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Enviar mensagem por e-mail ou SMS usando a mesma operação.",
     "prerequisites": ["interface", "invariante"],
@@ -623,7 +623,7 @@
     "quickQuiz": [
       {
         "id": "oop-encapsulation-polymorphism-q1",
-        "prompt": "Qual frase descreve melhor encapsulamento e polimorfismo?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Encapsulamento protege invariantes; polimorfismo permite trocar implementações por contrato.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -640,7 +640,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -652,9 +652,9 @@
     "summary": "Composição combina objetos; SOLID orienta responsabilidades, contratos e dependências.",
     "whyItMatters": "Compreender composição e princípios solid ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar composição e princípios solid com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Compor um serviço de pedido com frete e repositório substituíveis.",
     "prerequisites": ["composição", "SRP"],
@@ -666,7 +666,7 @@
     "quickQuiz": [
       {
         "id": "oop-composition-solid-q1",
-        "prompt": "Qual frase descreve melhor composição e princípios solid?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Composição combina objetos; SOLID orienta responsabilidades, contratos e dependências.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -683,7 +683,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -695,9 +695,9 @@
     "summary": "HTTP organiza requisições e respostas; REST modela recursos com métodos e status semânticos.",
     "whyItMatters": "Compreender http e apis rest ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar http e apis rest com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Definir rotas para criar, consultar e cancelar pedidos.",
     "prerequisites": ["GET", "POST"],
@@ -709,7 +709,7 @@
     "quickQuiz": [
       {
         "id": "backend-http-rest-q1",
-        "prompt": "Qual frase descreve melhor http e apis rest?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "HTTP organiza requisições e respostas; REST modela recursos com métodos e status semânticos.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -726,7 +726,7 @@
         "kind": "standard"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -738,9 +738,9 @@
     "summary": "Validação verifica entradas, autenticação confirma identidade e autorização decide permissões.",
     "whyItMatters": "Compreender validação, autenticação e autorização ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar validação, autenticação e autorização com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Garantir que uma pessoa veja apenas os próprios pedidos.",
     "prerequisites": ["sessão", "RBAC"],
@@ -752,7 +752,7 @@
     "quickQuiz": [
       {
         "id": "backend-validation-auth-q1",
-        "prompt": "Qual frase descreve melhor validação, autenticação e autorização?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Validação verifica entradas, autenticação confirma identidade e autorização decide permissões.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -769,7 +769,7 @@
         "kind": "standard"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -781,9 +781,9 @@
     "summary": "Cache evita recomputações; filas desacoplam entrada e processamento e absorvem picos.",
     "whyItMatters": "Compreender cache, filas e trabalho assíncrono ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar cache, filas e trabalho assíncrono com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Confirmar um pedido e gerar sua nota fiscal por uma fila.",
     "prerequisites": ["TTL", "retry"],
@@ -795,7 +795,7 @@
     "quickQuiz": [
       {
         "id": "backend-cache-queues-q1",
-        "prompt": "Qual frase descreve melhor cache, filas e trabalho assíncrono?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Cache evita recomputações; filas desacoplam entrada e processamento e absorvem picos.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -812,7 +812,7 @@
         "kind": "standard"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -824,9 +824,9 @@
     "summary": "Idempotência faz repetições da mesma intenção produzirem o mesmo efeito observável.",
     "whyItMatters": "Compreender idempotência em sistemas distribuídos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar idempotência em sistemas distribuídos com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Processar uma cobrança com chave de idempotência e restrição única.",
     "prerequisites": ["retry", "atomicidade"],
@@ -838,7 +838,7 @@
     "quickQuiz": [
       {
         "id": "backend-idempotency-distributed-q1",
-        "prompt": "Qual frase descreve melhor idempotência em sistemas distribuídos?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Idempotência faz repetições da mesma intenção produzirem o mesmo efeito observável.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -855,7 +855,7 @@
         "kind": "standard"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -867,9 +867,9 @@
     "summary": "Logs, métricas e traces explicam comportamento; limites de serviço organizam falhas.",
     "whyItMatters": "Compreender observabilidade e arquitetura de serviços ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar observabilidade e arquitetura de serviços com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Rastrear uma compra entre API, pagamento e estoque.",
     "prerequisites": ["trace", "métrica"],
@@ -881,7 +881,7 @@
     "quickQuiz": [
       {
         "id": "backend-observability-architecture-q1",
-        "prompt": "Qual frase descreve melhor observabilidade e arquitetura de serviços?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Logs, métricas e traces explicam comportamento; limites de serviço organizam falhas.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -898,7 +898,7 @@
         "kind": "standard"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -910,9 +910,9 @@
     "summary": "Algoritmos de busca exploram estados e ações para encontrar um caminho até um objetivo.",
     "whyItMatters": "Compreender busca e resolução de problemas em ia ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar busca e resolução de problemas em ia com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Encontrar a menor rota em um labirinto representado como grafo.",
     "prerequisites": ["BFS", "DFS"],
@@ -924,7 +924,7 @@
     "quickQuiz": [
       {
         "id": "ai-search-problem-solving-q1",
-        "prompt": "Qual frase descreve melhor busca e resolução de problemas em ia?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Algoritmos de busca exploram estados e ações para encontrar um caminho até um objetivo.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -941,7 +941,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -953,9 +953,9 @@
     "summary": "Sistemas de IA refletem dados, objetivos e decisões humanas com impactos potencialmente desiguais.",
     "whyItMatters": "Compreender ética, vieses e uso responsável de ia ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar ética, vieses e uso responsável de ia com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Auditar diferenças de erro de uma triagem entre grupos.",
     "prerequisites": ["fairness", "transparência"],
@@ -967,7 +967,7 @@
     "quickQuiz": [
       {
         "id": "ai-ethics-bias-q1",
-        "prompt": "Qual frase descreve melhor ética, vieses e uso responsável de ia?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Sistemas de IA refletem dados, objetivos e decisões humanas com impactos potencialmente desiguais.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -984,7 +984,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -996,9 +996,9 @@
     "summary": "Agentes percebem, decidem e agem; representações estruturadas apoiam raciocínio.",
     "whyItMatters": "Compreender agentes e representação de conhecimento ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar agentes e representação de conhecimento com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Criar um agente de suporte que consulta regras antes de agir.",
     "prerequisites": ["planejamento", "ontologia"],
@@ -1010,7 +1010,7 @@
     "quickQuiz": [
       {
         "id": "ai-agents-knowledge-q1",
-        "prompt": "Qual frase descreve melhor agentes e representação de conhecimento?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Agentes percebem, decidem e agem; representações estruturadas apoiam raciocínio.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1027,7 +1027,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1039,9 +1039,9 @@
     "summary": "No supervisionado há alvos conhecidos; no não supervisionado, busca-se estrutura sem rótulos.",
     "whyItMatters": "Compreender aprendizado supervisionado e não supervisionado ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar aprendizado supervisionado e não supervisionado com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Prever cancelamento e segmentar clientes por comportamento.",
     "prerequisites": ["classificação", "regressão"],
@@ -1053,7 +1053,7 @@
     "quickQuiz": [
       {
         "id": "ml-learning-paradigms-q1",
-        "prompt": "Qual frase descreve melhor aprendizado supervisionado e não supervisionado?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "No supervisionado há alvos conhecidos; no não supervisionado, busca-se estrutura sem rótulos.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1070,7 +1070,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1082,9 +1082,9 @@
     "summary": "Treino ajusta o modelo, validação orienta escolhas e teste estima o resultado final.",
     "whyItMatters": "Compreender treino, validação e teste ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar treino, validação e teste com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Separar dados históricos por data para prever eventos futuros.",
     "prerequisites": ["holdout", "cross-validation"],
@@ -1096,7 +1096,7 @@
     "quickQuiz": [
       {
         "id": "ml-training-validation-q1",
-        "prompt": "Qual frase descreve melhor treino, validação e teste?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Treino ajusta o modelo, validação orienta escolhas e teste estima o resultado final.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1113,7 +1113,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1125,9 +1125,9 @@
     "summary": "Métricas transformam tipos de erro em números alinhados ao custo do problema.",
     "whyItMatters": "Compreender métricas de classificação e regressão ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar métricas de classificação e regressão com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Priorizar recall em uma triagem que não deve perder casos.",
     "prerequisites": ["precision", "recall"],
@@ -1139,7 +1139,7 @@
     "quickQuiz": [
       {
         "id": "ml-evaluation-metrics-q1",
-        "prompt": "Qual frase descreve melhor métricas de classificação e regressão?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Métricas transformam tipos de erro em números alinhados ao custo do problema.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1156,7 +1156,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1168,9 +1168,9 @@
     "summary": "Feature engineering transforma sinais; pipelines repetem as mesmas etapas sem vazamento.",
     "whyItMatters": "Compreender feature engineering e pipelines ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar feature engineering e pipelines com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Transformar datas e categorias em atributos adequados ao modelo.",
     "prerequisites": ["encoding", "scaling"],
@@ -1182,7 +1182,7 @@
     "quickQuiz": [
       {
         "id": "ml-feature-engineering-q1",
-        "prompt": "Qual frase descreve melhor feature engineering e pipelines?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Feature engineering transforma sinais; pipelines repetem as mesmas etapas sem vazamento.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1199,7 +1199,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1211,9 +1211,9 @@
     "summary": "Overfitting ocorre quando o modelo aprende particularidades do treino e falha em novos exemplos.",
     "whyItMatters": "Compreender overfitting e generalização ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar overfitting e generalização com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Comparar curvas de aprendizado antes de aumentar o modelo.",
     "prerequisites": ["bias-variance", "regularização"],
@@ -1225,7 +1225,7 @@
     "quickQuiz": [
       {
         "id": "ml-overfitting-generalization-q1",
-        "prompt": "Qual frase descreve melhor overfitting e generalização?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Overfitting ocorre quando o modelo aprende particularidades do treino e falha em novos exemplos.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1242,7 +1242,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1254,9 +1254,9 @@
     "summary": "Um neurônio combina entradas ponderadas e aplica uma ativação; camadas conectam esses cálculos.",
     "whyItMatters": "Compreender perceptron e funções de ativação ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar perceptron e funções de ativação com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Calcular a saída de um neurônio com ativação ReLU.",
     "prerequisites": ["peso", "bias"],
@@ -1268,7 +1268,7 @@
     "quickQuiz": [
       {
         "id": "dl-perceptron-activations-q1",
-        "prompt": "Qual frase descreve melhor perceptron e funções de ativação?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Um neurônio combina entradas ponderadas e aplica uma ativação; camadas conectam esses cálculos.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1285,7 +1285,7 @@
         "kind": "book"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1297,9 +1297,9 @@
     "summary": "Backpropagation calcula gradientes; o otimizador atualiza parâmetros para reduzir a perda.",
     "whyItMatters": "Compreender backpropagation e otimização ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar backpropagation e otimização com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Comparar curvas de perda usando SGD e Adam.",
     "prerequisites": ["gradiente", "learning rate"],
@@ -1311,7 +1311,7 @@
     "quickQuiz": [
       {
         "id": "dl-backprop-optimization-q1",
-        "prompt": "Qual frase descreve melhor backpropagation e otimização?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Backpropagation calcula gradientes; o otimizador atualiza parâmetros para reduzir a perda.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1328,7 +1328,7 @@
         "kind": "book"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1340,9 +1340,9 @@
     "summary": "CNNs exploram estrutura espacial; transfer learning reutiliza representações pré-treinadas.",
     "whyItMatters": "Compreender cnns e transfer learning ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar cnns e transfer learning com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Adaptar um classificador para reconhecer defeitos industriais.",
     "prerequisites": ["convolução", "feature map"],
@@ -1354,7 +1354,7 @@
     "quickQuiz": [
       {
         "id": "dl-cnns-transfer-learning-q1",
-        "prompt": "Qual frase descreve melhor cnns e transfer learning?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "CNNs exploram estrutura espacial; transfer learning reutiliza representações pré-treinadas.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1371,7 +1371,7 @@
         "kind": "book"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1383,9 +1383,9 @@
     "summary": "Attention combina informações por relevância; transformers empilham atenção e projeções.",
     "whyItMatters": "Compreender attention e transformers ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar attention e transformers com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Visualizar relações entre tokens ao classificar uma frase.",
     "prerequisites": ["self-attention", "multi-head"],
@@ -1397,7 +1397,7 @@
     "quickQuiz": [
       {
         "id": "dl-transformers-attention-q1",
-        "prompt": "Qual frase descreve melhor attention e transformers?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Attention combina informações por relevância; transformers empilham atenção e projeções.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1414,7 +1414,7 @@
         "kind": "book"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1426,9 +1426,9 @@
     "summary": "Redes organizam operações parametrizadas em camadas que transformam entradas em saídas.",
     "whyItMatters": "Compreender neurônios, camadas e parâmetros ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar neurônios, camadas e parâmetros com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Desenhar as formas dos tensores de uma rede pequena.",
     "prerequisites": ["tensor", "parâmetro"],
@@ -1440,7 +1440,7 @@
     "quickQuiz": [
       {
         "id": "nn-neurons-layers-q1",
-        "prompt": "Qual frase descreve melhor neurônios, camadas e parâmetros?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Redes organizam operações parametrizadas em camadas que transformam entradas em saídas.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1457,7 +1457,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1469,9 +1469,9 @@
     "summary": "O treino calcula previsões, perda, gradientes e atualizações repetidamente sobre lotes.",
     "whyItMatters": "Compreender função de perda e ciclo de treinamento ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar função de perda e ciclo de treinamento com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Implementar um ciclo e registrar perdas de treino e validação.",
     "prerequisites": ["batch", "epoch"],
@@ -1483,7 +1483,7 @@
     "quickQuiz": [
       {
         "id": "nn-loss-training-loop-q1",
-        "prompt": "Qual frase descreve melhor função de perda e ciclo de treinamento?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "O treino calcula previsões, perda, gradientes e atualizações repetidamente sobre lotes.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1500,7 +1500,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1512,9 +1512,9 @@
     "summary": "Redes recorrentes mantêm estado; LSTMs usam portões para controlar memória.",
     "whyItMatters": "Compreender rnns, lstms e dependências temporais ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar rnns, lstms e dependências temporais com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Prever o próximo valor de uma série temporal curta.",
     "prerequisites": ["hidden state", "BPTT"],
@@ -1526,7 +1526,7 @@
     "quickQuiz": [
       {
         "id": "nn-rnn-lstm-q1",
-        "prompt": "Qual frase descreve melhor rnns, lstms e dependências temporais?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Redes recorrentes mantêm estado; LSTMs usam portões para controlar memória.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1543,7 +1543,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1555,9 +1555,9 @@
     "summary": "Regularização limita adaptação excessiva; normalização estabiliza o processo de treino.",
     "whyItMatters": "Compreender regularização e normalização em redes ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar regularização e normalização em redes com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Comparar uma rede base com dropout e batch normalization.",
     "prerequisites": ["dropout", "weight decay"],
@@ -1569,7 +1569,7 @@
     "quickQuiz": [
       {
         "id": "nn-regularization-normalization-q1",
-        "prompt": "Qual frase descreve melhor regularização e normalização em redes?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Regularização limita adaptação excessiva; normalização estabiliza o processo de treino.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1586,7 +1586,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1598,9 +1598,9 @@
     "summary": "Modelos de linguagem estimam sequências de tokens e geram continuação a partir do contexto.",
     "whyItMatters": "Compreender modelos de linguagem e tokens ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar modelos de linguagem e tokens com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Comparar a tokenização de texto, código e identificadores.",
     "prerequisites": ["tokenização", "context window"],
@@ -1612,7 +1612,7 @@
     "quickQuiz": [
       {
         "id": "genai-language-models-tokens-q1",
-        "prompt": "Qual frase descreve melhor modelos de linguagem e tokens?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Modelos de linguagem estimam sequências de tokens e geram continuação a partir do contexto.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1629,7 +1629,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1641,9 +1641,9 @@
     "summary": "Prompts fornecem contexto e tarefa; guardrails combinam validação, limites e monitoramento.",
     "whyItMatters": "Compreender prompting e guardrails ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar prompting e guardrails com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Solicitar JSON e validar a saída antes de utilizá-la.",
     "prerequisites": ["system prompt", "structured output"],
@@ -1655,7 +1655,7 @@
     "quickQuiz": [
       {
         "id": "genai-prompting-guardrails-q1",
-        "prompt": "Qual frase descreve melhor prompting e guardrails?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Prompts fornecem contexto e tarefa; guardrails combinam validação, limites e monitoramento.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1672,7 +1672,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1684,9 +1684,9 @@
     "summary": "Embeddings representam itens como vetores; busca vetorial recupera vizinhos similares.",
     "whyItMatters": "Compreender embeddings e busca vetorial ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar embeddings e busca vetorial com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Buscar trechos relacionados mesmo sem palavras idênticas.",
     "prerequisites": ["similaridade cosseno", "vector database"],
@@ -1698,7 +1698,7 @@
     "quickQuiz": [
       {
         "id": "genai-embeddings-vector-search-q1",
-        "prompt": "Qual frase descreve melhor embeddings e busca vetorial?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Embeddings representam itens como vetores; busca vetorial recupera vizinhos similares.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1715,7 +1715,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1727,9 +1727,9 @@
     "summary": "RAG recupera contexto relevante antes de um modelo gerar a resposta.",
     "whyItMatters": "Compreender rag: geração apoiada por recuperação ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar rag: geração apoiada por recuperação com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Responder sobre documentação citando os trechos recuperados.",
     "prerequisites": ["chunking", "reranking"],
@@ -1741,7 +1741,7 @@
     "quickQuiz": [
       {
         "id": "generative-ai-rag-q1",
-        "prompt": "Qual frase descreve melhor rag: geração apoiada por recuperação?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "RAG recupera contexto relevante antes de um modelo gerar a resposta.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1758,7 +1758,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1770,9 +1770,9 @@
     "summary": "NumPy oferece arrays vetorizados; pandas organiza tabelas em Series e DataFrames.",
     "whyItMatters": "Compreender numpy e pandas para dados tabulares ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar numpy e pandas para dados tabulares com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Calcular receita por produto a partir de quantidade e preço.",
     "prerequisites": ["ndarray", "DataFrame"],
@@ -1784,7 +1784,7 @@
     "quickQuiz": [
       {
         "id": "data-numpy-pandas-q1",
-        "prompt": "Qual frase descreve melhor numpy e pandas para dados tabulares?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "NumPy oferece arrays vetorizados; pandas organiza tabelas em Series e DataFrames.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1801,7 +1801,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1813,9 +1813,9 @@
     "summary": "Medidas de centro, dispersão e forma resumem como os valores se distribuem.",
     "whyItMatters": "Compreender estatística descritiva e distribuições ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar estatística descritiva e distribuições com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Comparar média e mediana de tempos com valores extremos.",
     "prerequisites": ["média", "mediana"],
@@ -1827,7 +1827,7 @@
     "quickQuiz": [
       {
         "id": "data-descriptive-statistics-q1",
-        "prompt": "Qual frase descreve melhor estatística descritiva e distribuições?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Medidas de centro, dispersão e forma resumem como os valores se distribuem.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1844,7 +1844,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1856,9 +1856,9 @@
     "summary": "Limpeza corrige problemas; análise exploratória investiga qualidade, relações e hipóteses.",
     "whyItMatters": "Compreender limpeza de dados e análise exploratória ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar limpeza de dados e análise exploratória com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Auditar vendas com datas inválidas, moedas distintas e duplicatas.",
     "prerequisites": ["missing data", "outlier"],
@@ -1870,7 +1870,7 @@
     "quickQuiz": [
       {
         "id": "data-cleaning-eda-q1",
-        "prompt": "Qual frase descreve melhor limpeza de dados e análise exploratória?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Limpeza corrige problemas; análise exploratória investiga qualidade, relações e hipóteses.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1887,7 +1887,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1899,9 +1899,9 @@
     "summary": "Visualizações escolhem marcas e escalas para comunicar perguntas com contexto e honestidade.",
     "whyItMatters": "Compreender visualização e comunicação de resultados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar visualização e comunicação de resultados com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Mostrar evolução, meta e uma mudança de processo em um gráfico.",
     "prerequisites": ["escala", "encoding visual"],
@@ -1913,7 +1913,7 @@
     "quickQuiz": [
       {
         "id": "data-visualization-communication-q1",
-        "prompt": "Qual frase descreve melhor visualização e comunicação de resultados?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Visualizações escolhem marcas e escalas para comunicar perguntas com contexto e honestidade.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1930,7 +1930,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1942,9 +1942,9 @@
     "summary": "Inferência quantifica incerteza; experimentos controlados ajudam a estimar efeitos causais.",
     "whyItMatters": "Compreender inferência estatística e experimentos ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar inferência estatística e experimentos com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Planejar um teste A/B com métrica, amostra e regra de parada.",
     "prerequisites": ["intervalo de confiança", "p-valor"],
@@ -1956,7 +1956,7 @@
     "quickQuiz": [
       {
         "id": "data-inference-experiments-q1",
-        "prompt": "Qual frase descreve melhor inferência estatística e experimentos?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Inferência quantifica incerteza; experimentos controlados ajudam a estimar efeitos causais.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -1973,7 +1973,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -1985,9 +1985,9 @@
     "summary": "Pipelines extraem, transformam e carregam dados; ETL e ELT diferem na ordem.",
     "whyItMatters": "Compreender etl, elt e ingestão de dados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar etl, elt e ingestão de dados com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Carregar arquivos diários de vendas em tabela analítica.",
     "prerequisites": ["ingestão", "batch"],
@@ -1999,7 +1999,7 @@
     "quickQuiz": [
       {
         "id": "engineering-etl-elt-q1",
-        "prompt": "Qual frase descreve melhor etl, elt e ingestão de dados?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Pipelines extraem, transformam e carregam dados; ETL e ELT diferem na ordem.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -2016,7 +2016,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -2028,9 +2028,9 @@
     "summary": "Warehouses integram dados; modelos dimensionais organizam fatos e dimensões.",
     "whyItMatters": "Compreender data warehouses e modelagem dimensional ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar data warehouses e modelagem dimensional com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Modelar vendas por pedido, produto, cliente e data.",
     "prerequisites": ["tabela fato", "dimensão"],
@@ -2042,7 +2042,7 @@
     "quickQuiz": [
       {
         "id": "engineering-warehouse-dimensional-q1",
-        "prompt": "Qual frase descreve melhor data warehouses e modelagem dimensional?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Warehouses integram dados; modelos dimensionais organizam fatos e dimensões.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -2059,7 +2059,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -2071,9 +2071,9 @@
     "summary": "Streaming processa eventos contínuos e define tempo, ordem, janelas e repetição.",
     "whyItMatters": "Compreender streaming e semântica de processamento ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar streaming e semântica de processamento com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Contar transações por janela aceitando eventos atrasados.",
     "prerequisites": ["watermark", "event time"],
@@ -2085,7 +2085,7 @@
     "quickQuiz": [
       {
         "id": "engineering-streaming-semantics-q1",
-        "prompt": "Qual frase descreve melhor streaming e semântica de processamento?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Streaming processa eventos contínuos e define tempo, ordem, janelas e repetição.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -2102,7 +2102,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   },
@@ -2114,9 +2114,9 @@
     "summary": "Orquestração coordena dependências; testes monitoram contratos, atrasos e qualidade.",
     "whyItMatters": "Compreender orquestração, qualidade e observabilidade de dados ajuda a tomar decisões técnicas mais claras e verificar os resultados.",
     "guidingQuestions": [
-      "Como explicar orquestração, qualidade e observabilidade de dados com suas próprias palavras?",
-      "Em qual situação prática esse conceito é útil?",
-      "Quais limites e erros precisam ser observados?"
+      "Qual é a ideia principal?",
+      "Quando usar esse conceito?",
+      "Qual erro deve ser evitado?"
     ],
     "practicalExample": "Orquestrar cargas com testes de unicidade, frescor e volume.",
     "prerequisites": ["DAG", "data quality"],
@@ -2128,7 +2128,7 @@
     "quickQuiz": [
       {
         "id": "engineering-orchestration-quality-q1",
-        "prompt": "Qual frase descreve melhor orquestração, qualidade e observabilidade de dados?",
+        "prompt": "Qual alternativa está correta?",
         "options": [
           "Orquestração coordena dependências; testes monitoram contratos, atrasos e qualidade.",
           "É apenas uma escolha de aparência sem efeito técnico.",
@@ -2145,7 +2145,7 @@
         "kind": "official-docs"
       }
     ],
-    "contentVersion": 1,
+    "contentVersion": 2,
     "reviewStatus": "reviewed",
     "lastContentReviewAt": "2026-09-15"
   }

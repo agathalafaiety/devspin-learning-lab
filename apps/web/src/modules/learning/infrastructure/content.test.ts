@@ -93,7 +93,13 @@ describe('biblioteca oficial de conteúdo', () => {
   it('mantém quizzes completos, com opções únicas e uma resposta existente', () => {
     for (const concept of concepts) {
       expect(concept.quickQuiz.length).toBeGreaterThan(0);
+      expect(concept.guidingQuestions).toEqual([
+        'Qual é a ideia principal?',
+        'Quando usar esse conceito?',
+        'Qual erro deve ser evitado?',
+      ]);
       for (const question of concept.quickQuiz) {
+        expect(question.prompt).toBe('Qual alternativa está correta?');
         expect(question.options[question.correctOptionIndex]).toBeDefined();
         expect(new Set(question.options).size).toBe(question.options.length);
       }
